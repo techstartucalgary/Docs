@@ -1,0 +1,43 @@
+name: deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - name: git-clone
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: build
+        run: |
+          set -eux
+          mkdir bin out
+
+          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.18/mdbook-v0.4.18-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
+
+          root="${PWD}"
+          for project in open-source-tutorial; do
+            cd "${root}/${project}"
+            "${root}/bin/mdbook" build --dest-dir "${root}/out/${project}"
+          done
+
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          force_orphan: true
+          full_commit_message: ${{ github.event.head_commit.message }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: docs
+          publish_dir: out
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
