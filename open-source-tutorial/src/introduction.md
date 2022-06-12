@@ -16,6 +16,10 @@ they all had cool projects
 and contributed to open source.
 For example:
 [@sindresorhus](https://github.com/sindresorhus),
+[@donnemartin](https://github.com/donnemartin),
+[@kamranahmedse](https://github.com/kamranahmedse),
+[@jwasham](https://github.com/jwasham),
+[@trekhleb](https://github.com/trekhleb),
 [@tiangolo](https://github.com/tiangolo),
 [@kamadorueda](https://github.com/kamadorueda),
 among others.
