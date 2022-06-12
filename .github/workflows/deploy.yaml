@@ -18,18 +18,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: install-nix
+        uses: cachix/install-nix-action@v15
+
       - name: build
-        run: |
-          set -eux
-          mkdir bin out
-
-          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.4.18/mdbook-v0.4.18-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=bin
-
-          root="${PWD}"
-          for project in open-source-tutorial; do
-            cd "${root}/${project}"
-            "${root}/bin/mdbook" build --dest-dir "${root}/out/${project}"
-          done
+        run: nix build
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -38,6 +31,6 @@ jobs:
           full_commit_message: ${{ github.event.head_commit.message }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: docs
-          publish_dir: out
+          publish_dir: result
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
