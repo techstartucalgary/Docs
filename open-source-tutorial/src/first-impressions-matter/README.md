@@ -181,6 +181,16 @@ are present in the first page:
    There is no need to overwhelm the user with details at this point.
    We can introduce the details later.
 
+   For example, a better version would be:
+
+   > Install prettier with:
+   >
+   > `$ npm install --save-dev prettier`
+   >
+   > Make your code beautiful with:
+   >
+   > `$ npx prettier --write .`
+
    Remember to keep the first impression simple and intuitive.
 
    Simplicity is key here.
