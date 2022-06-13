@@ -147,4 +147,40 @@ are present in the first page:
    But also make sure not to show unnecessary details.
    Try to find a balance.
    Too short and you'll leave questions unanswered.
-   Too long and you'll bore them or confuse them.
+   Too long and you'll bore or confuse them.
+
+1. **Getting Started**:
+   Users are interested at this point,
+   they want action now.
+
+   Here we place the shortest path a user can take
+   in order to interact with the project.
+   If there are many, show the fastest/easiest one first,
+   and then slowly introduce them to the more complex ones.
+
+   This is an example from the
+   [Alejandra](https://github.com/kamadorueda/alejandra)
+   project:
+
+   ![Alejandra Getting Started](./alejandra-getting-started.png)
+
+   It simply tells the user to use a web version of the project.
+   Everybody knows how to click a link, that's easy, nice.
+
+   This is an example from the
+   [Prettier](https://github.com/prettier/prettier)
+   project:
+
+   ![Prettier Getting Started](./prettier-getting-started.png)
+
+   Users familiar with Node JS
+   will find the instructions easy to follow.
+   However,
+   some steps could have been removed
+   and it would have worked the same.
+   There is no need to overwhelm the user with details at this point.
+   We can introduce the details later.
+
+   Remember to keep the first impression simple and intuitive.
+
+   Simplicity is key here.
