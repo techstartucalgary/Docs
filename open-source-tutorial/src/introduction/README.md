@@ -22,9 +22,11 @@ For example:
 [@trekhleb](https://github.com/trekhleb),
 [@tiangolo](https://github.com/tiangolo),
 [@kamadorueda](https://github.com/kamadorueda),
-among others.
+among others:
+
+![FastAPI and Typer by Tiangolo](./tiangolo-projects.png)
 
 This tutorial will guide you
-through making your GitHub account more awesome,
+through making your GitHub projects more awesome,
 and by extension,
 increasing your value as a developer.

@@ -1,7 +1,7 @@
 # Summary
 
-- [Introduction](./introduction.md)
-- [First impressions matter](./first-impressions-matter.md)
+- [Introduction](./introduction/README.md)
+- [First impressions matter](./first-impressions-matter/README.md)
 
 # The legal side
 
