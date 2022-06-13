@@ -3,15 +3,15 @@ authors = ["Kevin Amado"]
 language = "en"
 multilingual = false
 src = "src"
-title = "Open Source Tutorial"
+title = "Open Sourcing Like A Pro"
 
 [output.html]
 default-theme = "light"
-edit-url-template = "https://github.com/Tech-Start-UCalgary/tsu-resources/edit/master/open-source-tutorial/{path}"
+edit-url-template = "https://github.com/Tech-Start-UCalgary/tsu-resources/edit/master/open-sourcing-like-a-pro/{path}"
 preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/Tech-Start-UCalgary/tsu-resources"
 git-repository-icon = "fa-github"
-site-url = "/open-source-tutorial/"
+site-url = "/open-sourcing-like-a-pro/"
 
 [output.html.fold]
 enable = true

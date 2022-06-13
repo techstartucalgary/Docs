@@ -3,7 +3,7 @@
 When I was first introduced to GitHub,
 I had no idea what it was or what it could do.
 Between you and me,
-I created the account because I was required to do so by my previous company.
+I created the account because I was required to do so by my university.
 
 For the longest time as a beginner
 I did nothing with my account.
@@ -13,7 +13,7 @@ I started following other developers
 and checking out their work on GitHub,
 and I noticed something they had in common:
 they all had cool projects
-and contributed to open source.
+and contributed to Open Source.
 For example:
 [@sindresorhus](https://github.com/sindresorhus),
 [@donnemartin](https://github.com/donnemartin),

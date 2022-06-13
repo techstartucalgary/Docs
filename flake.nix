@@ -24,7 +24,7 @@
       builder = builtins.toFile "builder.sh" ''
         source $stdenv/setup
 
-        for project in open-source-tutorial; do
+        for project in open-sourcing-like-a-pro; do
           cd "$src/$project"
           mdbook build --dest-dir "$out/$project"
         done
