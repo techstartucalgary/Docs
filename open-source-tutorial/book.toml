@@ -12,3 +12,7 @@ preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/Tech-Start-UCalgary/tsu-resources"
 git-repository-icon = "fa-github"
 site-url = "/open-source-tutorial/"
+
+[output.html.fold]
+enable = true
+level = 0
