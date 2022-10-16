@@ -12,6 +12,7 @@
       name = "docs";
       packages = [
         nixpkgs.mdbook
+        nixpkgs.mdbook-linkcheck
       ];
     };
 
@@ -19,7 +20,10 @@
       name = "docs";
       src = ./.;
 
-      buildInputs = [nixpkgs.mdbook];
+      buildInputs = [
+        nixpkgs.mdbook
+        nixpkgs.mdbook-linkcheck
+      ];
 
       buildPhase = "mdbook build --dest-dir $out";
       dontInstall = true;
