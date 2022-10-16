@@ -2,7 +2,9 @@
 
 A `README.md` file in the root of the repository
 is going to be the first things your users see.
-GitHub renders this file on the main page of the repository:
+GitHub renders this file on the main page of the repository.
+
+This is an example from the [NixOS organization](https://github.com/NixOS/nixpkgs):
 
 ![NixOS README](./nixos-readme.png)
 

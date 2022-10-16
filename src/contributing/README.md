@@ -3,8 +3,7 @@
 Please submit bug reports,
 feature requests,
 or general feedback to our
-[Bug Tracker on GitHub](https://github.com/Tech-Start-UCalgary/docs/issues),
-or to our Support Email.
+[Bug Tracker on GitHub](https://github.com/Tech-Start-UCalgary/docs/issues).
 
 ## Code contributions
 
