@@ -1,0 +1,23 @@
+[book]
+authors = ["Kevin Amado"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Tech Start Ucalgary Documentation"
+
+[output.html]
+default-theme = "light"
+edit-url-template = "https://github.com/Tech-Start-UCalgary/docs/edit/main/{path}"
+preferred-dark-theme = "ayu"
+git-repository-url = "https://github.com/Tech-Start-UCalgary/docs"
+git-repository-icon = "fa-github"
+no-section-label = false
+site-url = "/"
+
+[output.html.fold]
+enable = true
+level = 0
+
+[output.html.print]
+enable = true
+page-break = true

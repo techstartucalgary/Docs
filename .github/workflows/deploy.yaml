@@ -27,6 +27,7 @@ jobs:
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
+          cname: docs.techstartucalgary.com
           force_orphan: true
           full_commit_message: ${{ github.event.head_commit.message }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
