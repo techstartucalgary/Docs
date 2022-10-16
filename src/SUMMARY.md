@@ -6,8 +6,8 @@
 
 # Projects
 
-- [Motivation](./motivation/README.md)
-- [A good README](./a-good-readme/README.md)
+- [Motivation](./projects/motivation/README.md)
+- [A good README.md](./projects/readme/README.md)
 
 # The legal side
 

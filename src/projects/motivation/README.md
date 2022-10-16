@@ -5,6 +5,7 @@ Guess what most of the top Software Developers have in common?
 They all have cool projects!
 
 [torvalds](https://github.com/torvalds),
+[dtolnay](https://github.com/dtolnay),
 [sindresorhus](https://github.com/sindresorhus),
 [donnemartin](https://github.com/donnemartin),
 [kamranahmedse](https://github.com/kamranahmedse),

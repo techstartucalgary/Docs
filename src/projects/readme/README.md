@@ -1,16 +1,15 @@
-## A good `README.md`
+# A good `README.md`
 
 A `README.md` file in the root of the repository
 is going to be the first things your users see.
-GitHub renders this file in the main page of the repository:
+GitHub renders this file on the main page of the repository:
 
 ![NixOS README](./nixos-readme.png)
 
-It's important that it's professional, colorful,
-and that it grabs the user attention.
+It's important that it's professional and colorful, and that it grabs the user's attention.
 
 I highly recommend the following elements
-are present in the first page:
+are present on the first page:
 
 1. **Logo and name**:
    A good logo is going to make the project look respected
@@ -32,7 +31,7 @@ are present in the first page:
 
 1. **Slogan**:
    A short, catchy phrase,
-   summarizing what the project do and its most hot features.
+   summarizing what the project does and its most hot features.
 
    This is an example from the
    [FastAPI](https://github.com/tiangolo/fastapi)
@@ -40,26 +39,26 @@ are present in the first page:
 
    > FastAPI framework, high performance, easy to learn, fast to code, ready for production.
 
-   Wow. Yes, I want high performance APIs.
+   Wow. Yes, I want high-performance APIs.
    I want things easy to learn,
-   no boilerplate,
-   robust enough for production.
+   with no boilerplate,
+   and robust enough for production.
 
    While short,
    this slogan is very important
-   because it's displayed in the project card:
+   because it's displayed on the project card:
 
    ![FastAPI slogan](./fastapi-slogan.png)
 
-   It can be the first thing a new visitor see
+   It can be the first thing a new visitor sees
    and therefore can be the decisive factor
    for a user to click on it.
 
-   It's also displayed in the top of the project home page:
+   It's also displayed on the top of the project home page:
 
    ![FastAPI about](./fast-api-about.png)
 
-   And sets the expectative for what comes next,
+   And sets the expectations for what comes next,
    it needs to be good.
 
 1. **Description**:
@@ -90,12 +89,12 @@ are present in the first page:
    >
    > <small>\* estimation based on tests on an internal development team, building production applications.</small>
 
-   Here the user knows that FastAPI helps building APIs with Python.
+   Here the user knows that FastAPI helps build APIs with Python.
    They should be using FastAPI right now
    because it's fast, intuitive, easy, and so on.
 
-   It's always a good idea to throw a few power words like: "Fast", "Powerful", "Secure", "Reliable".
-   But of course make sure that this is true.
+   It's always a good idea to throw a few power-words like: "Fast", "Powerful", "Secure", and "Reliable",
+   but of course, make sure that this is true.
 
    You can further improve this section by adding emojis.
 
@@ -105,10 +104,10 @@ are present in the first page:
 
    ![Alejandra description](./alejandra-description.png)
 
-   To this point your users should have a clear understanding of:
+   To this point, your users should have a clear understanding of:
 
    - What problem does your project solve?
-   - How does it make the user life easier?
+   - How does it make the user's life easier?
    - What is special about it? What are the key features?
 
    But also make sure not to show unnecessary details.
@@ -121,7 +120,7 @@ are present in the first page:
    they want action now.
 
    Here we place the shortest path a user can take
-   in order to interact with the project.
+   to interact with the project.
    If there are many, show the fastest/easiest one first,
    and then slowly introduce them to the more complex ones.
 
@@ -132,7 +131,7 @@ are present in the first page:
    ![Alejandra Getting Started](./alejandra-getting-started.png)
 
    It simply tells the user to use a web version of the project.
-   Everybody knows how to click a link, that's easy, nice.
+   Everybody knows how to click a link, that's easy and nice.
 
    This is an example from the
    [Prettier](https://github.com/prettier/prettier)
@@ -162,7 +161,7 @@ are present in the first page:
 
    Simplicity is key here.
 
-All together, the following are examples of a good README:
+Altogether, the following are examples of a good README:
 
 - Prettier:
 
