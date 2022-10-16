@@ -1,10 +1,13 @@
 # Summary
 
-# Open Sourcing Like A Pro
+# Tech Start UCalgary Documentation
 
 - [Introduction](./README.md)
-- [First impressions matter](./first-impressions-matter/README.md)
-  - [A good README](./first-impressions-matter/a-good-readme/README.md)
+
+# Projects
+
+- [Motivation](./motivation/README.md)
+- [A good README](./a-good-readme/README.md)
 
 # The legal side
 
