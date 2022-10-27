@@ -35,3 +35,10 @@
 
 - [Contributing](./contributing/README.md)
 
+# Credits
+
+- [Credits](./credits/README.md)
+
+# License
+
+- [License](./LICENSE.md)
