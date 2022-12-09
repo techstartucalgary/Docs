@@ -28,6 +28,6 @@ Without further ado, the challenges!
 
    1. <https://cwe.mitre.org/data/definitions/79.html>
    1. <https://github.com/theand-fork/bwapp-code/blob/master/bWAPP/xss_get.php>.
-   1. <https://github.com/theand-fork/bwapp-code/blob/master/bWAPP/xss_get>.php#L144
+   1. <https://github.com/theand-fork/bwapp-code/blob/master/bWAPP/xss_get.php#L144>
    1. On HTML, you can execute JavaScript code
       by putting it inside script tags `<script>alert("Hello!")</script>`.
