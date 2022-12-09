@@ -8,13 +8,13 @@ and how can we prevent them in our software projects.
 
 Without further ado, the challenges!
 
-1. Data Breach - <https://bwapp.kamadorueda.com/admin/index.php>
+1. <https://bwapp.kamadorueda.com/admin/index.php>
 
    Hints:
 
    1. <https://cwe.mitre.org/data/definitions/200.html>
 
-1. SQL Injection - <https://bwapp.kamadorueda.com/sqli_3.php>
+1. <https://bwapp.kamadorueda.com/sqli_3.php>
 
    Hints:
 
@@ -22,7 +22,7 @@ Without further ado, the challenges!
    1. <https://github.com/theand-fork/bwapp-code/blob/master/bWAPP/sqli_3.php#L140>.
    1. Try to make the `WHERE` clause evaluate to `true`.
 
-1. Cross-Site Scripting (XSS) - <https://bwapp.kamadorueda.com/xss_get.php>.
+1. https://bwapp.kamadorueda.com/xss_get.php
 
    Hints:
 
