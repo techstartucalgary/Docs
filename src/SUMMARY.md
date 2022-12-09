@@ -12,10 +12,6 @@
 - [A RoadMap](./projects/roadmap/README.md)
 - [Demos](./projects/demos/README.md)
 
-# Tutorials
-
-- [Cybersecurity](./cubersecurity/README.md)
-
 # Contributing
 
 - [Contributing](./contributing/README.md)
