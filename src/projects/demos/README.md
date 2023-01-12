@@ -31,6 +31,8 @@ Namely, January 26, February 23, and March 30, all in 2023.
 
 ## Agenda
 
+We'll go to the table where you are with your team.
+
 Driven by the project manager:
 
 1. Mention your project's name,
@@ -62,6 +64,7 @@ Driven by the project manager:
    - What would be the top 1 thing that if implemented
      would make your team contributing experience happier?
 
+1. Any closing thoughts?
 <!--
 
 The spirit of this demo is to:
