@@ -31,7 +31,8 @@ Namely, January 26, February 23, and March 30, all in 2023.
 
 ## Agenda
 
-We'll go to the table where you are with your team.
+We'll go to the table where you are with your team
+and talk with you there.
 
 Driven by the project manager:
 
