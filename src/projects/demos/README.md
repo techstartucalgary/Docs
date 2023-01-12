@@ -12,9 +12,9 @@ This year's showcase is scheduled for April 2023.
 To prepare for the showcase
 we want each team to demo their project
 on the last dev night of every month until the showcase.
-Namely, January 26, February 23, and March 30, all in 2023.
+Namely, February 2nd, March 2, and March 30, all in 2023.
 
-# Demo #1, January 26th
+# Demo #1, February 2nd
 
 ## Spirit
 
