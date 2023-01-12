@@ -14,7 +14,55 @@ we want each team to demo their project
 on the last dev night of every month until the showcase.
 Namely, January 26, February 23, and March 30, all in 2023.
 
+# Demo #1, January 26th
+
 ## Spirit
+
+1. Get to know the technical side of your project
+   a little bit more
+   and the things you've build so far,
+   or plan on building.
+1. Discovering how we can help you.
+1. Help you get out of the way the challenges you see.
+1. Monitoring progress is not a goal,
+   don't feel pressured,
+   this Demo shouldn't require much preparation,
+   and instead is more of a sincere conversation.
+
+## Agenda
+
+Driven by the project manager:
+
+1. Mention your project's name,
+   the name of its members,
+   and a short phrase about what your project is about,
+   and what problem it solves for its consumers.
+
+1. Walk us through your vision:
+
+   - How do you want your project to look like 3 months for now?
+
+   - Are there any challenges you are facing or may face?
+
+   - What's your number 1 priority as a team right now?
+   - What's your number 1 priority as a project manager?
+
+1. Technical overview:
+
+   - What's your chosen tech stack?
+
+   > Note: "Source Code" below means code, diagrams, designs, plots, anything.
+
+   - Walk us through how a Developer
+     would clone/access your Source Code
+     and get started contributing.
+
+   - Walk us through your Source Code.
+
+   - What would be the top 1 thing that if implemented
+     would make your team contributing experience happier?
+
+<!--
 
 The spirit of this demo is to:
 
@@ -98,6 +146,7 @@ please follow the following guidelines:
    where to provide feedback (GitHub issues for example),
    and maybe encourage them to click
    on the "star" button of your project repository.
+   -->
 
 May your projects be successful!
 
