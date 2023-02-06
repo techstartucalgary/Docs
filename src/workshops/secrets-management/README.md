@@ -43,6 +43,11 @@ Please come to the workshop with the following tools ready to be used:
    Run `$ brew install sops` on MacOS,
    or `$ apt install sops` or similar on Linux/WSL.
 
+1. [Age](https://github.com/FiloSottile/age):
+
+   Run `$ brew install age` on MacOS,
+   or `$ apt install age` or similar on Linux/WSL.
+
 1. Vault:
 
    Please follow the instructions here:
