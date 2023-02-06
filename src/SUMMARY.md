@@ -12,6 +12,12 @@
 - [A RoadMap](./projects/roadmap/README.md)
 - [Demos](./projects/demos/README.md)
 
+# Topics
+
+- [Management Styles](./topics/management-styles/README.md).
+
+- [Dealing With Conflict](./topics/conflict-management-styles/README.md).
+
 # Contributing
 
 - [Contributing](./contributing/README.md)
