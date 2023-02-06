@@ -15,8 +15,11 @@
 # Topics
 
 - [Management Styles](./topics/management-styles/README.md).
-
 - [Dealing With Conflict](./topics/conflict-management-styles/README.md).
+
+# Workshops
+
+- [Secrets Management](./workshops/secrets-management/README.md)
 
 # Contributing
 

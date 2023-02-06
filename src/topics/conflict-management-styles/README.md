@@ -1,4 +1,4 @@
-# Dealing with conflict
+# Dealing With Conflict
 
 Conflict resolution is the process of resolving differences
 and disputes between individuals, groups,
