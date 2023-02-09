@@ -128,7 +128,17 @@ Steps:
 
 1. The next step is understanding how it works, so essentially you configure which paths of the repository are encrypted in a `.gitattributes` file like this one:
    <https://github.com/techstartucalgary/Docs/blob/main/src/workshops/secrets-management/.gitattributes>,
-   where essentially we tell git-crypt to encrypt the files under the secrets/ folder.
+   where essentially we tell git-crypt to encrypt the files under the secrets/ folder. You can check which files are encrypted with
+
+   ```sh
+   $ git-crypt status
+      not encrypted: src/workshops/secrets-management/README.md
+          encrypted: src/workshops/secrets-management/secrets/dev/password
+          encrypted: src/workshops/secrets-management/secrets/dev/username
+          encrypted: src/workshops/secrets-management/secrets/prod/password
+          encrypted: src/workshops/secrets-management/secrets/prod/username
+      not encrypted: src/workshops/secrets-management/unsafe/key
+   ```
 
 <!--
 https://vault.kamadorueda.com/ui
