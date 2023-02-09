@@ -82,7 +82,10 @@ even if the source code doesn't. For this reason it's recommended to
 
 Enables you to encrypt/decrypt the parts of a git of repository.
 
-- Ideal for simple projects
+Example:
+
+<!--
+Key: [here](./unsafe/key) (Note: This should be distributed through a secure channel. For the sake of simplicity you can download it) -->
 
 <!--
 https://vault.kamadorueda.com/ui
