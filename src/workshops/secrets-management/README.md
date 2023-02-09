@@ -84,8 +84,9 @@ Enables you to encrypt/decrypt the parts of a git of repository.
 
 Example:
 
-<!--
-Key: [here](./unsafe/key) (Note: This should be distributed through a secure channel. For the sake of simplicity you can download it) -->
+<https://github.com/techstartucalgary/Docs/tree/main/src/workshops/secrets-management/secrets>
+
+Key: [download](https://github.com/techstartucalgary/Docs/raw/main/src/workshops/secrets-management/unsafe/key) (Note: This should be distributed through a secure channel. For the sake of simplicity you can download it)
 
 <!--
 https://vault.kamadorueda.com/ui
