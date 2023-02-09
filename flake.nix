@@ -15,7 +15,7 @@
   in {
     devShells.${system}.default = nixpkgs.mkShell {
       name = "docs";
-      packages = dependencies;
+      packages = dependencies ++ [nixpkgs.age nixpkgs.git-crypt nixpkgs.sops];
     };
 
     packages.${system}.default = nixpkgs.stdenv.mkDerivation {

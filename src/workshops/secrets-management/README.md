@@ -91,15 +91,17 @@ The bad:
 
 - You cannot have multiple keys. All people share the same encryption key,
   which means you cannot isolate environments,
-  and therefore is not that useful in highly regulated environments.
+  and therefore is not that useful in highly regulated industries.
+- Unencrypted secrets touch the disk,
+  which is not great if someone steals your laptop while unencrypted.
 
 Steps:
 
-1. Visit <https://github.com/techstartucalgary/Docs/tree/main/src/workshops/secrets-management/secrets>.
+1. Visit <https://github.com/techstartucalgary/Docs/tree/main/src/workshops/secrets-management/git-crypt/secrets>.
 
    As you can see, there are `dev` and `prod` secrets with `username` and `password`, but they are encrypted, so we cannot see them unless we have they key.
 
-1. Download the key [here](https://github.com/techstartucalgary/Docs/raw/main/src/workshops/secrets-management/unsafe/key)
+1. Download the key [here](https://github.com/techstartucalgary/Docs/raw/main/src/workshops/secrets-management/git-crypt/unsafe/key)
 
    Note: This should be distributed through a secure channel (e.g. encrypted email).
    For the sake of simplicity you can download it here.
@@ -110,35 +112,62 @@ Steps:
    $ git clone https://github.com/techstartucalgary/Docs.git docs
    $ cd docs
 
-   docs $ cat src/workshops/secrets-management/secrets/dev/username
+   docs $ cat src/workshops/secrets-management/git-crypt/secrets/dev/username
      <you should see gibberish>
 
    # Decrypt
    docs $ git-crypt unlock /path/to/key
 
    # You should see the secrets now
-   docs $ cat src/workshops/secrets-management/secrets/dev/username
-   docs $ cat src/workshops/secrets-management/secrets/dev/password
+   docs $ cat src/workshops/secrets-management/git-crypt/secrets/dev/username
+   docs $ cat src/workshops/secrets-management/git-crypt/secrets/dev/password
 
    # Encrypt
    docs $ git-crypt lock
-   docs $ cat src/workshops/secrets-management/secrets/dev/username
+   docs $ cat src/workshops/secrets-management/git-crypt/secrets/dev/username
      <you should see gibberish again>
    ```
 
 1. The next step is understanding how it works, so essentially you configure which paths of the repository are encrypted in a `.gitattributes` file like this one:
-   <https://github.com/techstartucalgary/Docs/blob/main/src/workshops/secrets-management/.gitattributes>,
+   <https://github.com/techstartucalgary/Docs/blob/main/src/workshops/secrets-management/git-crypt/.gitattributes>,
    where essentially we tell git-crypt to encrypt the files under the secrets/ folder. You can check which files are encrypted with
 
    ```sh
    $ git-crypt status
       not encrypted: src/workshops/secrets-management/README.md
-          encrypted: src/workshops/secrets-management/secrets/dev/password
-          encrypted: src/workshops/secrets-management/secrets/dev/username
-          encrypted: src/workshops/secrets-management/secrets/prod/password
-          encrypted: src/workshops/secrets-management/secrets/prod/username
-      not encrypted: src/workshops/secrets-management/unsafe/key
+          encrypted: src/workshops/secrets-management/git-crypt/secrets/dev/password
+          encrypted: src/workshops/secrets-management/git-crypt/secrets/dev/username
+          encrypted: src/workshops/secrets-management/git-crypt/secrets/prod/password
+          encrypted: src/workshops/secrets-management/git-crypt/secrets/prod/username
+      not encrypted: src/workshops/secrets-management/git-crypt/unsafe/key
    ```
+
+## Sops
+
+Enables you to encrypt/decrypt JSON, YAML, or whole files.
+
+The good:
+
+- You can have multiple keys and access control over a whole file,
+  great for highly regulated industries.
+- Keys can be connected to an AWS/GCP/Azure identity,
+  which is great in corporate environments,
+  and Age/PGP, which is great for other environments.
+- Everything happens in-memory.
+
+The neutral:
+
+- Not that easy to use, but reasonable given the features.
+
+The bad:
+
+- Requires some training to get used to it.
+
+Steps:
+
+1. Visit <https://github.com/techstartucalgary/Docs/tree/main/src/workshops/secrets-management/sops>.
+
+   As you can see, there are `dev` and `prod` secrets with `username` and `password`, but they are encrypted, so we cannot see them unless we have they key.
 
 <!--
 https://vault.kamadorueda.com/ui
