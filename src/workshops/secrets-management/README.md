@@ -82,11 +82,53 @@ even if the source code doesn't. For this reason it's recommended to
 
 Enables you to encrypt/decrypt the parts of a git of repository.
 
-Example:
+The good:
 
-<https://github.com/techstartucalgary/Docs/tree/main/src/workshops/secrets-management/secrets>
+- It's simple to use.
+- Great for a simple project, with no compliance needs.
 
-Key: [download](https://github.com/techstartucalgary/Docs/raw/main/src/workshops/secrets-management/unsafe/key) (Note: This should be distributed through a secure channel. For the sake of simplicity you can download it)
+The bad:
+
+- You cannot have multiple keys. All people share the same encryption key,
+  which means you cannot isolate environments,
+  and therefore is not that useful in highly regulated environments.
+
+Steps:
+
+1. Visit <https://github.com/techstartucalgary/Docs/tree/main/src/workshops/secrets-management/secrets>.
+
+   As you can see, there are `dev` and `prod` secrets with `username` and `password`, but they are encrypted, so we cannot see them unless we have they key.
+
+1. Download the key [here](https://github.com/techstartucalgary/Docs/raw/main/src/workshops/secrets-management/unsafe/key)
+
+   Note: This should be distributed through a secure channel (e.g. encrypted email).
+   For the sake of simplicity you can download it here.
+
+1. Now we want to decrypt the secrets, for this we have to:
+
+   ```sh
+   $ git clone https://github.com/techstartucalgary/Docs.git docs
+   $ cd docs
+
+   docs $ cat src/workshops/secrets-management/secrets/dev/username
+     <you should see gibberish>
+
+   # Decrypt
+   docs $ git-crypt unlock /path/to/key
+
+   # You should see the secrets now
+   docs $ cat src/workshops/secrets-management/secrets/dev/username
+   docs $ cat src/workshops/secrets-management/secrets/dev/password
+
+   # Encrypt
+   docs $ git-crypt lock
+   docs $ cat src/workshops/secrets-management/secrets/dev/username
+     <you should see gibberish again>
+   ```
+
+1. The next step is understanding how it works, so essentially you configure which paths of the repository are encrypted in a `.gitattributes` file like this one:
+   <https://github.com/techstartucalgary/Docs/blob/main/src/workshops/secrets-management/.gitattributes>,
+   where essentially we tell git-crypt to encrypt the files under the secrets/ folder.
 
 <!--
 https://vault.kamadorueda.com/ui
@@ -95,5 +137,5 @@ vault operator init -address https://vault.kamadorueda.com
 
 export VAULT_ADDR=https://vault.kamadorueda.com
 vault login
-vault kv get -address https://vault.kamadorueda.com  -field=password secret/kevin
+vault kv get -address https://vault.kamadorueda.com -field=password secret/kevin
 -->
