@@ -153,7 +153,6 @@ The good:
 - Keys can be connected to an AWS/GCP/Azure identity,
   which is great in corporate environments,
   and Age/PGP, which is great for other environments.
-- Everything happens in-memory.
 
 The neutral:
 
@@ -168,6 +167,39 @@ Steps:
 1. Visit <https://github.com/techstartucalgary/Docs/tree/main/src/workshops/secrets-management/sops>.
 
    As you can see, there are `dev` and `prod` secrets with `username` and `password`, but they are encrypted, so we cannot see them unless we have they key.
+
+1. Download the development key
+   [here](https://github.com/techstartucalgary/Docs/raw/main/src/workshops/secrets-management/sops/unsafe/dev-key.txt)
+   and the production key
+   [here](https://github.com/techstartucalgary/Docs/raw/main/src/workshops/secrets-management/sops/unsafe/prod-key.txt)
+
+   Note: This should be distributed through a secure channel (e.g. encrypted email).
+   For the sake of simplicity you can download it here.
+
+1. Now we want to decrypt the secrets, for this we have to:
+
+   ```sh
+   $ git clone https://github.com/techstartucalgary/Docs.git docs
+   $ cd docs
+
+   $ cd src/workshops/secrets-management/sops
+
+   src/workshops/secrets-management/sops $ cat dev.yaml
+     <you should see gibberish>
+
+   src/workshops/secrets-management/sops $ cat prod.yaml
+     <you should see gibberish>
+
+   # Decrypt dev secrets with dev key
+   src/workshops/secrets-management/sops $ SOPS_AGE_KEY_FILE=/path/to/dev/key sops -d dev.yaml
+
+   # Decrypt prod secrets with dev key
+   src/workshops/secrets-management/sops $ SOPS_AGE_KEY_FILE=/path/to/dev/key sops -d prod.yaml
+      <you should see a failure, wrong key>
+
+   # Decrypt prod secrets with prod key
+   src/workshops/secrets-management/sops $ SOPS_AGE_KEY_FILE=/path/to/prod/key sops -d prod.yaml
+   ```
 
 <!--
 https://vault.kamadorueda.com/ui
