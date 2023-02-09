@@ -8,21 +8,27 @@
 
     nixpkgs = import inputs.nixpkgs {inherit system;};
 
-    dependencies = [
+    mdbook = [
       nixpkgs.mdbook
       nixpkgs.mdbook-linkcheck
+    ];
+    secretsManagementWorkshop = [
+      nixpkgs.age
+      nixpkgs.git-crypt
+      nixpkgs.sops
+      nixpkgs.vault
     ];
   in {
     devShells.${system}.default = nixpkgs.mkShell {
       name = "docs";
-      packages = dependencies ++ [nixpkgs.age nixpkgs.git-crypt nixpkgs.sops];
+      packages = mdbook ++ secretsManagementWorkshop;
     };
 
     packages.${system}.default = nixpkgs.stdenv.mkDerivation {
       name = "docs";
       src = ./.;
 
-      buildInputs = dependencies;
+      buildInputs = mdbook;
 
       buildPhase = "mdbook build --dest-dir $out";
       dontInstall = true;

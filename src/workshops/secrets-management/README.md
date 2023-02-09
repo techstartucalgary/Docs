@@ -9,7 +9,7 @@ We'll be exploring three approaches used in industry,
 and talking about when to use one or the other:
 
 1. [Git Crypt](https://github.com/AGWA/git-crypt).
-2. [SOPS](https://github.com/mozilla/sops).
+2. [SOPS](https://github.com/mozilla/sops) - My favorite.
 3. [Hashicorp's Vault](https://www.hashicorp.com/products/vault).
 
 We'll also talk a little bit about the [Twelve-Factor app](https://12factor.net/),
@@ -80,10 +80,13 @@ even if the source code doesn't. For this reason it's recommended to
 
 ## Git-Crypt
 
+> https://github.com/AGWA/git-crypt
+
 Enables you to encrypt/decrypt the parts of a git of repository.
 
 The good:
 
+- Versioned as code.
 - It's simple to use.
 - Great for a simple project, with no compliance needs.
 
@@ -144,10 +147,13 @@ Steps:
 
 ## Sops
 
+> https://github.com/mozilla/sops
+
 Enables you to encrypt/decrypt JSON, YAML, or whole files.
 
 The good:
 
+- Versioned as code.
 - You can have multiple keys and access control over a whole file,
   great for highly regulated industries.
 - Keys can be connected to an AWS/GCP/Azure identity,
@@ -201,12 +207,39 @@ Steps:
    src/workshops/secrets-management/sops $ SOPS_AGE_KEY_FILE=/path/to/prod/key sops -d prod.yaml
    ```
 
-<!--
-https://vault.kamadorueda.com/ui
+## Vault
 
-vault operator init -address https://vault.kamadorueda.com
+> <https://www.hashicorp.com/products/vault>
 
-export VAULT_ADDR=https://vault.kamadorueda.com
-vault login
-vault kv get -address https://vault.kamadorueda.com -field=password secret/kevin
--->
+The good:
+
+- Big enterprises like it. Why? Maybe marketing? I assume is because it allows for centralization, which is important if you have hundreds of teams.
+
+The neutral:
+
+- Very flexible.
+
+The bad:
+
+- Another server to maintain.
+- Not versioned as code.
+- Not free.
+
+Steps:
+
+1. Login to the UI at <https://vault.kamadorueda.com/ui>. The token is `123`.
+
+1. Let's put and get a secret out of it
+
+   ```sh
+   $ export VAULT_ADDR=https://vault.kamadorueda.com
+
+   # Login. The token is: 123
+   $ vault login
+
+   $ vault kv put secret/your-name password=your-password
+
+   $ vault kv get -field=password secret/your-name
+   ```
+
+1. It's possible to define access control lists, policies, and grant each person a different token, or login with OIDC. It's very flexible.
