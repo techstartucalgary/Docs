@@ -53,9 +53,36 @@ Please come to the workshop with the following tools ready to be used:
    Please follow the instructions here:
    <https://developer.hashicorp.com/vault/downloads>.
 
+# Why?
+
+Application secrets are critical for security.
+For example, if an attacker discovers the database credentials,
+then immediately this attacker would gain access to all of the applications data.
+Application secrets is the entrypoint for everything, they are the Keys of Heaven,
+and therefore, it's very important to make sure
+that only the right people can get access to those secrets.
+
+In this line of making application secrets be only accessible to the right people
+we also need to make sure that developers can only access development secrets.
+It's very common to have at least 2 environments: Development and Production,
+and to have some kind of segmentation where only super admins can access Production secrets.
+
+It also doesn't matter if your source code is private,
+you still want to protect your secrets because your source code may be leaked,
+as it has happened in the past to companies like Twitch.
+
+There is also an argument about maintainability.
+Secrets are also configuration, namely, their values may change over time,
+even if the source code doesn't. For this reason it's recommended to
+[strictly separate them from the source code](https://12factor.net/config).
+
 # Workshop Step by Step
 
-This section will be published on the day of the workshop.
+## Git-Crypt
+
+Enables you to encrypt/decrypt the parts of a git of repository.
+
+- Ideal for simple projects
 
 <!--
 https://vault.kamadorueda.com/ui
