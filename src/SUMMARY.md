@@ -23,10 +23,10 @@
 
 # Curated online resources
 
-- [Management Styles](./topics/management-styles/README.md).
 - [Dealing With Conflict](./topics/conflict-management-styles/README.md).
 - [CSS](./topics/css/README.md).
 - [HTML](./topics/html/README.md).
+- [Management Styles](./topics/management-styles/README.md).
 
 ---
 
