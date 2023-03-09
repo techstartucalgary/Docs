@@ -8,8 +8,8 @@ come and give us feedback on the projects,
 while also allowing you as a professional and us as a club
 to connect and network with different companies.
 
-This year's showcase is scheduled for April 2023.
+This year's showcase is scheduled for **April 29th, 2023**.
 To prepare for the showcase
 we want each team to demo their project
 on the last dev night of every month until the showcase.
-Namely, February 2nd, March 2, and March 30, all in 2023.
+Namely, February 2nd, March 16th, and April 6th, all in 2023.
