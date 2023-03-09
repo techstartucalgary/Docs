@@ -16,9 +16,11 @@
 # Software Development
 
 - [Career Paths](./software/career-paths/README.md).
-  - [Front End](./software/front-end/README.md).
+- [Front End](./software/front-end/README.md).
 
-# Topics
+---
+
+# Curated online resources
 
 - [Management Styles](./topics/management-styles/README.md).
 - [Dealing With Conflict](./topics/conflict-management-styles/README.md).
@@ -31,8 +33,8 @@
 
 ---
 
-[Contributing](./contributing/README.md)
+[Contributing](./CONTRIBUTING.md)
 
-[Credits](./credits/README.md)
+[Credits](./CREDITS.md)
 
 [License](./LICENSE.md)
