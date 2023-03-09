@@ -225,6 +225,8 @@ The bad:
 - Not versioned as code.
 - Not free.
 
+> Note: <https://vault.kamadorueda.com> will be only available during the workshop. If you are following this guide after the workshop, please use your own Vault instance instead.
+
 Steps:
 
 1. Login to the UI at <https://vault.kamadorueda.com/ui>. The token is `123`.

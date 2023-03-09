@@ -15,8 +15,7 @@ no-section-label = false
 site-url = "/"
 
 [output.html.fold]
-enable = true
-level = 2
+enable = false
 
 [output.html.print]
 enable = true
