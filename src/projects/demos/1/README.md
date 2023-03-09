@@ -6,9 +6,9 @@
    a little bit more
    and the things you've build so far,
    or plan on building.
-1. Discovering how we can help you.
-1. Help you get out of the way the challenges you see.
-1. Monitoring progress is not a goal,
+2. Discovering how we can help you.
+3. Help you get out of the way the challenges you see.
+4. Monitoring progress is not a goal,
    don't feel pressured,
    this Demo shouldn't require much preparation,
    and instead is more of a sincere conversation.
@@ -25,7 +25,7 @@ Driven by the project manager:
    and a short phrase about what your project is about,
    and what problem it solves for its consumers.
 
-1. Walk us through your vision:
+2. Walk us through your vision:
 
    - How do you want your project to look like 3 months for now?
 
@@ -34,7 +34,7 @@ Driven by the project manager:
    - What's your number 1 priority as a team right now?
    - What's your number 1 priority as a project manager?
 
-1. Technical overview:
+3. Technical overview:
 
    - What's your chosen tech stack?
 
@@ -49,7 +49,7 @@ Driven by the project manager:
    - What would be the top 1 thing that if implemented
      would make your team contributing experience happier?
 
-1. Any closing thoughts?
+4. Any closing thoughts?
 <!--
 
 The spirit of this demo is to:
