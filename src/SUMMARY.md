@@ -17,6 +17,7 @@
 
 - [Career Paths](./software/career-paths/README.md).
 - [Front End](./software/front-end/README.md).
+- [DevOps](./software/devops/README.md).
 
 ---
 
@@ -25,6 +26,7 @@
 - [Management Styles](./topics/management-styles/README.md).
 - [Dealing With Conflict](./topics/conflict-management-styles/README.md).
 - [CSS](./topics/css/README.md).
+- [HTML](./topics/html/README.md).
 
 ---
 
