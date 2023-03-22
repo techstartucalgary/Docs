@@ -6,7 +6,7 @@ src = "src"
 title = "Tech Start UCalgary Documentation"
 
 [output.html]
-default-theme = "rust"
+default-theme = "navy"
 edit-url-template = "https://github.com/Tech-Start-UCalgary/docs/edit/main/{path}"
 preferred-dark-theme = "ayu"
 git-repository-url = "https://github.com/Tech-Start-UCalgary/docs"

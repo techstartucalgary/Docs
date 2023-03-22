@@ -11,6 +11,7 @@
 - [Demos](./projects/demos/README.md)
   - [February 2nd](./projects/demos/1/README.md)
   - [March 16th](./projects/demos/2/README.md)
+  - [April 6th](./projects/demos/3/README.md)
 
 ---
 
