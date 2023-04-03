@@ -42,10 +42,17 @@ you'll have:
   1. LifeLine.
   1. AiRM.
   1. TechstArcade.
-
 - The judges will score based on
   [this rubric](https://docs.google.com/document/d/1scLIovkpHQizCwvwH1ql02NYGKR--tHjXpN2FT3Lsyw/edit?usp=sharing),
   so if you want to win some prizes you may want to optimize for that.
+- Please prepare your responses for the following retrospective questions:
+   - What was the most challenging aspect of the project and how did you overcome it?
+   - Looking back, what would you have done differently in terms of planning or execution?
+   - How did each team member contribute to the project, and what strengths did they bring to the team?
+   - What did you learn from working on this project that you can apply to future projects?
+   - In what ways did the project meet or exceed your initial expectations, and why?
+   - Did you feel that the project had a meaningful impact, either for your team or for others?
+   - What is your plan for the next 3 weeks leading up to the final showcase?
 
 Lastly, just remember to look back on what you have achieved,
 and take a moment to appreciate how far you have come
