@@ -2,6 +2,10 @@
 
 ---
 
+# Getting Started
+
+- [Installfest: from zero to hero](./installation/README.md)
+
 # Projects
 
 - [Motivation](./projects/motivation/README.md)
