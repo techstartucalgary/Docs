@@ -38,6 +38,14 @@
 
 ---
 
+# Guides
+
+- [Django](./guides/Django_Guide/DjangoGuide.html)
+- [Git](./guides/Git_Guide/GitGuide.html)
+- [GraphQL](./guides/GraphQL_API_Guide/GraphQLAPIGuide.html)
+- [React](./guides/React_Guide/ReactGuide.html)
+- [Web Dev](./guides/Web_Dev_Guide/WebDevGuide.html)
+
 [Contributing](./CONTRIBUTING.md)
 
 [Credits](./CREDITS.md)
