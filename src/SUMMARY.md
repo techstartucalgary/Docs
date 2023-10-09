@@ -4,7 +4,8 @@
 
 # Getting Started
 
-- [Installfest: from zero to hero](./installation/README.md)
+- [Installfest: from zero to hero](./installation/installfest/README.md)
+- [Django installation](./installation/django/README.md)
 
 # Projects
 
