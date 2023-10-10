@@ -42,7 +42,7 @@
 
 - [Django](./guides/Django_Guide/README.md)
 - [Git](./guides/Git_Guide/README.md)
-- [GraphQL](./guides/GraphQL_API_Guide/GraphQLAPIGuide.md)
+- [GraphQL](./guides/GraphQL_API_Guide/README.md)
 - [React](./guides/React_Guide/README.md)
 - [Web Dev](./guides/Web_Dev_Guide/README.md)
 
