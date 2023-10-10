@@ -8,6 +8,7 @@ We understand that setting up your computer for development can be a daunting ta
 This guide will help you install all the tools you need to start coding. It will also help you configure your computer so that you can easily switch between different versions of Node.js and Python. Your don't need to install everything in this guide, only the tools you need for your project. If you are not sure what tools you need, ask your project lead or one of the exec members.
 
 #### Table of Contents
+  - [Windows Users](#windows-users)
   - [Installing Homebrew](#installing-homebrew)
   - [Installing Git](#installing-git)
   - [Installing Node](#installing-node)
@@ -16,6 +17,9 @@ This guide will help you install all the tools you need to start coding. It will
   - [Installing Pip](#installing-pip)
   - [Installing Pyenv](#installing-pyenv)
   - [That's it!](#thats-it)
+
+#### Windows Users
+If you are using Windows, we recommend that you install WSL2 and Ubuntu as your development environment. You can find instructions on how to do so here: [WSL2 Installation](../wsl2/README.md) Once you have installed WSL2 and Ubuntu, you can continue with this guide.
 
 #### Installing Homebrew
 Homebrew is a package manager for macOS (or Linux) that allows you to easily install and manage software packages and libraries. It simplifies the installation process by automating the installation of dependencies and providing a consistent interface for installing software. To install Homebrew, run the following command:

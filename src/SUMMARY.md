@@ -5,6 +5,7 @@
 # Getting Started
 
 - [Installfest: from zero to hero](./installation/installfest/README.md)
+- [WSL2 Installation](./installation/wsl2/README.md)
 - [Django installation](./installation/django/README.md)
 
 # Projects
