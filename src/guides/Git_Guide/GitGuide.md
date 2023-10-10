@@ -1,13 +1,13 @@
 
 |  |
 | --- |
-| Tech Start's Git Guide |
+# Tech Start's Git Guide 
 
 ![](images/image4.png)
 
 
 
-Legend
+## Legend
 
 === Beginner Section ===
 
@@ -451,7 +451,7 @@ WIP, should include push, pop, apply, list
 
 == didnt realize we already have git clean there, but we can do more detail here ==
 
-## Undoing Commits & Changes[[a]](#cmnt1)
+## Undoing Commits & Changes
 
 WIP
 
