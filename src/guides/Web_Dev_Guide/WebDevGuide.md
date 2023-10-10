@@ -1,7 +1,7 @@
 
 |  |
 | --- |
-| Tech Start's Super Awesome Mega Web Dev Guide:)  |
+# Tech Start's Super Awesome Mega Web Dev Guide:)  
 
 Want to get into web dev? This guide should be your best friend. It covers some of the basic tools and languages you'll need to dive into the world of web development. Rather than providing tutorials, this guide focuses on directing you towards the best free online content to teach you the fundamentals.
 

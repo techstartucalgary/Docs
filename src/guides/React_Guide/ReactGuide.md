@@ -1,7 +1,7 @@
 
 |  |
 | --- |
-| Tech Start's React Guide |
+# Tech Start's React Guide 
 
 ~~ WIP ~~
 
