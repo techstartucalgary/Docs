@@ -40,11 +40,11 @@
 
 # Guides
 
-- [Django](./guides/Django_Guide/DjangoGuide.md)
-- [Git](./guides/Git_Guide/GitGuide.md)
+- [Django](./guides/Django_Guide/README.md)
+- [Git](./guides/Git_Guide/README.md)
 - [GraphQL](./guides/GraphQL_API_Guide/GraphQLAPIGuide.md)
-- [React](./guides/React_Guide/ReactGuide.md)
-- [Web Dev](./guides/Web_Dev_Guide/WebDevGuide.md)
+- [React](./guides/React_Guide/README.md)
+- [Web Dev](./guides/Web_Dev_Guide/README.md)
 
 ---
 
