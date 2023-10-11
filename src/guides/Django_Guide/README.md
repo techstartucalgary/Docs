@@ -1,7 +1,4 @@
-
-
 # Tech Start's Django Guide 
-
 
 Django is a free and open source python framework that lets you build awesome backends for websites, apps, and more. You can use it to host databases and build secure APIs for them without writing a line of SQL. You can also use it to create multi-page applications with dynamically served content. It makes it easy to get started building complex functionalities by automating a lot of the boilerplate code that you'd normally have to write. 
 
@@ -13,77 +10,92 @@ We recommend that you have a basic knowledge of python before using django! This
 
 (Img src: [https://medium.com/crowdbotics/when-to-use-django-and-when-not-to-9f62f55f693b](https://medium.com/crowdbotics/when-to-use-django-and-when-not-to-9f62f55f693b))
 
+#### Table of Contents
 
-## 
-
-
-## Setup
-
-Before you get started with Django, you should set up your environment. You should have a recent version of Python installed. You can follow the directions here:
-
-[https://docs.djangoproject.com/en/3.1/howto/windows/](https://docs.djangoproject.com/en/3.1/howto/windows/)
-
-You should make a venv for your django project.
-
-
-![alt_text](images/image17.png "image_tooltip")
-
-
-Video tutorial for venv windows: [https://www.youtube.com/watch?v=APOPm01BVrk](https://www.youtube.com/watch?v=APOPm01BVrk)
-
-Video tutorial for venv mac/linux: [https://www.youtube.com/watch?v=Kg1Yvry_Ydk](https://www.youtube.com/watch?v=Kg1Yvry_Ydk)
-
-Note: if you're using Git Bash on windows, use  **<code>$ source venv/scripts/activate</code></strong>
-
-When you're done using your virtual environment, just enter **<code>$ deactivate</code></strong>
-
-[https://docs.djangoproject.com/en/3.1/intro/tutorial01/](https://docs.djangoproject.com/en/3.1/intro/tutorial01/)
+- [Requirements](#Requirements)
+- [Setup](#Setup)
+- [Installing Dotenv](#Installing-Dotenv)
+- [Installing Postgres and psycopg2](#Installing-Postgres-and-psycopg2)
+- [Creating a Postgres database](#Creating-a-Postgres-database)
+- [Connecting Django to Postgres](#Connecting-Django-to-Postgres)
+- [Writing Models](#Writing-Models)
+- [Run your app](#Run-your-app)
+- [URLs](#URLs)
+- [Views](#Views)
+- [Django REST Framework](#Django-REST-Framework)
+- [Serializers](#Serializers)
+- [Django REST Framework: Class based Views](#Django-REST-Framework:-Class-based-Views)
+- [Testing your API](#Test-out-your-Django-REST-API)
 
 
+#### Requirements
+
+First you will need to install Homebrew, Python, Pip, and Pyenv. If you have not done so already, please follow the instructions in the [Installfest](../../installation/installfest/README.md) section.
+
+#### Setup
+
+To create a Django project first wee need to create a directory for the project. To do so, run the following command:
+
+```bash
+mkdir <project-name>
 ```
-    $ python -m pip install Django
-```
+  
+Then, we need to navigate to the directory we just created. To do so, run the following command:
 
-
-Get Django installed once you have created your virtual environment.
-
-
-```
-  $  python -m django --version 
+```bash
+cd <project-name>
 ```
 
+Now, we need to create a virtual environment for our project. To do so, run the following command:
 
-// Checks if you have django installed
-
-Next, cd into the folder which you want to contain your project and run the following command:
-
-
-```
-  $ django-admin startproject pNameHere
+```bash
+pyenv virtualenv .venv
 ```
 
+Then, we need to activate the virtual environment. You need to do this every time you want to run your project. To do so, run the following command:
 
-// starts project. cd into pNameHere folder.
+```bash
+source .venv/bin/activate
+```
 
+If you want to deactivate your virtual environment when you're done working on your project, run the following command:
+
+```bash
+deactivate
+```
+
+Now, we need to install Django. To do so, run the following command:
+
+```bash
+pip install django
+```
+
+To check if Django is installed, run the following command:
+
+```bash
+python3 -m django --version 
+```
+
+Next, let's create a project.
+
+```bash
+django-admin startproject <project-name> . # the dot is important! it will create the project in the current directory
+```
 
 ```
 Good to know: Projects vs. apps
 What's the difference between a django project and a django app? An app is a Web application that does something – e.g., a Weblog system, a database of public records or a small poll app. A project is a collection of configuration and apps for a particular website. A project can contain multiple apps. An app can be in multiple projects.
 ```
 
-
-
-```
-  $ python manage.py startapp yourAppName
+```bash
+python3 manage.py startapp <your-app-name>
 ```
 
-
-This creates an app within your project. You'll need to be in the same folder that holds your project's manage.py
+This creates an app within your project. You can create as many apps as you want within a project.
 
 Next step: include your app in the INSTALLED_APPS fields in settings.py (just the name)
 
-
-```
+```python
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -92,14 +104,135 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    #Add your app name like this!
-    'myAppName',
+    ...
+    'your-app-name',
 ]
 ```
 
+#### Installing Dotenv
 
+Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology. To install dotenv, run the following command:
 
-## Writing Models
+```bash
+pip install python-dotenv
+```
+
+Then freeze the requirements. To do so, run the following command:
+
+```bash
+pip freeze > requirements.txt
+```
+
+This will create a file called requirements.txt that will contain all the packages that are installed in your virtual environment. This file will be useful for when you need to install the same packages in another virtual environment. <strong>After adding a new package to your virtual environment, you will need to freeze the requirements again.</strong>
+
+Next, go to your project and create a .env file. To do so, run the following command:
+
+```bash
+touch .env
+```
+
+Then go to your settings.py file and add the following code:
+
+```python
+from django.core.management.utils import get_random_secret_key
+from dotenv import load_dotenv
+
+...
+
+load_dotenv()
+
+# SECURITY WARNING: keep the secret key used in production secret!
+# Copy the secret key from the .env file
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
+```
+
+Your .env file should look like this:
+
+```.env
+DJANGO_SECRET_KEY=your-secret-key
+```
+
+#### Installing Postgres and psycopg2
+
+PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance. To install Postgres, run the following command:
+
+```bash
+brew install postgresql
+```
+
+To check if Postgres is installed, run the following command:
+
+```bash
+postgres --version
+```
+
+psycopg2 is a PostgreSQL database adapter for the Python programming language. To install psycopg2, run the following command:
+
+```bash
+pip install psycopg2
+```
+
+Then freeze the requirements. To do so, run the following command:
+
+```bash
+pip freeze > requirements.txt
+```
+
+Then go to your settings.py file and add the following code:
+
+```python
+INSTALLED_APPS = [
+    ...
+    'psycopg2',
+]
+```
+
+#### Creating a Postgres database
+
+To create a Postgres database, run the following command:
+
+```bash
+createdb <database-name>
+```
+
+Remember your credentials for the database. You will need them later.
+
+It is also recommended to install pgAdmin, a free and open-source administration and development platform for PostgreSQL and its related database management systems. To install pgAdmin, run the following command:
+
+```bash
+brew install --cask pgadmin4
+```
+
+#### Connecting Django to Postgres
+
+Add the following code to your .env file:
+
+```bash
+DATABASE_NAME=<database-name>
+DATABASE_USER=<database-user>
+DATABASE_PASSWORD=<database-password>
+```
+
+Now go to your settings.py file and add the following code:
+
+```python
+import os
+
+...
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DATABASE_NAME'),
+        'USER': os.getenv('DATABASE_USER'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'HOST': "127.0.0.1",
+        'PORT': "5432",
+    }
+}
+```
+
+#### Writing Models
 
 **Models** allow you to define the content of your database. <span style="text-decoration:underline;">If you don't need content in your database, you won't need models.</span>
 
@@ -112,7 +245,7 @@ More about models: [https://docs.djangoproject.com/en/3.1/topics/db/models/](htt
 You will define all your models in models.py, located within the folder for your app.
 
 
-```
+```python
 from django.db import models
 
 # Create your models here.
@@ -136,15 +269,13 @@ Each model should correspond to the structure of a table of a relational model o
 
 Django can convert these into real SQL tables!
 
-
-
 * **_Good to know: Primary Keys_**: In the above example we didn't specify any ids for our models (normally, with databases, you want an id to be your primary key). Django automatically creates an ID field to be the primary key for each model and takes care of auto-incrementing, unless you specifically override it. I don't recommend overriding, it's not worth the effort (and its doubly complicated and not worth it to have a primary key composed of several fields)
 * **_Good to know: __str__:_** the __str__ function is Python's default function for string representation. In this case, it's good practice to override this for your models. This will help you understand your data if you login via the admin view (I'll show how to do this later)
 * **_Good to know: Foreign Keys_**: See the Song model class for how you can reference a foreign key belonging to another model (in this case it refers to Album). You don't need to refer to a foreign model's keys directly, all you need to do is specify which table you are referencing. Also note: if you are referring to a table, it needs to be defined above the point in the code where you are referring to it. 
 
 There are more options that can be explored about how you can define your models, but this should be a good base for you to do your own research :)
 
-Now we're ready to convert these into a real database! By default, Django will make a sqlite file that has your database.
+Now we're ready to convert these into a real database! By default, Django will make a migration file that has your database.
 
 
 ```
@@ -152,24 +283,26 @@ Converting models into your database
 
 https://docs.djangoproject.com/en/3.1/intro/tutorial02/
 
->> python manage.py makemigrations appName
+>> python3 manage.py makemigrations appName
 Creates migrations for the changes you made in appName
 
->> python manage.py migrate
+>> python3 manage.py migrate
 Migrates the changes you made into your database
 
 ```
 
-
-
-## Run your app
+#### Run your app
 
 Whenever you are ready to run your server, just call this command!
 
 
+```bash
+python3 manage.py runserver 
 ```
->> python manage.py runserver 
-```
+
+You should see something like this:
+
+![django-initial-page](./images/django-initial-page.png)
 
 
 By default, this will run the Django server on localhost:8000. View the django documentation to see how you can run it on a different port. You can now access it from your web browser by visiting [http://localhost:8000](http://localhost:8000) !
@@ -177,8 +310,8 @@ By default, this will run the Django server on localhost:8000. View the django d
 You can also create a superuser (admin) to view the inner contents of your database. To do this, you first need to create them from the command line using the following command:
 
 
-```
->> python manage.py createsuperuser --username yourNameHere --email yours@email.ca
+```bash
+python3 manage.py createsuperuser --username yourNameHere --email yours@email.ca
 ```
 
 
@@ -187,8 +320,8 @@ This will create a super user with your provided info (it will prompt you to ent
 The following command creates a token for the superuser that you can use for authentication in requests. If you are not using Django Rest Framework, this is not applicable to you.
 
 
-```
->> python manage.py drf_create_token yourSuperUserName
+```bash
+python3 manage.py drf_create_token yourSuperUserName
 ```
 
 
@@ -313,18 +446,15 @@ Both the above docs and the docs for views also show how you can interact with y
 Once you have defined your views and given them a corresponding url, you can test them out. 
 
 
-```
->> python manage.py runserver 
+```bash
+python3 manage.py runserver 
 ```
 
 
 Run your server, and using either a web browser, or preferably an API testing tool like Postman ([https://www.postman.com/](https://www.postman.com/))  access the proper urls (ex. [http://localhost:8000/myApp/hello_world](http://localhost:8000/myApp/hello_world)) to see if they have the expected behavior. 
 
 
-## 
-
-
-## Django REST Framework
+#### Django REST Framework
 
 Django REST Framework is an add-on to Django that makes it simple to develop REST-compliant APIs. There is great documentation here: [https://www.django-rest-framework.org/](https://www.django-rest-framework.org/) **_&lt;--- FOLLOW INSTALL INSTRUCTIONS_**
 
@@ -339,7 +469,7 @@ Before we define any endpoints with Django REST Framework, let's make some seria
 
 
 
-### Serializers
+#### Serializers
 
 Django REST Framework uses serializers as a way to perform **translation **of your models from your python code and your database into data formats like JSON and XML that an API might use. Read more about them here:
 
@@ -356,7 +486,7 @@ We should define some basic serializers so that we can make API endpoints that i
 Here's an example, using the Song and Album models we defined earlier. Here's what's at the top of serializers.py:
 
 
-```
+```python
 from rest_framework import serializers
 from .models import *
 
@@ -379,7 +509,7 @@ You may be curious why I also included an id, when we didn't define one in our m
 We can also create multiple serializers for the same models, if we wanted different behavior. For example, what if we wanted to include the album id of the song?
 
 
-```
+```python
 class SongSerializerWithAlbumId(serializers.ModelSerializer):
     class Meta: 
         model = Song
@@ -392,7 +522,7 @@ This would include the album's PK (in this case, it's id, but if the PK was diff
 What if we wanted to include the full album info when an api request was made to see the song? Here's another example serializer that we could make:
 
 
-```
+```python
 class SongSerializerFullAlbum(serializers.ModelSerializer):
     myFullAlbumDesc = AlbumSerializer("album", read_only=True)
     class Meta:
@@ -406,7 +536,7 @@ It's using our album serializer from earlier to serialize a field, which must (r
 This was just an introduction to serializers. If you want to use more complex behaviors, you'll have to do the research on your own.
 
 
-### Django REST Framework: Class based Views
+#### Django REST Framework: Class based Views
 
 
 ```
@@ -423,7 +553,7 @@ You can use Django's Class Based Views to quickly create views that can do CRUD 
 In views.py:
 
 
-```
+```python
 from rest_framework.views import APIView
 from rest_framework import generics
 from rest_framework import status
@@ -435,7 +565,7 @@ from .serializers import *
 Some class based views that we'll define. Right now these are just the generic create, read, update, destroy views. By defining these views with the classes, Django REST Framework takes care of the default behavior for us. It's that easy!
 
 
-```
+```python
 class SaveSong(generics.CreateAPIView):
     queryset = Song.objects.all()
     serializer_class = SongSerializerWithAlbumId
@@ -459,7 +589,7 @@ Notice that we need to make the create and update serializers include the album 
 Before we can use the views we created, we need to hook them up to a URL, just like you would for any other view. Do keep in mind that we need to call the as-view function on them, though. Here is an example of the URLs for the previous views. This pattern is how we normally define CRUD endpoint urls for any entity in a database
 
 
-```
+```python
     path('song', views.GetSongs.as_view(), name='songs'),
     # Create a song
     path('song/create', views.SaveSong.as_view(), name='Save Song'),
@@ -477,7 +607,7 @@ What if we want more complex behavior beyond the default predefined classes? We 
 In this example, we added an optional way to filter songs by album, using a query_param called album. You'll need to read documentation and tutorials if you want to know more about the custom behavior you can define within your Django REST Framework views.
 
 
-```
+```python
 class GetSongInAlbum(generics.ListAPIView):
     serializer_class = SongSerializer
     def get_queryset(self):
@@ -491,13 +621,13 @@ class GetSongInAlbum(generics.ListAPIView):
 If you have a view that isn't necessarily linked to CRUD actions, or has more complex usage and needs more custom defined behavior, you can use APIView. 
 
 
-### Test out your Django REST API
+#### Test out your Django REST API
 
 Compile and run your app with 
 
 
-```
-$ python manage.py runserver 
+```bash
+python3 manage.py runserver 
 ```
 
 
@@ -641,7 +771,7 @@ It's easy to access query params within Django - see the getSongInAlbum view def
 
 
 
-## Authtokens, users, logins with Django REST Framework
+#### Authtokens, users, logins with Django REST Framework
 
 Up to now, we've covered the fundamentals of how to create a database, populate it, and create simple endpoints for creating, updating, and destroying. But what happens when we want our system to be used by real users? How do we store their information and their interactions with our system? There are a few important issues that we'll need to address:
 
@@ -667,10 +797,10 @@ By default, Django builds the User models for you. You can see them after you _r
 
 We can also utilize the User model to build new endpoints in our API, just like we could with any other model. Here's an example:
 
-## Models.py
+#### Models.py
 
 
-```
+```python
 from django.contrib.auth.models import User
 ```
 
@@ -678,14 +808,14 @@ from django.contrib.auth.models import User
 …
 
 
-```
+```python
 class UserLikesSong(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     song = models.ForeignKey(Song, on_delete=models.CASCADE)
 ```
 
 
-## Serializers.py
+#### Serializers.py
 
 
 ```
@@ -712,7 +842,7 @@ I highly recommend using Django REST Framework's Authtokens to handle informatio
 To add Authtoken's, make sure the following items appear in settings.py:
 
 
-```
+```python
 ###### You will need to add the REST Framework part.
 ###### INSTALLED_APPS should already exist.
 
@@ -732,7 +862,8 @@ INSTALLED_APPS = [ # There will be more here
 Note: I couldn't get these to work, at least not with authtoken. Leaving them here in case some enterprising individual finds them useful, or message us on Discord if you figure this out :)
 
 To get REST Framework's default login and logout views (prebuilt), type this in your project's root urls.py file:
-```
+
+```python
  urlpatterns = [
     ...
     path('api-auth/', include('rest_framework.urls'))
@@ -746,7 +877,7 @@ Your path doesn't have to be api-auth, it can be whatever you want.
 To use REST Framework's login view, include this in urls.py:
 
 
-```
+```python
     path('whateverPathYouWantToLogin', obtain_auth_token, name='API Token Login'),
 ```
 
@@ -754,7 +885,7 @@ To use REST Framework's login view, include this in urls.py:
 Include this at top of your urls.py:
 
 
-```
+```python
 from rest_framework.authtoken.views import obtain_auth_token
 ```
 
@@ -852,9 +983,9 @@ I did a login request to the login view I made earlier, but here's what I got:
 
 Whenever you see an error like "no such table", that should be a clue that you need to rerun migrations. The app expected there to be a SQL table, but there was none made yet! Running migrations will ensure there is. Recall the commands for migrations are:
 
->> `python manage.py makemigrations yourAppName`
+>> `python3 manage.py makemigrations yourAppName`
 
->> `python manage.py migrate`
+>> `python3 manage.py migrate`
 
 In this case, just the second command will be sufficient
 
@@ -890,7 +1021,7 @@ If a user makes a request while they are authenticated (using authtoken, or some
 You can access the user within a class-based view through 
 
 
-```
+```python
  self.request.user
 ```
 
@@ -900,7 +1031,7 @@ You can use this within your views in a variety of ways: to filter, to make more
 For example, let's make a UserLikesSong endpoint that is limited to the songs that the currently logged in user has liked.
 
 
-```
+```python
 class GetUserLikesSongs(generics.ListAPIView):
     def get_queryset(self):
         queryset = UserLikesSong.objects.all()
@@ -914,7 +1045,7 @@ class GetUserLikesSongs(generics.ListAPIView):
 We'll cover this in much more detail in the Permissions section.
 
 
-## Permissions
+#### Permissions
 
 
 ```
@@ -929,7 +1060,7 @@ To use generic permissions with Django, all you need to do is:
 * In your views.py:
 
 
-```
+```python
 from rest_framework.permissions import IsAdminUser, IsAuthenticated, IsAuthenticatedOrReadOnly
 ```
 
@@ -937,7 +1068,7 @@ from rest_framework.permissions import IsAdminUser, IsAuthenticated, IsAuthentic
 Now, on any class-based view you want to guard with permissions, you can add the following line:
 
 
-```
+```python
 class deleteLicenseType(generics.DestroyAPIView):
     permission_classes = [IsAdminUser]
     queryset = License_Type.objects.all()
@@ -950,13 +1081,13 @@ class deleteLicenseType(generics.DestroyAPIView):
 You can apply multiple permissions to the same view like this:
 
 
-```
+```python
     permission_classes = [IsAdminUser|IsAuthenticatedOrReadOnly]
 ```
 
 
 
-## Sessions & Cookies
+#### Sessions & Cookies
 
 Sessions/cookies are very easy to make use of with Django. You can use cookies to store information in a user's browser that you'll be able to access in all subsequent requests that a user makes. One example of a good use of sessions/cookies is to store a user's shopping cart content.
 
@@ -971,7 +1102,7 @@ Some great videos for learning about sessions & cookies:
 
 
 
-## Deploy to Heroku
+#### Deploy to Heroku
 
 
 ![alt_text](images/image13.png "image_tooltip")
@@ -1007,8 +1138,8 @@ These commands will help initialize your heroku repository:
 
 >> heroku create
 
->> heroku run python manage.py migrate
+>> heroku run python3 manage.py migrate
 
->> heroku run python manage.py createsuperuser
+>> heroku run python3 manage.py createsuperuser
 
 Important: Your database itself will not transfer to Heroku. You will need to recreate all entities, config, and users.
