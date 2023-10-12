@@ -11,6 +11,7 @@ This guide will help you install all the tools you need to start coding. It will
   - [Windows Users](#windows-users)
   - [Installing Homebrew](#installing-homebrew)
   - [Installing Git](#installing-git)
+  - [Installing bash-completion](#installing-bash-completion)
   - [Installing Node](#installing-node)
   - [Installing Nvm](#installing-nvm)
   - [Installing Python](#installing-python)
@@ -95,6 +96,27 @@ to check if it worked:
 gh auth status
 ```
 
+#### Installing bash-completion
+bash-completion is a collection of shell functions that take advantage of the programmable completion feature of bash. It provides completions for various commands, including git, npm, and others. To install bash-completion, run the following command:
+
+```bash
+brew install bash-completion
+```
+
+To configure bash-completion, run the following command:
+
+```bash
+code ~/.bash_profile
+```
+
+And add the following lines at the end of the file and save it:
+
+```bash
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+```
+
 #### Installing Node
 Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. It allows developers to use JavaScript to write command-line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. To install Node, run the following command:
 
@@ -115,7 +137,26 @@ nvm stands for Node Version Manager. It is a tool that allows you to easily inst
 brew install nvm
 ```
 
-To check if nvm is installed, run the following command:
+To configure nvm, run the following command:
+
+```bash
+mkdir ~/.nvm
+```
+
+Then open your `~/.bash_profile` using:
+
+```bash
+code ~/.bash_profile
+```
+
+And at the following lines at the end of the file and save it:
+
+```bash
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+```
+
+Close and reopen your terminal. To check if nvm is installed, run the following command:
 
 ```bash
 nvm --version
