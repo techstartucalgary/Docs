@@ -20,7 +20,7 @@ This guide will help you install all the tools you need to start coding. It will
   - [That's it!](#thats-it)
 
 #### Windows Users
-If you are using Windows, we recommend that you install WSL2 and Ubuntu as your development environment. You can find instructions on how to do so here: [WSL2 Installation](../wsl2/index.html) Once you have installed WSL2 and Ubuntu, you can continue with this guide.
+If you are using Windows, we recommend that you install WSL2 and Ubuntu as your development environment. You can find instructions on how to do so here: [WSL2 Installation](../wsl2/README.md) Once you have installed WSL2 and Ubuntu, you can continue with this guide.
 
 #### Installing Homebrew
 Homebrew is a package manager for macOS (or Linux) that allows you to easily install and manage software packages and libraries. It simplifies the installation process by automating the installation of dependencies and providing a consistent interface for installing software. To install Homebrew, run the following command:
