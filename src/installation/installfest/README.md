@@ -115,7 +115,28 @@ nvm stands for Node Version Manager. It is a tool that allows you to easily inst
 brew install nvm
 ```
 
-To check if nvm is installed, run the following command:
+To configure nvm, run the following command:
+
+```bash
+mkdir ~/.nvm
+```
+
+Then open your
+
+Then open your `~/.bash_profile` using:
+
+```bash
+code ~/.bash_profile
+```
+
+And at the following lines at the end of the file and save it:
+
+```bash
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+```
+
+Close and reopen your terminal. To check if nvm is installed, run the following command:
 
 ```bash
 nvm --version
