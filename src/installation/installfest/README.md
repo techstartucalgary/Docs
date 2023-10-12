@@ -17,6 +17,7 @@ This guide will help you install all the tools you need to start coding. It will
   - [Installing Python](#installing-python)
   - [Installing Pip](#installing-pip)
   - [Installing Pyenv](#installing-pyenv)
+  - [Downloading Xcode](#downloading-xcode)
   - [That's it!](#thats-it)
 
 #### Windows Users
@@ -223,6 +224,8 @@ pyenv --version
 
 pyenv will be useful for those who are working with Django or Flask.
 
+#### Downloading Xcode
+Recommended for those who are working with React Native. Xcode is an integrated development environment (IDE) for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, iPadOS, watchOS, and tvOS. To download Xcode, go to the App Store and search for [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
 
 #### That's it!
 Now that you have installed all the tools you need, you are ready to start coding like a PRO. If you have any questions, feel free to ask your project lead or one of the exec members.
