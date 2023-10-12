@@ -121,8 +121,6 @@ To configure nvm, run the following command:
 mkdir ~/.nvm
 ```
 
-Then open your
-
 Then open your `~/.bash_profile` using:
 
 ```bash
