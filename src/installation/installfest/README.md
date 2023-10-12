@@ -11,6 +11,7 @@ This guide will help you install all the tools you need to start coding. It will
   - [Windows Users](#windows-users)
   - [Installing Homebrew](#installing-homebrew)
   - [Installing Git](#installing-git)
+  - [Installing bash-completion](#installing-bash-completion)
   - [Installing Node](#installing-node)
   - [Installing Nvm](#installing-nvm)
   - [Installing Python](#installing-python)
@@ -93,6 +94,27 @@ to check if it worked:
 
 ```bash
 gh auth status
+```
+
+#### Installing bash-completion
+bash-completion is a collection of shell functions that take advantage of the programmable completion feature of bash. It provides completions for various commands, including git, npm, and others. To install bash-completion, run the following command:
+
+```bash
+brew install bash-completion
+```
+
+To configure bash-completion, run the following command:
+
+```bash
+code ~/.bash_profile
+```
+
+And add the following lines at the end of the file and save it:
+
+```bash
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 ```
 
 #### Installing Node
