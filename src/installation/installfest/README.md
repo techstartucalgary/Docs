@@ -75,7 +75,7 @@ Open the remote explorer by pressing `Ctrl+Shift+P` and typing `View: Show Remot
 
 Then select `Ubuntu 20.04` or the version of Ubuntu you installed. This will cause some reinstalling to happen, but once it's done, you will be able to use VSCode with Ubuntu.
 
-Now you can go back to the WSL2 terminal and open VSCode by running the following command:
+To check if WSL2 is connected with VSCode, go to the WSFL2 terminal and run the following command:
 
 ```bash
 code .
