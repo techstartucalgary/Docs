@@ -11,21 +11,32 @@ This guide will help you install all the tools you need to start coding. It will
   - [Windows Users](#windows-users)
   - [Installing Homebrew](#installing-homebrew)
   - [Installing Git](#installing-git)
+  - [Installing bash-completion](#installing-bash-completion)
   - [Installing Node](#installing-node)
   - [Installing Nvm](#installing-nvm)
   - [Installing Python](#installing-python)
   - [Installing Pip](#installing-pip)
   - [Installing Pyenv](#installing-pyenv)
+  - [Downloading Xcode](#downloading-xcode)
   - [That's it!](#thats-it)
 
 #### Windows Users
-If you are using Windows, we recommend that you install WSL2 and Ubuntu as your development environment. You can find instructions on how to do so here: [WSL2 Installation](../wsl2/README.md) Once you have installed WSL2 and Ubuntu, you can continue with this guide.
+If you are using Windows, we recommend that you install WSL2 and Ubuntu as your development environment. You can find instructions on how to do so here: [WSL2 Installation](https://docs.techstartucalgary.com/installation/wsl2/index.html) Once you have installed WSL2 and Ubuntu, you can continue with this guide.
 
 #### Installing Homebrew
 Homebrew is a package manager for macOS (or Linux) that allows you to easily install and manage software packages and libraries. It simplifies the installation process by automating the installation of dependencies and providing a consistent interface for installing software. To install Homebrew, run the following command:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+If you are using Windows, run the following commands:
+
+```bash
+test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
+test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+test -r ~/.bash_profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bash_profile
+echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
 ```
 
 To check if Homebrew is installed, run the following command:
@@ -111,6 +122,27 @@ to check if it worked:
 gh auth status
 ```
 
+#### Installing bash-completion
+bash-completion is a collection of shell functions that take advantage of the programmable completion feature of bash. It provides completions for various commands, including git, npm, and others. To install bash-completion, run the following command:
+
+```bash
+brew install bash-completion
+```
+
+To configure bash-completion, run the following command:
+
+```bash
+code ~/.bash_profile
+```
+
+And add the following lines at the end of the file and save it:
+
+```bash
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+```
+
 #### Installing Node
 Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser. It allows developers to use JavaScript to write command-line tools and for server-side scripting—running scripts server-side to produce dynamic web page content before the page is sent to the user's web browser. To install Node, run the following command:
 
@@ -131,7 +163,26 @@ nvm stands for Node Version Manager. It is a tool that allows you to easily inst
 brew install nvm
 ```
 
-To check if nvm is installed, run the following command:
+To configure nvm, run the following command:
+
+```bash
+mkdir ~/.nvm
+```
+
+Then open your `~/.bash_profile` using:
+
+```bash
+code ~/.bash_profile
+```
+
+And at the following lines at the end of the file and save it:
+
+```bash
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+```
+
+Close and reopen your terminal. To check if nvm is installed, run the following command:
 
 ```bash
 nvm --version
@@ -198,6 +249,8 @@ pyenv --version
 
 pyenv will be useful for those who are working with Django or Flask.
 
+#### Downloading Xcode
+Recommended for those who are working with React Native. Xcode is an integrated development environment (IDE) for macOS containing a suite of software development tools developed by Apple for developing software for macOS, iOS, iPadOS, watchOS, and tvOS. To download Xcode, go to the App Store and search for [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
 
 #### That's it!
 Now that you have installed all the tools you need, you are ready to start coding like a PRO. If you have any questions, feel free to ask your project lead or one of the exec members.
