@@ -41,7 +41,7 @@ Homebrew 3.2.0
 Homebrew/homebrew-core (git revision 3b6; last commit 2021-07-26)
 ```
 
-#### Installing VSCode
+#### Installing VSCode: MacOS
 Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring, and embedded Git. To install VSCode, run the following command:
 
 ```bash
@@ -52,6 +52,22 @@ To check if VSCode is installed, run the following command:
 
 ```bash
 code --version
+```
+
+#### Installing VSCode: Windows WSFL2
+
+To install VSCode, download it from the following link: [VSCode Installer](https://code.visualstudio.com/) Once downloaded, open VScode in Windows.
+
+Open the remote explorer by pressing `Ctrl+Shift+P` and typing `View: Show Remote Explorer` and selecting `WSL Targets`.
+
+![Remote Explorer](./remote-explorer.png)
+
+Then select `Ubuntu 20.04` or the version of Ubuntu you installed. This will cause some reinstalling to happen, but once it's done, you will be able to use VSCode with Ubuntu.
+
+Now you can go back to the WSL2 terminal and open VSCode by running the following command:
+
+```bash
+code .
 ```
 
 #### Installing Git

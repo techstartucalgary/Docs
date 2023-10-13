@@ -48,7 +48,7 @@ You can configure a default Ubuntu terminal by going to Settings > Terminal > De
 ![Ubuntu](./windows7.png)
 
 #### That's it! 
-You have successfully installed WSL2 and Ubuntu. Now you can start using Linux applications on Windows without having to install a virtual machine or dual boot your computer. For your project we recommend using WSFL2 and Ubuntu as your development environment. If you are done working, you can close the terminal window and it will automatically shut down the Ubuntu environment. Continue the installfest here: [Installfest](../installfest/README.md)
+You have successfully installed WSL2 and Ubuntu. Now you can start using Linux applications on Windows without having to install a virtual machine or dual boot your computer. For your project we recommend using WSFL2 and Ubuntu as your development environment. If you are done working, you can close the terminal window and it will automatically shut down the Ubuntu environment. Continue the installfest here: [Installfest](https://docs.techstartucalgary.com/installation/installfest/index.html#installing-homebrew)
 
 #### I don't know how to use Linux, help!
 If you are not familiar with Linux, we recommend that you take a look at the following resources:
