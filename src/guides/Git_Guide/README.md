@@ -41,18 +41,18 @@ We are also assuming that you have set up a project at /path/to/project and had 
 
 ## Getting Started - Setting up a Repository
 
-[https://docs.github.com/en/enterprise-server@2.22/get-started](https://docs.github.com/en/enterprise-server@2.22/get-started)
+[GitHub: Create a Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories)
 
 A Git Repository is virtual storage of your code, allowing you to save versions of your code, as well as share and allow others to edit the code.
 
-Initializing a new repository: **git init**
-
+Initializing a new repository: `git init`
 
 
 * This step is typically used by the project manager, or the owner of the project
 
-Cloning an existing repository:** git clone [github git link]**
+Cloning an existing repository: `git clone [github git link]`
 
+E.g. `git clone https://github.com/techstartucalgary/tsu-website`
 
 
 * This step is typically used by the project members, or anyones who wants to add onto the projects after it has already been created
@@ -67,7 +67,7 @@ Since they are unaware of Google Docs, Person A choses to create a word document
 
 After working on the paper for a bit, he realizes that Person B also needs to contribute, so they send the paper by email to Person B. This step is equivalent to **forking a repository.**
 
-Person B decides that he would prefer to work on the paper by hand, and so he takes the email that Person A sent, and prints it to work on,** cloning the repository **
+Person B decides that he would prefer to work on the paper by hand, and so he takes the email that Person A sent, and prints it to work on, **cloning the repository**
 
 
 ## Staging Files & Creating Commits
@@ -80,11 +80,11 @@ You can think of the staging area of git (the green box that says "staged change
 
 Committing is like sealing that box and sticking a label on it. The contents of that box are your changes. But, if there are changes in the untracked or unstaged areas, they will not be included in the commit, because they are outside of the box.
 
-The following diagram shows how the staging process works, and what commands you can use to move changes on a per-file-basis in between areas. Use the **git status** command to see a summary of where every change in your project is on this diagram! We recommend using git status frequently. 
+The following diagram shows how the staging process works, and what commands you can use to move changes on a per-file-basis in between areas. Use the `git status` command to see a summary of where every change in your project is on this diagram! We recommend using git status frequently. 
 
 
-## 
-![alt_text](images/image2.png "image_tooltip")
+##
+![alt_text](images/image2.png "")
 
 
 Shown are some common commands for using git to store and prepare the code to be pushed to the remote repository. They are shown in the general order that you want to use them in. 
@@ -115,7 +115,7 @@ Additionally, if you have a merge conflict, it will show which files caused it.
 <p>
 This command will also allow adding a deleted file to be staged, which after being committed and pushed will remove the file from the git branch
 <p>
-**This command will ignore all files in the “.gitignore” file **
+**This command will ignore all files in the “.gitignore” file**
 <ul>
 
 <li>[file path] File path expression. Any files which match the expression are acted upon by git add. 
@@ -219,15 +219,15 @@ You can only switch branches if you have no unstaged/staged changes in your curr
 
 Whenever you are working on a new feature, or conducting a test/messing with code, you should create a new branch to use. 
 
-Before you make your branch, you should make sure you are creating your branch based on the most recent code. Do **git checkout main **(or master instead of main) to switch to the primary branch of your repository. You will also probably want to do **git pull** to make sure the primary branch is up to date with the version present on your remote repository (more on this in the next section).
+Before you make your branch, you should make sure you are creating your branch based on the most recent code. Do `git checkout main` to switch to the primary branch of your repository. You will also probably want to do `git pull` to make sure the primary branch is up to date with the version present on your remote repository (more on this in the next section).
 
-Now that you are on the primary branch, use **git branch [branchName] **to create a new branch based on the current one. Make sure you name it according to what you aim to accomplish there (see the description of the command above).
+Now that you are on the primary branch, use `git branch [branchName]` to create a new branch based on the current one. Make sure you name it according to what you aim to accomplish there (see the description of the command above).
 
-Now that you have created your branch, you'll want to switch to it. Use **git checkout [branchName]** to switch to your branch. You can do work here and follow the instructions in the staging files and creating commits section to save your changes into commits.
+Now that you have created your branch, you'll want to switch to it. Use `git checkout [branchName]` to switch to your branch. You can do work here and follow the instructions in the staging files and creating commits section to save your changes into commits.
 
-Eventually, you'll be done using the branch (perhaps you will follow the instructions in the next few sections to push it to your remote repository and use it in a pull request. or perhaps you need to work somewhere else). Either way, you can switch to a different branch with **git checkout [branchName].**
+Eventually, you'll be done using the branch (perhaps you will follow the instructions in the next few sections to push it to your remote repository and use it in a pull request. or perhaps you need to work somewhere else). Either way, you can switch to a different branch with `git checkout [branchName]`
 
-If you have completed a pull request for your branch to merge it into a different branch of your project, you no longer need to keep the local copy of your branch. We recommend you use **git branch -d **to delete any branches you will no longer need to use. This makes sure your local repository remains nice and tidy.
+If you have completed a pull request for your branch to merge it into a different branch of your project, you no longer need to keep the local copy of your branch. We recommend you use `git branch -d` to delete any branches you will no longer need to use. This makes sure your local repository remains nice and tidy.
 
 **<span style="text-decoration:underline;">What happens if you can't checkout?</span>**
 
@@ -239,7 +239,7 @@ You will have a few choices on what to do:
 
 * Restore files to how they originally were (either by manually undoing, or by making use of _git restore, _described in the previous section). Do this if any of your changes are unnecessary or accidental. 
 * Create a commit, following instructions from the previous section. Only create a commit if you actually want to save the changes you made. We recommend you avoid making commits on any branches that you share with other people, especially your primary branch (main/master)!
-* Utilize **_git stash_** to move changes from one branch to another without needing to commit them. Do this if your changes are intentional, but you wanted them on a different branch than the one you are currently on. This is described in more detail [here.](#heading=h.ncn9ba95tavq)
+* Utilize `git stash` to move changes from one branch to another without needing to commit them. Do this if your changes are intentional, but you wanted them on a different branch than the one you are currently on. This is described in more detail [here.](#heading=h.ncn9ba95tavq)
 
 You can combine these approaches to deal with your changes as necessary.
 
@@ -248,7 +248,7 @@ You can combine these approaches to deal with your changes as necessary.
 
 When you work with git, you will typically have a **_local repository _**(the copy of your project that exists on your personal device) and a **_remote repository_** (the copy of your project that exists on the internet, usually on a service like GitHub or BitBucket)
 
-An absolutely core part of using Git is managing the interactions between your local repository and the associated remote repository. The two key commands you will need to learn are **git push **(which you can use to _push _commits from your local repository to the remote repository) and **git pull **(which you can use to _pull _commits from the remote repository and insert them into your own local repository). We have more info on how to use these commands appropriately below.
+An absolutely core part of using Git is managing the interactions between your local repository and the associated remote repository. The two key commands you will need to learn are `git push` (which you can use to _push _commits from your local repository to the remote repository) and `git pull` (which you can use to _pull _commits from the remote repository and insert them into your own local repository). We have more info on how to use these commands appropriately below.
 
 A common mistake that newcomers to git will make is assuming that the local repository is the same as the remote repository- when they're actually 2 separate concepts. Your commits won't appear on the remote repository until you manually push them there. If someone else pushes new changes to the remote repository, you won't see their changes on your local repository until you manually pull those changes to your device.
 
@@ -291,7 +291,7 @@ Note: You can name a local branch the same name as the remote branch/repository,
 
 Note: You can also have multiple remote repositories(default is origin). This allows you to have multiple different working branches for new/different features of your code.
 
-**git fetch** is what you do when you want to see what everybody else has been working on. it doesn’t force you to actually merge the changes into your repository. This makes fetching a safe way to review commits before integrating them with your local repository.
+`git fetch` is what you do when you want to see what everybody else has been working on. it doesn’t force you to actually merge the changes into your repository. This makes fetching a safe way to review commits before integrating them with your local repository.
 
 [https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction/](https://www.git-tower.com/learn/git/ebook/en/command-line/remote-repositories/introduction/)
 
@@ -412,7 +412,7 @@ A pull request is a way of merging code from one branch of your remote repositor
 ![alt_text](images/image3.png "image_tooltip")
 
 
-You are _requesting _that the _base** **_branch <span style="text-decoration:underline;">pulls</span> the commits from the _compare_ branch. In the above example, you are requesting that the main branch pulls the commits from the addLaunchEvent.
+You are _requesting_ that the _base_ branch <span style="text-decoration:underline;">pulls</span> the commits from the _compare_ branch. In the above example, you are requesting that the main branch pulls the commits from the addLaunchEvent.
 
 We recommend you use pull requests extensively as part of your git workflow. 
 
@@ -550,26 +550,26 @@ Let's assume you have some commits on branch yourLocalBranch, and you want to me
 
 
 
-1. Ensure you are on the main branch of your repository. It is usually called main or master. If you are not on the main branch, switch to it with **git checkout main **(or master)
-2. Pull the most recent version of your main branch from GitHub. You can do this with **git pull origin main **(or master). This will make sure your new branch contains all the most recent changes
-3. Create a new branch for yourself. The name of the branch should describe what the code inside will do, and you should prefix it with your name or nickname. For example, **git branch joel/changeButtonColor**
-4. Check out your new branch before you make any changes. Refer to _Branches _if you make any mistakes. Example: **git checkout joel/changeButtonColor**
+1. Ensure you are on the main branch of your repository. It is usually called main. If you are not on the main branch, switch to it with `git checkout main`
+2. Pull the most recent version of your main branch from GitHub. You can do this with `git pull origin main`. This will make sure your new branch contains all the most recent changes
+3. Create a new branch for yourself. The name of the branch should describe what the code inside will do, and you should prefix it with your name or nickname. For example, `git branch joel/changeButtonColor`
+4. Check out your new branch before you make any changes. Refer to _Branches _if you make any mistakes. Example: `git checkout joel/changeButtonColor`
 
 <span style="text-decoration:underline;">Part 2 - Make your commits</span>
 
 
 
-5. Follow the instructions in the _Staging Files and Adding Commits _section to create a commit containing your desired changes. Use** git status **frequently to make sure you are doing everything correctly.
+5. Follow the instructions in the _Staging Files and Adding Commits _section to create a commit containing your desired changes. Use `git status` frequently to make sure you are doing everything correctly.
 
 <span style="text-decoration:underline;">Part 3 - Push your commits to origin </span>
 
 
 
-6. Push your branch to origin. Ex. **git push origin joel/changeButtonColor** 
+6. Push your branch to origin. Ex. `git push origin joel/changeButtonColor`
 7. Set up a pull request on GitHub, with the base as main (or the branch you want to merge to) and the compare branch as your branch, (ex joel/changeButtonColor)
-8. (Only if your pull request indicates you have a merge conflict): DO NOT merge the branch. Instead, do **git pull origin main **(or the branch you want to merge to) on your local machine. This will bring up the merge conflict.
-9. Follow the instructions in "Merge Conflicts" to fix any merge conflicts that you get from pulling that branch. Once you have fixed all merge conflicts, remember to double check that your code runs, then **git add** and **git commit** your fixes!
-10. Push your changes to your remote repository! Do **git push origin yourLocalBranch**
+8. (Only if your pull request indicates you have a merge conflict): DO NOT merge the branch. Instead, do `git pull origin main` (or the branch you want to merge to) on your local machine. This will bring up the merge conflict.
+9. Follow the instructions in "Merge Conflicts" to fix any merge conflicts that you get from pulling that branch. Once you have fixed all merge conflicts, remember to double check that your code runs, then `git add` and `git commit` your fixes!
+10. Push your changes to your remote repository! Do `git push origin yourLocalBranch`
 11. Now that your changes are present on your remote repository, you should create a pull request on GitHub. The base (target branch) should be branchYouWantToMergeTo, and the source should be yourLocalBranch. 
 12. Check to make sure the pull request says "No merge conflicts". If it does detect merge conflicts, that means you didn't do steps 4-7 correctly, so redo them!
 13. Request a reviewer for your pull request. They will read your code and offer suggestions on how to improve it. 
@@ -580,7 +580,7 @@ Let's assume you have some commits on branch yourLocalBranch, and you want to me
 
 
 15. Delete your branch on the remote repository
-16. Delete your branch on your local system (checkout to main. Then delete with **git branch -d yourBranchName**)
+16. Delete your branch on your local system (checkout to main. Then delete with `git branch -d yourBranchName`)
 
 
 ## Big Picture Git/GitHub Workflow
@@ -742,7 +742,7 @@ Below is the general sequence of commands to check, and undo previous commits. N
    </td>
    <td>‘git clean -n’ shows which UNTRACKED files will be removed, should you do ‘git clean -f’
 <p>
-** good practice is to always -n before you -f **
+**good practice is to always -n before you -f**
 <p>
 <a href="https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-use-the-git-clean-command">https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-use-the-git-clean-command</a>
 <ul>
