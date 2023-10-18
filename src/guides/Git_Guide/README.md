@@ -527,7 +527,7 @@ _This is what is used at Microsoft. It works well and it's good practice to teac
 
 - What should I do if I started work in the wrong branch but not committed yet?
 
-  - Refer to [undoing changes and commits](#heading=h.2spd0i8oye6o)
+  - Refer to [undoing changes and commits](#undoing-commits--changes)
 
 - What if I want to revert a commit?
 

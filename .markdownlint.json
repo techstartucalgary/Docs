@@ -2,5 +2,6 @@
   "default": true,
   "no-inline-html": false,
   "ol-prefix": false,
-  "line-length": false
+  "line-length": false,
+  "no-duplicate-heading": false
 }
