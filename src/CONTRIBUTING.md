@@ -13,12 +13,13 @@ This will open the corresponding page on GitHub,
 where you can add or modify content
 and then commit the change.
 
-For more elaborated changes
-please:
+For more elaborate changes please:
 
 1. Fork the project from: <https://github.com/techstartucalgary/docs>.
-1. Follow the tutorial of [mdBook](https://rust-lang.github.io/mdBook/index.html),
+2. Follow the tutorial of [mdBook](https://rust-lang.github.io/mdBook/index.html),
    the tool we use to build and generate this documentation.
+3. Before you make a PR, please run [markdownlint](https://github.com/DavidAnson/markdownlint) on the files you changed. I recommend using the VS Code extensions for ease of use.
+4. Make a PR!
 
 ### Legal
 
