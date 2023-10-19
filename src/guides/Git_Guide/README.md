@@ -592,7 +592,7 @@ You can use the `-a` and `-am` flags on `git` commit for the following effects:
 
 <!-- should include push, pop, apply, list
 
-== didnt realize we already have git clean there, but we can do more detail here == -->
+we already have git clean, but we can do more detail here -->
 
 ## Undoing Commits & Changes
 
