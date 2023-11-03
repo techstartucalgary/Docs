@@ -14,9 +14,9 @@
 - [A LICENSE.md](./projects/license/README.md)
 - [A RoadMap](./projects/roadmap/README.md)
 - [Demos](./projects/demos/README.md)
-  - [February 2nd](./projects/demos/1/README.md)
-  - [March 16th](./projects/demos/2/README.md)
-  - [April 6th](./projects/demos/3/README.md)
+  - [November 30th](./projects/demos/1/README.md)
+  - [Demo 2](./projects/demos/2/README.md)
+  - [Demo 3](./projects/demos/3/README.md)
 
 ---
 
@@ -25,6 +25,16 @@
 - [Career Paths](./software/career-paths/README.md).
 - [Front End](./software/front-end/README.md).
 - [DevOps](./software/devops/README.md).
+
+---
+
+# Guides
+
+- [Django](./guides/Django_Guide/README.md)
+- [Git](./guides/Git_Guide/README.md)
+- [GraphQL](./guides/GraphQL_API_Guide/README.md)
+- [React](./guides/React_Guide/README.md)
+- [Web Dev](./guides/Web_Dev_Guide/README.md)
 
 ---
 
@@ -40,16 +50,6 @@
 # Workshops
 
 - [Secrets Management](./workshops/secrets-management/README.md)
-
----
-
-# Guides
-
-- [Django](./guides/Django_Guide/README.md)
-- [Git](./guides/Git_Guide/README.md)
-- [GraphQL](./guides/GraphQL_API_Guide/README.md)
-- [React](./guides/React_Guide/README.md)
-- [Web Dev](./guides/Web_Dev_Guide/README.md)
 
 ---
 
