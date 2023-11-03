@@ -30,27 +30,26 @@ These are just suggestions and not at all mandatory, but may help get you starte
 ### Design
 
 - After doing user research and synthesizing the data, what did you learn about your users?
-- What opportunities/ edge have you discover for your product?
-- What were some challenges you faced in this process (user research/ synthesis)?
-- How has user research driven you decision on what to include in your MVP?
+- What opportunities / edge have you discovered for your product?
+- What were some challenges you faced in the user research and synthesis process and how did you overcome them (or not)?
+- How has user research driven your decision on what to include in your MVP?
 
 ### Development
 
-- What stack are you using?
+- What is your tech stack?
 - What do you aim to include in your MVP?
 - How much progress have you made technically?
-- What does your roadmap look like?
+- What does your [roadmap](../../roadmap/README.md) look like? Feel free to share your project board.
 
 ## Milestones
 
-These milestones will give you a rough idea of where you should be by the demo, they are not requirements.
+These [milestones](https://docs.techstartucalgary.com/projects/roadmap/index.html#step-1---start-with-milestones) will give you a rough idea of where you should be by the demo, they are not requirements.
 
 ### Strategy
 
-- User Research Complete
-- Competition Analysis Complete
+- Competition analysis complete
 - Features to be made solidified
-- Unique Value Proposition Determined
+- Unique Value Proposition determined
 
 ### Design
 
