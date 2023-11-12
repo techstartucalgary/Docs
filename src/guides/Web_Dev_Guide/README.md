@@ -157,6 +157,8 @@ TypeScript Basics by JavaBrains: (also includes small project incl. API usage)
 
 # Part 4 - React
 
+NOTE: here is a more indepth [React Guide](../React_Guide/README.md), the better version!!
+
 HTML, CSS, and JS are great and all, but what if you want to make a modern, reactive website? Several frontend frameworks exist to empower dynamic, reactive sites, and as of 2021 React is by far the most popular among them. It's a great way to get an introduction into the world of web frameworks and it's a fun tool to use. 
 
 
