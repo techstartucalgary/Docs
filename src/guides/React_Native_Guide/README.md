@@ -3,7 +3,7 @@
 | --- |
 # Tech Start's React Native Guide 
 
-Please get aquanted with our [React Guide](../React_Guide/index.html) before you read this page, this is just a reccomendation though. Transitioning from a good background in React to React Native is a relatively smooth process, as many concepts carry over. However, there are specific topics and components you should learn to effectively work with React Native. Here's an outline of the topics you need to cover:
+Please get acquainted with our [React Guide](../React_Guide/index.html) before you read this page, this is just a recommendation though. Transitioning from a good background in React to React Native is a relatively smooth process, as many concepts carry over. However, there are specific topics and components you should learn to effectively work with React Native. Here's an outline of the topics you need to cover:
 
 1. [Video Resources (If you don't Like Reading)](#video-resources)
 2. [React Native Basics Main Concepts](#react-native-main-concepts)
@@ -29,7 +29,7 @@ Please get aquanted with our [React Guide](../React_Guide/index.html) before you
 
 
 ## Video Resources: <a name="video-resources"></a>
-These tutorials should be suffecient to get started but this guide give many more subtle topics that are not covered in these videos. Choose your weapon wisely.
+These tutorials should be sufficient to get started but this guide gives many more subtle topics that are not covered in these videos. Choose your weapon wisely.
 - https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ
 - https://www.youtube.com/watch?v=0-S5a0eXPoc
 
@@ -1127,4 +1127,4 @@ These are essential security best practices for React Native apps, but it's impo
 
 
 # Conclusion: <a name="conclusion"></a>
-This guide was meant to be a starting/middle point for learning React Native across its many topics, ranging from front-end to back-end(mainly backe-end because that is what really matters, am I right!). Jokes aside, as you progress through these topics, you'll find that your React experience serves as a strong foundation for learning React Native. React Native allows you to leverage your JavaScript skills to build mobile apps for both iOS and Android, making it a valuable addition to your toolkit.
+This guide was meant to be a starting/middle point for learning React Native across its many topics, ranging from front-end to back-end(mainly back-end because that is what really matters, am I right!). Jokes aside, as you progress through these topics, you'll find that your React experience serves as a strong foundation for learning React Native. React Native allows you to leverage your JavaScript skills to build mobile apps for both iOS and Android, making it a valuable addition to your toolkit.
