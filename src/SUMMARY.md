@@ -53,6 +53,17 @@
 
 ---
 
+# Guides
+
+- [Django](./guides/Django_Guide/README.md)
+- [Git](./guides/Git_Guide/README.md)
+- [APIs](./guides/API_Guide/README.md)
+- [React](./guides/React_Guide/README.md)
+- [React Native](./guides/React_Native_Guide/README.md)
+- [Web Dev](./guides/Web_Dev_Guide/README.md)
+
+---
+
 [Contributing](./CONTRIBUTING.md)
 
 [Credits](./CREDITS.md)
