@@ -3,7 +3,7 @@
 | --- |
 # Tech Start's React Native Guide 
 
-Please get aquanted with our [React Guide](../React_Guide/README.md) before you read this page, this is just a reccomendation though. Transitioning from a good background in React to React Native is a relatively smooth process, as many concepts carry over. However, there are specific topics and components you should learn to effectively work with React Native. Here's an outline of the topics you need to cover:
+Please get aquanted with our [React Guide](../React_Guide/index.html) before you read this page, this is just a reccomendation though. Transitioning from a good background in React to React Native is a relatively smooth process, as many concepts carry over. However, there are specific topics and components you should learn to effectively work with React Native. Here's an outline of the topics you need to cover:
 
 1. [Video Resources (If you don't Like Reading)](#video-resources)
 2. [React Native Basics Main Concepts](#react-native-main-concepts)
