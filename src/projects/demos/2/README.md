@@ -8,7 +8,13 @@ Share your progress with the club, get feedback from industry guests, and practi
 
 This is a pitch and demo, you are selling your product to investors.
 
-## Time Limit: 10 minutes
+## Quick Info
+
+### Start Time: 6pm sharp
+
+### Time Limit: 10 minutes
+
+### Dress Code: Business Casual
 
 ## What to do
 
