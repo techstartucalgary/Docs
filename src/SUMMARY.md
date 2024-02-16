@@ -14,7 +14,7 @@
 - [A LICENSE.md](./projects/license/README.md)
 - [A RoadMap](./projects/roadmap/README.md)
 - [Demos](./projects/demos/README.md)
-  - [November 30th](./projects/demos/1/README.md)
+  - [Demo 1](./projects/demos/1/README.md)
   - [Demo 2](./projects/demos/2/README.md)
   - [Demo 3](./projects/demos/3/README.md)
 
@@ -22,14 +22,14 @@
 
 # Software Development
 
-- [Career Paths](./software/career-paths/README.md).
-- [Front End](./software/front-end/README.md).
-- [DevOps](./software/devops/README.md).
+- [Career Paths](./software/career-paths/README.md)
+- [Front End](./software/front-end/README.md)
+- [DevOps](./software/devops/README.md)
 
 ---
 
 # Guides
-
+- [Giving a good Technical Demo](./guides/Tech_Demo/README.md)
 - [Django](./guides/Django_Guide/README.md)
 - [Git](./guides/Git_Guide/README.md)
 - [APIs](./guides/API_Guide/README.md)
@@ -40,10 +40,10 @@
 
 # Curated online resources
 
-- [Dealing With Conflict](./topics/conflict-management-styles/README.md).
-- [CSS](./topics/css/README.md).
-- [HTML](./topics/html/README.md).
-- [Management Styles](./topics/management-styles/README.md).
+- [Dealing With Conflict](./topics/conflict-management-styles/README.md)
+- [CSS](./topics/css/README.md)
+- [HTML](./topics/html/README.md)
+- [Management Styles](./topics/management-styles/README.md)
 
 ---
 
