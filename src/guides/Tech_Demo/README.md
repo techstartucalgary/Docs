@@ -47,3 +47,5 @@ Finally, if (and when) something goes wrong, the best thing to do is to move pas
 
 #### References/Further Reading
 [How to create great tech demos and presentations - Thomas Maurer](https://www.thomasmaurer.ch/2020/01/how-to-create-great-tech-demos-and-presentations/)
+
+[13 Demoing Strategies That Make Tech Software Compelling](https://www.forbes.com/sites/forbestechcouncil/2019/12/12/13-demoing-strategies-that-make-tech-software-compelling)
