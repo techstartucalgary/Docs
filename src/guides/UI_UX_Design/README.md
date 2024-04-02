@@ -8,18 +8,18 @@ While this guide is a good starting point, there's a ton of resources available 
 
 Enjoy the guide and have fun designing! :) 
 
+</br>
 
 **Table of Contents**
-* Design Process
-* User Research
+* [Design Process](#designprocess)
+* [User Research](#userresearch)
 * Usability Testing 
 * Working in Figma 
 * Other Design Considerations 
 
 </br>
 
-
-## Design Process
+## Design Process <a name="designprocess"></a>
 
 **Purpose:** a design process helps you break down a project into manageable chunks and gives your work structure. 
 
@@ -96,7 +96,7 @@ Below are some great resources for the tasks/ methods:
 
 </br>
 
-## User Research 
+## User Research <a name="userresearch"></a>
 
 **Purpose:** user research is conducted to understand user needs and preferences— it’ll ensure that your designs are intuitive and meet user expectations.
 
