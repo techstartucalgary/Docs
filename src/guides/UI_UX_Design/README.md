@@ -34,8 +34,8 @@ There’s various design processes out there but we recommend using the double d
 
 **Note:** this design process is not linear— it’s iterative. That means you may be revisiting certain stages to tweak and improve your product as you work through the process.
 
-**picture here**
-![alt_text](images/component.png "figma component")
+
+![alt_text](images/doublediamond.jpeg "double diamond design process")
 
 We recommend taking a look at the following resources to get started:
 * Article: https://www.uxpin.com/studio/blog/double-diamond-design-process/
