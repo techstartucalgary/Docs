@@ -110,12 +110,12 @@ Best practices to keep in mind for user interviews:
 * Record & transcribe your interviews
 
 Here’s an example of what a good survey question may look like: 
-* What problems do you face while trying to do <task> ? (select all that apply)
+* What problems do you face while trying to do [task]? (select all that apply)
 
 Here’s some examples of what good user interview questions may look like: 
-* How do you currently go about doing <task>?
-* What do you like about how you currently perform <task>?
-* What is the biggest pain point when performing <task>?
+* How do you currently go about doing [task]?
+* What do you like about how you currently perform [task]?
+* What is the biggest pain point when performing [task]?
 
 Below are some great resources to get started with user research: 
 * [Article - UX research cheat sheet](https://www.nngroup.com/articles/ux-research-cheat-sheet/) 
