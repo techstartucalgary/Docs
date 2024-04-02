@@ -66,7 +66,7 @@ Here’s some great FigJam Templates:
 * [Affinity mapping](https://www.figma.com/community/file/973596233310955890)  
 * [Empathy mapping](https://www.figma.com/community/file/1157607115950793533)
 
-**Develop:**
+**Develop phase:**
 * User flows & site maps
 * Wireframes & low-fidelity prototypes
 * User testing prototypes and iterating on your designs based on user feedback 
@@ -75,7 +75,7 @@ Here’s some great FigJam Templates:
 * [User flow diagram](https://www.figma.com/community/file/1174820493855619258)
 * [Wireframing](https://www.figma.com/templates/wireframe-kits/)
 
-**Deliver:**
+**Deliver phase:**
 * High-fidelity prototypes (in Figma)
 
 Below are some great resources for the tasks/ methods: 
@@ -172,7 +172,7 @@ Resources for learning auto layout:
 * [Video - Auto layout tutorial](https://www.youtube.com/watch?v=42uQGucQA9o)
 
 
-### Using grids
+### Using Grids
 
 Using grids will provide visual structure to your designs. They’ll make your designs look clean & organized. 
 
@@ -209,7 +209,7 @@ You might want to look at existing user interfaces to get inspiration for your o
 * [Behance](https://www.behance.net/)
 * Scope existing platforms that are similar to your app that have good UX/UI & take inspo from their designs
 
-### Design documentation
+### Design Documentation
 
 It’s essential to document your designs. It’ll help you communicate the specifics of your designs with your team members and others.
 
