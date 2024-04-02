@@ -16,6 +16,8 @@ Enjoy the guide and have fun designing! :)
 * Working in Figma 
 * Other Design Considerations 
 
+</br>
+
 
 ## Design Process
 
@@ -37,12 +39,15 @@ There’s various design processes out there but we recommend using the double d
 
 ![alt_text](images/doublediamond.jpeg "double diamond design process")
 
+</br>
 
 We recommend taking a look at the following resources to get started:
 * [Article](https://www.uxpin.com/studio/blog/double-diamond-design-process/)
 * [Video (walkthrough of the process)](https://www.youtube.com/watch?v=ExFeZaMJ6yA)
 * [Video (process with examples)](https://www.youtube.com/watch?v=rYH7AErVd7w)
 
+
+</br>
 
 
 ### Tasks to do at each stage/ Methods to use
@@ -89,6 +94,7 @@ Below are some great resources for the tasks/ methods:
 * [Article - User flows](https://careerfoundry.com/en/blog/ux-design/how-to-create-a-user-flow/)
 * [Article - Sitemaps](https://nulab.com/learn/design-and-ux/what-is-a-ux-sitemap-and-why-is-it-important/) 
 
+</br>
 
 ## User Research 
 
@@ -122,6 +128,7 @@ Below are some great resources to get started with user research:
 * [Article - Surveys](https://www.interaction-design.org/literature/article/ux-surveys)
 * [Article - User interviews](https://www.confirmkit.com/guides/user-interview-discovery-questions)
 
+</br>
 
 ## Usability Testing 
 
@@ -136,6 +143,7 @@ With your usability testing, focus on exploratory tasks where you give users a r
 Resources to get your started:
 * [Article - A comprehensive guide on prototype testing](https://maze.co/blog/prototype-testing/#:~:text=Prototype%20testing%20is%20the%20process,meets%20user%20needs%20and%20expectations)
 
+</br>
 
 ## All about Figma 
 
@@ -150,8 +158,11 @@ An important consideration as you work on your designs is to share your Figma fi
 Resources to get started with Figma: 
 * [Video - Figma for beginners](https://www.youtube.com/watch?v=FTFaQWZBqQ8)
 
+</br>
 
 Knowing how to use various things in Figma like: components, auto layout and grids will help you design more efficiently. 
+
+</br>
 
 ### Using Components
 
@@ -162,6 +173,7 @@ Knowing how to use various things in Figma like: components, auto layout and gri
 Here’s a great resource to get your stated: 
 * [Article + video - Components](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma#:~:text=Components%20are%20elements%20you%20can,icons%2C%20layouts%2C%20and%20more)
 
+</br>
 
 ### Using Auto Layout 
 
@@ -171,6 +183,7 @@ Resources for learning auto layout:
 * [Article - Using auto layout](https://help.figma.com/hc/en-us/articles/5731482952599-Using-auto-layout)
 * [Video - Auto layout tutorial](https://www.youtube.com/watch?v=42uQGucQA9o)
 
+</br>
 
 ### Using Grids
 
@@ -187,6 +200,7 @@ Resources to learn more:
 * [Article - Layout Grids in Figma](https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/)
 * [Article: A comprehensive guide on layouts](https://bootcamp.uxdesign.cc/12-8-4-column-system-for-responsive-grids-df207a58ebc)
 
+</br>
 
 ### Other Resources
 
@@ -199,6 +213,8 @@ Here’s an example of a plugin for Figma:
 
 [Figma community](https://www.figma.com/community) is also a great resource for finding templates, plugins and UI kits. 
 
+</br>
+
 ## Other Design Considerations 
 
 ### Where to Look for Inspiration 
@@ -209,6 +225,8 @@ You might want to look at existing user interfaces to get inspiration for your o
 * [Behance](https://www.behance.net/)
 * Scope existing platforms that are similar to your app that have good UX/UI & take inspo from their designs
 
+</br>
+
 ### Design Documentation
 
 It’s essential to document your designs. It’ll help you communicate the specifics of your designs with your team members and others.
@@ -216,6 +234,8 @@ It’s essential to document your designs. It’ll help you communicate the spec
 Below is a good example of a card that documents the design of a screen. Your major screens and user flows should be documented. 
 
 ![alt_text](images/designdocumentation.png "design documentation")
+
+</br>
 
 ### Accessibility and Inclusion in Design
 
@@ -225,5 +245,6 @@ You’ll want to use colors, typography, etc. that is accessible to all users.
 
 Here’s a great article to get started: [Accessibility Guidelines for UX Designers](https://uxdesign.cc/accessibility-guidelines-for-a-ux-designer-c3ba775539be)
 
+</br>
 
 That’s all for now! :) 
