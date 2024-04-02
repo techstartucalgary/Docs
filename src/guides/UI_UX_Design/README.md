@@ -35,6 +35,7 @@ There’s various design processes out there but we recommend using the double d
 **Note:** this design process is not linear— it’s iterative. That means you may be revisiting certain stages to tweak and improve your product as you work through the process.
 
 **picture here**
+![alt_text](images/component.png "figma component")
 
 We recommend taking a look at the following resources to get started:
 * Article: https://www.uxpin.com/studio/blog/double-diamond-design-process/
@@ -60,8 +61,8 @@ As you make your way through the design process there’s various tasks/ methods
 **Note:** to make your work easier, use FigJam templates to do the tasks for this phase. 
 
 Here’s some great FigJam Templates: 
-* Affinity mapping: https://www.figma.com/community/file/973596233310955890 
-* Empathy mapping: https://www.figma.com/community/file/1157607115950793533
+* [Affinity mapping](https://www.figma.com/community/file/973596233310955890)  
+* [Empathy mapping](https://www.figma.com/community/file/1157607115950793533)
 
 **Develop:**
 * User flows & site maps
