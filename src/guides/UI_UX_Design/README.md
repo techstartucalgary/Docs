@@ -32,7 +32,7 @@ There’s various design processes out there but we recommend using the double d
 3. Develop 
 4. Deliver
 
-**Note:** this design process is not linear— it’s iterative. That means you may be revisiting certain stages to tweak and improve your product as you work through the process.
+**Note:** this design process is not linear— it’s iterative. That means you may be revisiting certain stages to tweak and improve your designs as you work through the process.
 
 
 ![alt_text](images/doublediamond.jpeg "double diamond design process")
