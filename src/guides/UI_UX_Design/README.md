@@ -37,10 +37,12 @@ There’s various design processes out there but we recommend using the double d
 
 ![alt_text](images/doublediamond.jpeg "double diamond design process")
 
+
 We recommend taking a look at the following resources to get started:
-* Article: https://www.uxpin.com/studio/blog/double-diamond-design-process/
-* Video (walkthrough of the process): https://www.youtube.com/watch?v=ExFeZaMJ6yA 
-* Video (process with examples): https://www.youtube.com/watch?v=rYH7AErVd7w
+* [Article](https://www.uxpin.com/studio/blog/double-diamond-design-process/)
+* [Video (walkthrough of the process)](https://www.youtube.com/watch?v=ExFeZaMJ6yA)
+* [Video (process with examples)](https://www.youtube.com/watch?v=rYH7AErVd7w)
+
 
 
 ### Tasks to do at each stage/ Methods to use
@@ -70,22 +72,22 @@ Here’s some great FigJam Templates:
 * User testing prototypes and iterating on your designs based on user feedback 
 
 Here’s some great FigJam Templates:  
-* User flow diagram: https://www.figma.com/community/file/1174820493855619258
-* Wireframing: https://www.figma.com/templates/wireframe-kits/
+* [User flow diagram](https://www.figma.com/community/file/1174820493855619258)
+* [Wireframing](https://www.figma.com/templates/wireframe-kits/)
 
 **Deliver:**
 * High-fidelity prototypes (in Figma)
 
 Below are some great resources for the tasks/ methods: 
-* Course - Covers intro to UI/UX, wireframing, prototyping with Figma: https://www.codecademy.com/learn/intro-to-ui-ux 
-* Template - Competitive analysis: https://www.notion.so/Competitive-Analysis-69b2749ddfb7449baabb80504aef84c6?pvs=4 
-* Article - Affinity mapping: https://www.usertesting.com/blog/affinity-mapping
-* Article - Empathy mapping: https://www.nngroup.com/articles/empathy-mapping/
-* Article - Problem statement: https://careerfoundry.com/en/blog/ux-design/problem-statement-ux/
-* Article - How Might We (HMW) questions: https://www.nngroup.com/articles/how-might-we-questions/
-* Article - Product requirement doc: https://www.atlassian.com/agile/product-management/requirements 
-* Article - User flows: https://careerfoundry.com/en/blog/ux-design/how-to-create-a-user-flow/
-* Article - Sitemaps: https://nulab.com/learn/design-and-ux/what-is-a-ux-sitemap-and-why-is-it-important/ 
+* [Course - Covers intro to UI/UX, wireframing, prototyping with Figma](https://www.codecademy.com/learn/intro-to-ui-ux)
+* [Template - Competitive analysis](https://www.notion.so/Competitive-Analysis-69b2749ddfb7449baabb80504aef84c6?pvs=4)
+* [Article - Affinity mapping](https://www.usertesting.com/blog/affinity-mapping)
+* [Article - Empathy mapping](https://www.nngroup.com/articles/empathy-mapping/)
+* [Article - Problem statement](https://careerfoundry.com/en/blog/ux-design/problem-statement-ux/)
+* [Article - How Might We (HMW) questions](https://www.nngroup.com/articles/how-might-we-questions/)
+* [Article - Product requirement doc](https://www.atlassian.com/agile/product-management/requirements)
+* [Article - User flows](https://careerfoundry.com/en/blog/ux-design/how-to-create-a-user-flow/)
+* [Article - Sitemaps](https://nulab.com/learn/design-and-ux/what-is-a-ux-sitemap-and-why-is-it-important/) 
 
 
 ## User Research 
