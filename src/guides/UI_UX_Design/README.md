@@ -92,6 +92,133 @@ Below are some great resources for the tasks/ methods:
 
 ## User Research 
 
+**Purpose:** user research is conducted to understand user needs and preferences— it’ll ensure that your designs are intuitive and meet user expectations.
+
+User research happens throughout the design process and there’s different methods you can use at each stage. Some user research methods provide qualitative data (like user interviews) and others may provide more quantitative data (like close-ended surveys). Choosing which research method to use depends on various things like time availability, your research goals, type of product you’re building, etc. 
+
+![alt_text](images/researchmethods.png "research methods")
+
+**We recommend starting with simple methods such as surveys and user interviews.**
+
+Best practices to keep in mind for your research questions: 
+* Keep it short (5-10 questions)
+* Keep it simple (Use clear and concise language)
+* Avoid leading questions
+
+Best practices to keep in mind for user interviews:
+* Use active listing techniques (build rapport with the participant, ask relevant follow-up questions)
+* Record & transcribe your interviews
+
+Here’s an example of what a good survey question may look like: 
+* What problems do you face while trying to do <task> ? (select all that apply)
+
+Here’s some examples of what good user interview questions may look like: 
+* How do you currently go about doing <task>?
+* What do you like about how you currently perform <task>?
+* What is the biggest pain point when performing <task>?
+
+Below are some great resources to get started with user research: 
+* [Article - UX research cheat sheet](https://www.nngroup.com/articles/ux-research-cheat-sheet/) 
+* [Article - Surveys](https://www.interaction-design.org/literature/article/ux-surveys)
+* [Article - User interviews](https://www.confirmkit.com/guides/user-interview-discovery-questions)
+
+
+## Usability Testing 
+
+**Purpose:** usability testing will identify and address any usability issues— it’ll ensure your designs are intuitive and easy to use for its intended audience. 
+
+Once you have a working prototype, you’ll want to test that with users to get feedback on your designs. 
+
+With your usability testing, focus on exploratory tasks where you give users a realistic scenario and tasks to perform. For example, you could ask the user “add an item to your cart”, or “find an event to attend”. You want to see if (and where) users may get stuck doing a task— this will let you know which part of your design needs more work. 
+
+**NOTE:** testing with at least 5 users will give you sufficient feedback on your designs (these users can be fellow students, etc.) 
+
+Resources to get your started:
+* [Article - A comprehensive guide on prototype testing](https://maze.co/blog/prototype-testing/#:~:text=Prototype%20testing%20is%20the%20process,meets%20user%20needs%20and%20expectations)
+
+
+## All about Figma 
+
+**Purpose:** use Figma to create your low and high fidelity prototypes that you can share with your team. 
+
+[Figma's official website](https://help.figma.com/hc/en-us ) offers a ton of learning resources to guide you on your Figma learning journey!
+
+![alt_text](images/figmascreen.png "Figma screen")
+
+An important consideration as you work on your designs is to share your Figma file with your team members to **get feedback on the technical feasibility of your designs.** 
+
+Resources to get started with Figma: 
+* [Video - Figma for beginners](https://www.youtube.com/watch?v=FTFaQWZBqQ8)
+
+
+Knowing how to use various things in Figma like: components, auto layout and grids will help you design more efficiently. 
+
+### Using Components
+
+“Components are elements you can reuse across your designs. They help to create and manage consistent designs across projects.” - Figma 
+
+![alt_text](images/component.png "Figma component")
+
+Here’s a great resource to get your stated: 
+* [Article + video - Components](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma#:~:text=Components%20are%20elements%20you%20can,icons%2C%20layouts%2C%20and%20more)
+
+
+### Using Auto Layout 
+
+Auto layout is important for creating responsive interfaces. “It lets you create designs that grow to fill or shrink to fit, and reflow as their contents change” - Figma
+ 
+Resources for learning auto layout: 
+* [Article - Using auto layout](https://help.figma.com/hc/en-us/articles/5731482952599-Using-auto-layout)
+* [Video - Auto layout tutorial](https://www.youtube.com/watch?v=42uQGucQA9o)
+
+
+### Using grids
+
+Using grids will provide visual structure to your designs. They’ll make your designs look clean & organized. 
+
+![alt_text](images/grid.png "Figma grids")
+
+Here’s a good rule of thumb to follow for designing layouts for different screen sizes: 
+* For desktops - 12 columns
+* For tablets - 8 columns 
+* For mobile devices - 4 columns
+
+Resources to learn more: 
+* [Article - Layout Grids in Figma](https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/)
+* [Article: A comprehensive guide on layouts](https://bootcamp.uxdesign.cc/12-8-4-column-system-for-responsive-grids-df207a58ebc)
+
+
+### Other Resources
+
+There’s various Figma plugins, UI kits, and other resources you can use to make your workflow easier. 
+
+What you use will depend on your needs & project— so feel free to find ones suited for you!  
+
+Here’s an example of a plugin for Figma: 
+* [Streamline plugin for icons](https://www.figma.com/community/plugin/852192486284901337/streamline-plugin-for-icons-illustrations-assets-emoji-ui-ux-icons-library-svg-png)  
+
+[Figma community](https://www.figma.com/community) is also a great resource for finding templates, plugins and UI kits. 
+
+## Other Design Considerations 
+
+### Where to Look for Inspiration 
+
+You might want to look at existing user interfaces to get inspiration for your own project. We recommend the following resources: 
+
+* [Dribble](https://dribbble.com/search)
+* [Behance](https://www.behance.net/)
+* Scope existing platforms that are similar to your app that have good UX/UI & take inspo from their designs
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
