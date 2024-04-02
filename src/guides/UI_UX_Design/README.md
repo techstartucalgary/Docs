@@ -209,38 +209,21 @@ You might want to look at existing user interfaces to get inspiration for your o
 * [Behance](https://www.behance.net/)
 * Scope existing platforms that are similar to your app that have good UX/UI & take inspo from their designs
 
+### Design documentation
+
+It’s essential to document your designs. It’ll help you communicate the specifics of your designs with your team members and others.
+
+Below is a good example of a card that documents the design of a screen. Your major screens and user flows should be documented. 
+
+![alt_text](images/designdocumentation.png "design documentation")
+
+### Accessibility and Inclusion in Design
+
+Here’s something important to keep in mind as you design. You want to ensure that everyone can use your designs— regardless of their abilities. 
+
+You’ll want to use colors, typography, etc. that is accessible to all users. 
+
+Here’s a great article on how to design for accessibility: [Accessibility Guidelines for UX Designers] (https://uxdesign.cc/accessibility-guidelines-for-a-ux-designer-c3ba775539be)
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+That’s all for now! :) 
