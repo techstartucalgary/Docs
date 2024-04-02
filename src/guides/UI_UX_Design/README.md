@@ -223,7 +223,7 @@ Here’s something important to keep in mind as you design. You want to ensure t
 
 You’ll want to use colors, typography, etc. that is accessible to all users. 
 
-Here’s a great article on how to design for accessibility: [Accessibility Guidelines for UX Designers] (https://uxdesign.cc/accessibility-guidelines-for-a-ux-designer-c3ba775539be)
+Here’s a great article to get started: [Accessibility Guidelines for UX Designers](https://uxdesign.cc/accessibility-guidelines-for-a-ux-designer-c3ba775539be)
 
 
 That’s all for now! :) 
