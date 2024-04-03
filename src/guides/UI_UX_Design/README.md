@@ -13,9 +13,9 @@ Enjoy the guide and have fun designing! :)
 **Table of Contents**
 * [Design Process](#designprocess)
 * [User Research](#userresearch)
-* Usability Testing 
-* Working in Figma 
-* Other Design Considerations 
+* [Usability Testing](#usabilitytesting) 
+* [Working in Figma](#workinginfigma)
+* [Other Design Considerations](#otherdesignconsiderations) 
 
 </br>
 
@@ -83,7 +83,7 @@ Here’s some great FigJam Templates:
 **Deliver phase:**
 * High-fidelity prototypes (in Figma)
 
-Below are some great resources for the tasks/ methods: 
+Below are some great resources to get you started with the tasks/ methods: 
 * [Course - Covers intro to UI/UX, wireframing, prototyping with Figma](https://www.codecademy.com/learn/intro-to-ui-ux)
 * [Template - Competitive analysis](https://www.notion.so/Competitive-Analysis-69b2749ddfb7449baabb80504aef84c6?pvs=4)
 * [Article - Affinity mapping](https://www.usertesting.com/blog/affinity-mapping)
@@ -108,7 +108,7 @@ User research happens throughout the design process and there’s different meth
 
 Best practices to keep in mind for your research questions: 
 * Keep it short (5-10 questions)
-* Keep it simple (Use clear and concise language)
+* Keep it simple (use clear and concise language)
 * Avoid leading questions
 
 Best practices to keep in mind for user interviews:
@@ -130,7 +130,7 @@ Below are some great resources to get started with user research:
 
 </br>
 
-## Usability Testing 
+## Usability Testing <a name="usabilitytesting"></a>
 
 **Purpose:** usability testing will identify and address any usability issues— it’ll ensure your designs are intuitive and easy to use for its intended audience. 
 
@@ -145,7 +145,7 @@ Resources to get your started:
 
 </br>
 
-## All about Figma 
+## Working in Figma <a name="workinginfigma"></a>
 
 **Purpose:** use Figma to create your low and high fidelity prototypes that you can share with your team. 
 
@@ -160,7 +160,7 @@ Resources to get started with Figma:
 
 </br>
 
-Knowing how to use various things in Figma like: components, auto layout and grids will help you design more efficiently. 
+Knowing how to use various things in Figma like: components, auto layout, and grids will help you design more efficiently. 
 
 </br>
 
@@ -197,8 +197,8 @@ Here’s a good rule of thumb to follow for designing layouts for different scre
 * For mobile devices - 4 columns
 
 Resources to learn more: 
-* [Article - Layout Grids in Figma](https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/)
-* [Article: A comprehensive guide on layouts](https://bootcamp.uxdesign.cc/12-8-4-column-system-for-responsive-grids-df207a58ebc)
+* [Article - Layout grids in Figma](https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/)
+* [Article - A comprehensive guide on layouts](https://bootcamp.uxdesign.cc/12-8-4-column-system-for-responsive-grids-df207a58ebc)
 
 </br>
 
@@ -215,15 +215,15 @@ Here’s an example of a plugin for Figma:
 
 </br>
 
-## Other Design Considerations 
+## Other Design Considerations <a name="otherdesignconsiderations"></a>
 
 ### Where to Look for Inspiration 
 
 You might want to look at existing user interfaces to get inspiration for your own project. We recommend the following resources: 
 
-* [Dribble](https://dribbble.com/search)
+* [Dribbble](https://dribbble.com/)
 * [Behance](https://www.behance.net/)
-* Scope existing platforms that are similar to your app that have good UX/UI & take inspo from their designs
+* Scope existing platforms that are similar to your app that have good UI/UX & take inspo from their designs
 
 </br>
 
@@ -241,7 +241,7 @@ Below is a good example of a card that documents the design of a screen. Your ma
 
 Here’s something important to keep in mind as you design. You want to ensure that everyone can use your designs— regardless of their abilities. 
 
-You’ll want to use colors, typography, etc. that is accessible to all users. 
+That means using colors, typography, etc. that are accessible to all users. 
 
 Here’s a great article to get started: [Accessibility Guidelines for UX Designers](https://uxdesign.cc/accessibility-guidelines-for-a-ux-designer-c3ba775539be)
 
