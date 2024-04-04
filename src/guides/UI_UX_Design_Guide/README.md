@@ -213,6 +213,8 @@ Here’s an example of a plugin for Figma:
 
 [Figma community](https://www.figma.com/community) is also a great resource for finding templates, plugins and UI kits. 
 
+Also, for a more comprehensive guide on design methods, take a look at this [article](https://www.designmethods.co.uk/).  
+
 </br>
 
 ## Other Design Considerations <a name="otherdesignconsiderations"></a>
