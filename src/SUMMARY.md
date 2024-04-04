@@ -36,7 +36,7 @@
 - [React](./guides/React_Guide/README.md)
 - [React Native](./guides/React_Native_Guide/README.md)
 - [Web Dev](./guides/Web_Dev_Guide/README.md)
-- [UI/UX Design](./guides/UI_UX_Design/README.md)
+- [UI/UX Design](./guides/UI_UX_Design_Guide/README.md)
 ---
 
 # Curated online resources
