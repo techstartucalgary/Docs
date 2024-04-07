@@ -1,85 +1,61 @@
-# Demo & Pitch Night 2
-
-## 27 April 2024
+# Final Showcase
 
 ## Objectives
 
-Share your progress with the club, get feedback from industry guests, and practice your public speaking and pitching.
+Share your hard work over the last year to the club, our sponsors, and industry guests.
 
-This is a pitch and demo, you are selling your product to investors.
+Get invaluable feedback on your project to guide your further development beyond TechStart.
 
 ## Quick Info
 
-### Time: 
+### Venue
 
-### Presentation Time Limit: 15 minutes
+#### [Collision Space, Hunter Hub for Entrepreneurial Thinking](https://www.ucalgary.ca/hunter-hub/collision-space)
 
-### Dress Code: Business Casual
+Hunter Student Commons Room 401
 
-## What to do
+### Date - 27 April 2024
 
-Keep the focus on the product.
-Demo your product live, if it's deployed that's even better but localhost is okay.
-Have a pre-recorded demo *as a backup*, in case things go wrong.
+### Time - 12:00pm to 4:00pm
 
-## What not to do
+Project teams, please arrive no later than 11:30am
 
-Don't show any code.
-Don't talk about your challenges and wins.
+Setup begins at 10:45am, so you're welcome to enter the venue from then on
 
-## Suggested talking points
+### Presentation Time Limit
 
-These are just suggestions and not at all mandatory, but may help get you started.
+15 minutes for presentation (hard limit)
 
-### General
+We will have a timer clearly visible for you
 
-- Talk about the problem space & your solution (create a story around it)
-- Introduce team members
-- Talk about features (MVP)
-- Roadmap of what you'll do next (adding x feature, finalizing for launch, etc.)
+5 minutes for questions
 
-### Strategy
+### Schedule
 
-- STP Analysis
-- Exploring monetization and revenue models
-- Income & Expenditure forecasts in the real world
-- Unique Value Proposition, Problem Statement & Branding (collaborate with design team)
-- Market size research, figure out Total Addressable Market, Serviceable Addressable
-- Competition Research
+|                   |                              |
+| ----------------- | ---------------------------- |
+| 12:00pm - 12:15pm | Introductions                |
+| 12:15pm - 2:00pm  | Project Presentations        |
+| 2:00pm - 2:30pm   | Feedback & Winners Announced |
+| 2:30pm - 4:00pm   | Lunch & Networking           |
+| 4:00pm - 4:30pm   | Teardown Time                |
 
-### Design
+*\*Note: This is a rough schedule and it is likely we will run over time.*
 
-- Create a user persona (based on your user research) to explore the problem space - (collaborate with strategists)
-- How has user research driven your decision on what to include in your MVP features? List some of the features.
-- Show your high-fidelity designs / technical demo
+### Dress Code: Business Casual or Business
 
-### Development
+## Rubric
 
-- *Quick* overview of tech stack, showing off tech's best feature
-  - (e.g. *we're using NextJS hosted on Vercel because it lets us rapidly deploy changes to our users*)
-- How are you deploying your app?
-- Launch plans
-- Would you like to be on the App Store, etc?
-- Show a functional demo
+There are no predefined milestones or goals for the final showcase, as every team has their own specific goals.
 
-## Milestones
+Our judges will be using the rubric below to give feedback, as well as general feedback to each team.
 
-These [milestones](https://docs.techstartucalgary.com/projects/roadmap/index.html#step-1---start-with-milestones) will give you a rough idea of where you should be by the demo, they are not requirements.
+They will also choose winners for the following categories: Best Overall, Best Design, and Best Business Strategy.
 
-### Strategy
+Note, one team **can** win more than one award.
 
-- Everything money related figured out
-  - business model
-  - revenue forecasts
-  - expenses
-
-### Design
-
-- Usability testing on prototype is complete
-- High-fidelity designs are complete
-- Final designs are handed off to development
-
-### Development
-
-- Front-end and back-end connected
-- Deployed to cloud providers (AWS, Vercel, etc.)
+<object data="./rubric.pdf" type="application/pdf" width="100%" height="700px">
+    <embed src="./rubric.pdf">
+        <p>Failed to render rubric. Please find the PDF on Google Drive: <a href="https://drive.google.com/file/d/1uOApqhFG3j0oEj8EBkpVseIc79FBJHav/view?usp=sharing">View PDF</a></p>
+    </embed>
+</object>
