@@ -50,7 +50,7 @@ There are no predefined milestones or goals for the final showcase, as every tea
 
 Our judges will be using the rubric below to give feedback, as well as general feedback to each team.
 
-They will also choose winners for the following categories: Best Overall, Best Design, and Best Business Strategy.
+They will also choose winners for the following categories: Best Overall, Best Design, Best Business Strategy, and Best Technology.
 
 Note, one team **can** win more than one award.
 
