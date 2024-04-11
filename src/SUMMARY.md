@@ -16,7 +16,7 @@
 - [Demos](./projects/demos/README.md)
   - [Demo 1](./projects/demos/1/README.md)
   - [Demo 2](./projects/demos/2/README.md)
-  - [Demo 3](./projects/demos/3/README.md)
+  - [2024 Final Showcase](./projects/demos/3/README.md)
 
 ---
 
@@ -29,6 +29,7 @@
 ---
 
 # Guides
+
 - [Giving a good Technical Demo](./guides/Tech_Demo/README.md)
 - [Django](./guides/Django_Guide/README.md)
 - [Git](./guides/Git_Guide/README.md)
@@ -37,6 +38,7 @@
 - [React Native](./guides/React_Native_Guide/README.md)
 - [Web Dev](./guides/Web_Dev_Guide/README.md)
 - [UI/UX Design](./guides/UI_UX_Design_Guide/README.md)
+
 ---
 
 # Curated online resources

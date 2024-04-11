@@ -25,5 +25,4 @@ feedback from fellow project teams, execs, and our partners in industry.
 |------------------|---------------------:|-----------------------------:|---------------------------:|
 | 30 November 2023 | Demo & Pitch Night 1 | Project Teams & Execs        |                    ENC 201 |
 | 29 February 2024 | Demo & Pitch Night 2 | Tech Start & Industry Guests |                    ENC 201 |
-| Early April      | Demo & Pitch Night 3 | TBD                          |                        TBD |
 | 27 April 2024    | Final Showcase       | Open to the Public           | Hunter Hub Collision Space |
