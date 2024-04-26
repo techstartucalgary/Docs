@@ -32,15 +32,16 @@ We will have a timer clearly visible for you
 
 ### Schedule
 
-|                   |                              |
-| ----------------- | ---------------------------- |
-| 12:00pm - 12:15pm | Introductions                |
-| 12:15pm - 2:00pm  | Project Presentations        |
-| 2:00pm - 2:30pm   | Feedback & Winners Announced |
-| 2:30pm - 4:00pm   | Lunch & Networking           |
-| 4:00pm - 4:30pm   | Teardown Time                |
-
-*\*Note: This is a rough schedule and it is likely we will run over time.*
+|         |     |         |                             |
+| ------- | --- | ------- | --------------------------- |
+| 12:00pm | -   | 12:30pm | Light Networking & Snacks   |
+| 12:30pm | -   | 12:45pm | Introductions               |
+| 12:45pm | -   | 1:45pm  | Project Presentations (1-3) |
+| 1:45pm  | -   | 2:00pm  | Intermission                |
+| 2:00pm  | -   | 3:00pm  | Project Presentations (4-6) |
+| 3:00pm  | -   | 3:15pm  | Judging Break               |
+| 3:15pm  | -   | 3:30pm  | Feedback & Awards           |
+| 3:30pm  | -   | 4:30pm  | Lunch & Networking          |
 
 ### Dress Code: Business Casual or Business
 
