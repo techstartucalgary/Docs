@@ -18,9 +18,34 @@ Hunter Student Commons Room 401
 
 ### Time - 12:00pm to 4:00pm
 
-Project teams, please arrive no later than 11:30am
+Project teams, please arrive **no later than 11:30am**
 
-Setup begins at 10:45am, so you're welcome to enter the venue from then on
+Setup begins at 10:00am, so you're welcome to enter the venue from then on
+
+### Schedule
+
+|         |     |         |                             |
+| ------- | --- | ------- | --------------------------- |
+| 12:00pm | -   | 12:30pm | Light Networking & Snacks   |
+| 12:30pm | -   | 12:45pm | Introductions               |
+| 12:45pm | -   | 1:45pm  | Project Presentations (1-3) |
+| 1:45pm  | -   | 2:00pm  | Intermission                |
+| 2:00pm  | -   | 3:00pm  | Project Presentations (4-6) |
+| 3:00pm  | -   | 3:30pm  | Judging Break & Bingo       |
+| 3:30pm  | -   | 4:00pm  | Feedback & Awards           |
+| 4:00pm  | -   | 4:30pm  | Closing Remarks             |
+
+### Presentation Order
+
+1. CampusBuddy
+2. CraftXR
+3. Achevio
+
+*Intermission*.
+
+4. ReThread
+5. LocaLoyalty
+6. For Your Research
 
 ### Presentation Time Limit
 
@@ -30,17 +55,13 @@ We will have a timer clearly visible for you
 
 5 minutes for questions
 
-### Schedule
+### Presentation Logistics
 
-|                   |                              |
-| ----------------- | ---------------------------- |
-| 12:00pm - 12:15pm | Introductions                |
-| 12:15pm - 2:00pm  | Project Presentations        |
-| 2:00pm - 2:30pm   | Feedback & Winners Announced |
-| 2:30pm - 4:00pm   | Lunch & Networking           |
-| 4:00pm - 4:30pm   | Teardown Time                |
+There are 3 microphones: 1 clip-on, 1 hand-held, and 1 on the podium. If you're presenting it's a good idea to be familiar with how to use these to make your presentation go more smoothly.
 
-*\*Note: This is a rough schedule and it is likely we will run over time.*
+MacBooks with Apple Silicon chips (M1/2/3) can have issues with the projector system, so bring Intel MacBooks or Windows/Linux devices.
+
+We will have USB-C to HDMI adapters if you need, but we suggest having your own prepared and testing it out before the presentations start.
 
 ### Dress Code: Business Casual or Business
 
