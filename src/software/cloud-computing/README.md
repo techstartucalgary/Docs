@@ -24,17 +24,14 @@ Cloud computing is the delivery of various computing services, such as servers, 
 
 Cloud services come in more than one flavor. Choosing the right one will depend on your specific needs and how much fine control you'll need over the underlying gears and levers.
 
-**Infrastructure as a Service**
-
+**Infrastructure as a Service**  
 Infrastructure as a Service (IaaS) products generally simulate the look and feel you'd get from managing physical resources. laaS products give you direct access to a provider's compute, stor-age, and networking assets. Because it's you that's in there playing around at the hardware level, you—rather than the laaS provider-are responsible for the consequences of any bad configura-tions. The trade-off is that you get to closely configure every layer of your operating stack.
 
-**Platform as a Service**
-
+**Platform as a Service**  
 Unlike laaS, Platform as a Service (PaaS) products simplify the process of building an application by hiding the complexity of the infrastructure that runs it. You're given an interface through which you define the behavior and environment you want for your application.
 This will often include the code that will run your application.
 
-**Software as a Service**
-
+**Software as a Service**  
 Software as a Service (SaaS) products offer services meant to be accessed by end users. An easily recognizable illustration is Google's Gmail service, which allows users to manage their email by logging in to a browser interface or through an email client (like Microsoft Outlook) that's running locally.
 
 ## Further Reading
