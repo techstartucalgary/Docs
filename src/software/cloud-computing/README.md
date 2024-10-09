@@ -9,7 +9,7 @@ Cloud computing is the delivery of various computing services, such as servers, 
 - **Global Scale**: Scale services globally, delivering resources from the nearest location to ensure low latency and optimal performance.
 - **Productivity**: Focus on core business objectives rather than managing physical servers and infrastructure.
 - **Reliability**: Simplify data backup, disaster recovery, and business continuity through built-in redundancy.
-- **Security**: Leverage advanced security features such as encryption and multi-factor authentication (MFA) to protect sensitive data.
+- **Security**: Use advanced security features such as encryption and multi-factor authentication (MFA) to protect sensitive data.
 - **Performance**: Improve performance by distributing workloads across multiple servers and geographic regions for speed and redundancy.
 
 ## Types of Cloud Computing
