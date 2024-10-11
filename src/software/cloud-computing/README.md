@@ -39,10 +39,10 @@ This will often include the code that will run your application.
   - **Google App Engine**: A fully managed environment for deploying web apps. Developers write code, and the platform handles scaling and other operational details.
 
 **Software as a Service**  
-Software as a Service (SaaS) products offer services meant to be accessed by end users. An easily recognizable illustration is Google's Gmail service, which allows users to manage their email by logging in to a browser interface or through an email client (like Microsoft Outlook) that's running locally.
+Software as a Service (SaaS) products offer services meant to be accessed by end users.
 
 - **Example**:
-  - **Microsoft 365**: A suite of productivity software (Word, Excel, PowerPoint, etc.) accessed through the cloud, allowing users to collaborate and work from anywhere with just a web browser.
+  - An easily recognizable illustration is **Google's Gmail service**, which allows users to manage their email by logging in to a browser interface or through an email client (like Microsoft Outlook) that's running locally.
 
 ## Further Reading
 
