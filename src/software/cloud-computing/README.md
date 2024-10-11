@@ -14,9 +14,10 @@ Cloud computing is the delivery of various computing services, such as servers, 
 
 ## Types of Cloud Computing
 
-- **Public Cloud**: Services are owned and operated by third-party cloud providers and delivered over the internet.
-- **Private Cloud**: Infrastructure is owned and used exclusively by a single organization.
+- **Public Cloud**: Services are owned and operated by third-party cloud providers and delivered over the internet. You pay for only for what you use(AKA Operating expense-OpEx).
+- **Private Cloud**: Infrastructure is owned and used exclusively by a single organization. They pay for all the Infrastructure upfront (AKA Capital expense-CapEx).
 - **Hybrid Cloud**: Combines public and private cloud environments.
+- **Multi Cloud**: Use multiple public cloud providers.
 
 </br>
 
@@ -27,12 +28,21 @@ Cloud services come in more than one flavor. Choosing the right one will depend 
 **Infrastructure as a Service**  
 Infrastructure as a Service (IaaS) products generally simulate the look and feel you'd get from managing physical resources. laaS products give you direct access to a provider's compute, stor-age, and networking assets. Because it's you that's in there playing around at the hardware level, you—rather than the laaS provider-are responsible for the consequences of any bad configura-tions. The trade-off is that you get to closely configure every layer of your operating stack.
 
+- **Example**:
+  - **Amazon Web Services (AWS) EC2**: Rent virtual servers to run applications with control over the OS and network settings.
+
 **Platform as a Service**  
 Unlike laaS, Platform as a Service (PaaS) products simplify the process of building an application by hiding the complexity of the infrastructure that runs it. You're given an interface through which you define the behavior and environment you want for your application.
 This will often include the code that will run your application.
 
+- **Example**:
+  - **Google App Engine**: A fully managed environment for deploying web apps. Developers write code, and the platform handles scaling and other operational details.
+
 **Software as a Service**  
 Software as a Service (SaaS) products offer services meant to be accessed by end users. An easily recognizable illustration is Google's Gmail service, which allows users to manage their email by logging in to a browser interface or through an email client (like Microsoft Outlook) that's running locally.
+
+- **Example**:
+  - **Microsoft 365**: A suite of productivity software (Word, Excel, PowerPoint, etc.) accessed through the cloud, allowing users to collaborate and work from anywhere with just a web browser.
 
 ## Further Reading
 
