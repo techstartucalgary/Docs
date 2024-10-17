@@ -44,7 +44,7 @@ Software as a Service (SaaS) products offer services meant to be accessed by end
 - **Example**:
   - An easily recognizable illustration is **Google's Gmail service**, which allows users to manage their email by logging in to a browser interface or through an email client (like Microsoft Outlook) that's running locally.
 
-## Further Reading
+## 📚 Further Reading
 
 - **[What is Cloud Computing?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing#:~:text=Simply%20put%2C%20cloud%20computing%20is,resources%2C%20and%20economies%20of%20scale.)**  
   From Microsoft Azure's Cloud Computing Dictionary
