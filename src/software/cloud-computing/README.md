@@ -42,11 +42,21 @@ This will often include the code that will run your application.
 Software as a Service (SaaS) products offer services meant to be accessed by end users.
 
 - **Example**:
+
   - An easily recognizable illustration is **Google's Gmail service**, which allows users to manage their email by logging in to a browser interface or through an email client (like Microsoft Outlook) that's running locally.
+
+## Shared Responsibilty Model
+
+<img src="sharedResponsibility.png" alt="alt text" width="500"/>
+
+_Resource: [Microsoft's Shared Responsibility Model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)_
 
 ## 📚 Further Reading
 
 - **[What is Cloud Computing?](https://azure.microsoft.com/en-us/resources/cloud-computing-dictionary/what-is-cloud-computing#:~:text=Simply%20put%2C%20cloud%20computing%20is,resources%2C%20and%20economies%20of%20scale.)**  
+  From Microsoft Azure's Cloud Computing Dictionary
+
+- **[Shared Responsibility in the Cloud](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)**  
   From Microsoft Azure's Cloud Computing Dictionary
 
 - **[AWS Certified Solutions Architect Study Guide: Associate SAA-C01 Exam](https://www.amazon.com/dp/111950421X)**  
