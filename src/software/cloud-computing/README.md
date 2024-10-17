@@ -26,7 +26,7 @@ Cloud computing is the delivery of various computing services, such as servers, 
 Cloud services come in more than one flavor. Choosing the right one will depend on your specific needs and how much fine control you'll need over the underlying gears and levers.
 
 **Infrastructure as a Service**  
-Infrastructure as a Service (IaaS) products generally simulate the look and feel you'd get from managing physical resources. laaS products give you direct access to a provider's compute, stor-age, and networking assets. Because it's you that's in there playing around at the hardware level, rather than the laaS provider, you are responsible for the consequences of any bad configurations. The trade-off is that you get to closely configure every layer of your operating stack.
+Infrastructure as a Service (IaaS) products generally simulate the look and feel you'd get from managing physical resources. laaS products give you direct access to a provider's compute, storage, and networking assets. Because it's you that's in there playing around at the hardware level, rather than the laaS provider, you are responsible for the consequences of any bad configurations. The trade-off is that you get to closely configure every layer of your operating stack.
 
 - **Example**:
   - **Amazon Web Services (AWS) EC2**: Rent virtual servers to run applications with control over the OS and network settings.
