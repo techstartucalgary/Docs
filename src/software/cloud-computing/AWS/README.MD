@@ -1,6 +1,6 @@
 # What is AWS?
 
-Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud, offering over 200 fully featured services from data centers globally. Millions of customers are using AWS to lower costs, become more agile, and innovate faster.
+Amazon Web Services (AWS) is the most popular and widely used cloud platform, offering over 200 services from data centers around the world. Millions of customers use AWS to reduce costs, work more efficiently, and speed up innovation.
 
 Since AWS is a popular choice for many projects, we'll start by walking through how to set up a free account. Then, we'll explore some of the most widely-used AWS services and see how they can help you achieve your project goals.
 
