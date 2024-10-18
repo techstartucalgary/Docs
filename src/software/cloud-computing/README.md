@@ -15,7 +15,7 @@ Cloud computing is the delivery of various computing services, such as servers, 
 ## Types of Cloud Computing
 
 - **Public Cloud**: Services are owned and operated by third-party cloud providers and delivered over the internet. You pay for only for what you use(AKA Operating expense-OpEx).
-- **Private Cloud**: Infrastructure is owned and used exclusively by a single organization. They pay for all the Infrastructure upfront (AKA Capital expense-CapEx).
+- **Private Cloud**: Infrastructure is owned and used exclusively by a single organization. you pay for all the Infrastructure upfront (AKA Capital expense-CapEx).
 - **Hybrid Cloud**: Combines public and private cloud environments.
 - **Multi Cloud**: Use multiple public cloud providers.
 
@@ -47,7 +47,7 @@ Software as a Service (SaaS) products offer services meant to be accessed by end
 
 ## Shared Responsibilty Model
 
-<img src="sharedResponsibility.png" alt="alt text" width="500"/>
+<img src="./images/sharedResponsibility.png" alt="alt text" width="500"/>
 
 _Resource: [Microsoft's Shared Responsibility Model](https://learn.microsoft.com/en-us/azure/security/fundamentals/shared-responsibility)_
 
