@@ -38,6 +38,12 @@
 - [React Native](./guides/React_Native_Guide/README.md)
 - [Web Dev](./guides/Web_Dev_Guide/README.md)
 - [UI/UX Design](./guides/UI_UX_Design_Guide/README.md)
+- [Cloud Computing](./software/cloud-computing/README.md)
+  - [Amazon Web Services (AWS)](./software/cloud-computing/AWS/README.MD)
+    - [Database Services](./software/cloud-computing/AWS/Database%20Services/README.MD)
+      - [DynamoDB](./software/cloud-computing/AWS/Database%20Services/DynamoDB/README.md)
+      - [RDS](./software/cloud-computing/AWS/Database%20Services/RDS/README.MD)
+    - [Lambda](./software/cloud-computing/AWS/Lambda/README.MD)
 
 ---
 
