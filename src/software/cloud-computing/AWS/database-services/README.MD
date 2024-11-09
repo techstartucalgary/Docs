@@ -25,7 +25,7 @@ AWS offers various database types, each offering features to specific workloads 
    - Schema-less and designed to handle large volumes of unstructured or semi-structured data, NoSQL databases offer flexibility and speed.
    - **Example:** Amazon DynamoDB, optimized for applications with high scalability and low-latency needs.
 
-For detailed information on specific AWS database offerings, please refer to the subdirectories on [Amazon RDS](./RDS/README.md) and [DynamoDB](./DynamoDB/README.md).
+For detailed information on specific AWS database offerings, please refer to the subdirectories on [Amazon RDS](./RDS/README.MD) and [DynamoDB](./DynamoDB/README.md).
 
 ## 📚 Further Reading
 
