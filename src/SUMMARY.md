@@ -40,9 +40,9 @@
 - [UI/UX Design](./guides/UI_UX_Design_Guide/README.md)
 - [Cloud Computing](./software/cloud-computing/README.md)
   - [Amazon Web Services (AWS)](./software/cloud-computing/AWS/README.MD)
-    - [Database Services](./software/cloud-computing/AWS/Database%20Services/README.MD)
-      - [DynamoDB](./software/cloud-computing/AWS/Database%20Services/DynamoDB/README.md)
-      - [RDS](./software/cloud-computing/AWS/Database%20Services/RDS/README.MD)
+    - [Database Services](./software/cloud-computing/AWS/database-services/README.MD)
+      - [DynamoDB](./software/cloud-computing/AWS/database-services/DynamoDB/README.md)
+      - [RDS](./software/cloud-computing/AWS/database-services/RDS/README.MD)
     - [Lambda](./software/cloud-computing/AWS/Lambda/README.MD)
 
 ---
