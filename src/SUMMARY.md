@@ -13,10 +13,6 @@
 - [A good README.md](./projects/readme/README.md)
 - [A LICENSE.md](./projects/license/README.md)
 - [A RoadMap](./projects/roadmap/README.md)
-- [Demos](./projects/demos/README.md)
-  - [Demo 1](./projects/demos/1/README.md)
-  - [Demo 2](./projects/demos/2/README.md)
-  - [2024 Final Showcase](./projects/demos/3/README.md)
 
 ---
 
