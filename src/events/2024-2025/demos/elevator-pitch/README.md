@@ -10,7 +10,7 @@ Let everyone know what your product idea is, present progress so far and next st
 
 ### Start Time
 
-6pm sharp
+6 PM sharp
 
 ### Time Limit
 

@@ -21,7 +21,7 @@ feedback from fellow project teams, execs, and our partners in industry.-->
 
 ## Dates to Remember
 
-| Date             |           Event |           Audience | Location |
-| ---------------- | --------------: | -----------------: | -------: |
-| 21 November 2024 | Elevator Pitche |         Tech Start |   ENG 03 |
-| April 2025       |  Final Showcase | Open to the Public |      TBA |
+| Date             |          Event |           Audience | Location |
+| ---------------- | -------------: | -----------------: | -------: |
+| 21 November 2024 | Elevator Pitch |         Tech Start |   ENG 03 |
+| April 2025       | Final Showcase | Open to the Public |      TBA |
