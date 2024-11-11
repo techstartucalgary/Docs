@@ -2,6 +2,11 @@
 
 ---
 
+# Events
+
+- [Overview](./events/2024-2025/demos/README.md)
+- [Elevator Pitch](./events/2024-2025/demos/elevator-pitch/README.md)
+
 # Getting Started
 
 - [Installfest: from zero to hero](./installation/installfest/README.md)
