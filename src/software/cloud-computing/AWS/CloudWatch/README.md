@@ -1,6 +1,8 @@
 # Amazon CloudWatch
 
-<img src="../../images/cloudwatch.png" alt="lambda logo" width="200"/>
+<img src="../../images/cloudwatch.png" alt="cloudwatch logo" width="200"/>
+
+## Overview
 
 Imagine having a magical dashboard where you can see everything happening across your applications and AWS services, in real-time. That’s Amazon CloudWatch, a smart monitoring tool from AWS!
 

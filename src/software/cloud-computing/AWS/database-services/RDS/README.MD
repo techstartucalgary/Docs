@@ -1,5 +1,7 @@
 # Amazon Relational Database Service (RDS)
 
+<img src="../../../images/rds.png" alt="rds logo" width="200"/>
+
 ## Overview
 
 Amazon RDS (Relational Database Service) is a fully managed service that simplifies the setup, operation, and scaling of relational databases in the cloud. RDS supports popular database engines, enabling users to choose the one that best fits their application’s needs.

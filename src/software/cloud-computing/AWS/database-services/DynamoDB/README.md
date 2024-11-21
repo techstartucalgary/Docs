@@ -1,5 +1,7 @@
 # Amazon DynamoDB
 
+<img src="../../../images/dynamodb.png" alt="dynamodb logo" width="200"/>
+
 ## Overview
 
 Amazon DynamoDB is a fully managed NoSQL database service that provides single-digit millisecond response times, making it ideal for high-traffic applications. DynamoDB supports both key-value and document data models, allowing for flexible and dynamic data structures.
