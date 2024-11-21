@@ -4,7 +4,7 @@
 
 ## Overview
 
-AWS Lambda is a serverless compute service that allows you to run code in response to events without managing servers. Simply upload your function code, and Lambda handles the patching, and infrastructure management.
+AWS Lambda is a serverless compute service that allows you to run code in response to events without managing servers. Simply upload your function code, and Lambda takes care of the rest.
 
 ## Functions
 
@@ -33,7 +33,63 @@ In this example, the `boto3` library is used, which is the AWS SDK (Software Dev
 
 ## Creating a Lambda Function
 
-To create a Lambda function, you need a deployment package. The deployment package is a .zip file archive or container image that contains your function code and any external libraries used in the code. However, you do not need to include `boto3` in the dependencies, since it is already included in the AWS Lambda Python runtime environment.
+To create a Lambda function, you need a deployment package. The deployment package is a .zip file archive or container image that contains your function code and any external libraries used in the code.
+
+### Steps to Create the `.zip` File
+
+1. **Save your Python code in a file, for example, `lambda_function.py`.**
+2. **Install Dependencies**
+   If your function has external dependencies, list them in a `requirements.txt` file. To generate `requirements.txt` from an existing project, run:
+
+```bash
+pip freeze > requirements.txt
+```
+
+`Note`: Exclude boto3 from the file to reduce the package size, since it is already included in the AWS Lambda Python runtime environment.
+
+```bash
+pip uninstall boto3 -y
+```
+
+3. **Install Dependencies Locally**
+   Create a directory for your function and install the dependencies into that directory:
+
+```bash
+mkdir my-lambda-function
+pip install -r requirements.txt -t my-lambda-function/
+```
+
+4. **Add Your Function Code**
+   Copy your lambda_function.py file into the same directory:
+
+```bash
+cp lambda_function.py my-lambda-function/
+```
+
+5. **Create the .zip File**
+   Package the directory into a .zip file:
+
+```bash
+cd my-lambda-function
+zip -r ../my-lambda-function.zip .
+cd ..
+```
+
+### What's Next?
+
+There are multiple ways to create your Lambda function once the package is ready, including:
+
+1. **Manually via the AWS Console**: Upload the `.zip` file directly through the AWS Management Console.
+2. **AWS Command Line Interface (CLI)**: Use CLI commands to create and deploy your Lambda function.
+3. **Infrastructure as Code (IaC) Tools**: Automate the creation of Lambda functions using tools like Terraform, AWS CloudFormation.
+
+### Why Avoid Manual Deployments via the Console?
+
+While the AWS Console provides a simple and intaractive interface for creating Lambda functions, it is **not recommended** for production deployments due to the following reasons:
+
+- **Role Attachments**: Each Lambda function requires an IAM role with appropriate permissions. Configuring roles manually in the console can lead to errors or inconsistent configurations.
+- **Reproducibility**: Deploying via the console lacks automation and version control, making it difficult to reproduce configurations across environments.
+- **Scalability**: IaC tools simplify managing multiple Lambda functions and their dependencies.
 
 ## Installing boto3
 
