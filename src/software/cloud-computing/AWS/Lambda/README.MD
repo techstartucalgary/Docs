@@ -1,6 +1,6 @@
 # AWS Lambda
 
-<img src="../../images/lambda.png" alt="lambda logo" width="200"/>
+<img src="../../images/lambda.png" alt="lambda logo" width="100"/>
 
 ## Overview
 

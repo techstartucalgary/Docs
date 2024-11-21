@@ -1,6 +1,6 @@
 # Amazon CloudWatch
 
-<img src="../../images/cloudwatch.png" alt="cloudwatch logo" width="200"/>
+<img src="../../images/cloudwatch.png" alt="cloudwatch logo" width="100"/>
 
 ## Overview
 

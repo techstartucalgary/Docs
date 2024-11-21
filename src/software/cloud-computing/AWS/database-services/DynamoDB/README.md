@@ -1,6 +1,6 @@
 # Amazon DynamoDB
 
-<img src="../../../images/dynamodb.png" alt="dynamodb logo" width="200"/>
+<img src="../../../images/dynamodb.png" alt="dynamodb logo" width="100"/>
 
 ## Overview
 

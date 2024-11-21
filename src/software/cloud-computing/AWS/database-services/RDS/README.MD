@@ -1,6 +1,6 @@
 # Amazon Relational Database Service (RDS)
 
-<img src="../../../images/rds.png" alt="rds logo" width="200"/>
+<img src="../../../images/rds.png" alt="rds logo" width="100"/>
 
 ## Overview
 
