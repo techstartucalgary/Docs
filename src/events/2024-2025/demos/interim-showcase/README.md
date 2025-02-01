@@ -20,7 +20,42 @@ Business casual, try to coordinate with your team for a professional cohesive lo
 
 ### Key Elements
 
-#### Tech Stack
+#### Demonstration (Video or Live Encouraged)
+
+- Provide a compelling demonstration of the product through a pre-recorded video or a live walkthrough to showcase its functionality.
+- If you are not in a state where a demo is possible / all the features can’t be shown feel free to add to the Figma Designs to your slides.
+
+#### Brand Identity (Final Name & Logo)
+
+- Present the finalized product name, slogan and logo to establish a strong brand presence.
+- Doesn’t need to be a formal slide but should be apparent on the slide deck/ introduction.
+
+#### Technical Knowledge (No Code Submission, But Understand the Codebase)
+
+- While no code submission is required, be prepared to explain the architecture, technology stack, and key technical decisions.
+
+#### Problem Statement (Why This Matters & Target Audience)
+
+- Clearly define the problem your product solves, why it’s important, and who the primary users are.
+
+#### Solution
+
+- How you are solving the problem and why people would be willing to pay for your solution
+
+#### Go-To-Market Strategy & Roadmap
+
+- Give some indication of how large the target market is (Could do TAM, SAM, SOM market sizing)
+- Outline how you plan to attract users, the development timeline, key milestones, and when revenue generation will begin.
+
+#### Revenue Model (How You Make Money)
+
+- Explain the business model, pricing strategy, and revenue streams.
+
+#### Competitive Analysis (Market Landscape & Why You’re Better)
+
+- Compare your solution to existing competitors, highlighting your unique advantages through a competitive matrix.
+
+#### (Required but not presented) Tech Stack Documents
 
 1. A document containing a list of every technology your team has been using / plan to use, with a short paragraph for each technology that answers the following questions:
 
@@ -32,6 +67,12 @@ Business casual, try to coordinate with your team for a professional cohesive lo
 2. A near final diagram of how all of your technologies link together (how does information move between technologies?)
 
 **NOTE:** Due to Earth's Echo being a video game made with Unity, they are exempt from these requirements, although please still come well informed and prepared to answer questions on what tools you used in Unity to create the different components of the game.
+
+#### (Optional) Team Composition & Skills
+
+- Provide an overview of your team, their expertise, and how their skills contribute to the success of the project.
+
+### [Example Pitch Presentation](https://docs.google.com/file/d/1P3JH9HGTV9xSUeaNL65b_6SZ6GduVNrC/edit?filetype=mspresentation)
 
 ### EMERGENCY BACKUP
 
