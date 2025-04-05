@@ -14,14 +14,10 @@ on the business strategy will be on display here. Pitching your start-up
 in a convincing manner is a critical skill, so we also give you the opportunity to
 practice this in the demos leading up to the final showcase.
 
-<!-- This year's showcase is scheduled for **April 27th, 2024**.
-To prepare for this, we want each team to demo and pitch their project to
-the club before the showcase. This will help you get experience and valuable
-feedback from fellow project teams, execs, and our partners in industry.-->
 
 ## Dates to Remember
 
 | Date             |          Event |           Audience | Location |
 | ---------------- | -------------: | -----------------: | -------: |
 | 21 November 2024 | Elevator Pitch |         Tech Start |   ENG 03 |
-| April 2025       | Final Showcase | Open to the Public |      TBA |
+| 3 May 2025       | Final Showcase | Open to the Public |      Hunter Hub Collision Space |
