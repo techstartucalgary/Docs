@@ -30,7 +30,7 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 | 12:30pm | -   | 12:45pm | Introductions               |
 | 12:45pm | -   | 1:45pm  | Project Presentations (1-3) |
 | 1:45pm  | -   | 2:00pm  | Intermission                |
-| 2:00pm  | -   | 3:00pm  | Project Presentations (4-6) |
+| 2:00pm  | -   | 2:45pm  | Project Presentations (4-5) |
 | 3:00pm  | -   | 3:30pm  | Judging Break & Bingo       |
 | 3:30pm  | -   | 4:00pm  | Feedback & Awards           |
 | 4:00pm  | -   | 4:30pm  | Closing Remarks             |
@@ -51,6 +51,8 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 We will have a timer clearly visible for you
 
 5 minutes for questions
+
+We will also be allowing 3 mins for each team during the judging break to let the judges play with their product. 
 
 ### Presentation Logistics
 
