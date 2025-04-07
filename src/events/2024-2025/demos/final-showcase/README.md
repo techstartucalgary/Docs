@@ -22,6 +22,10 @@ Project teams, please arrive **no later than 11:30am**
 
 Setup begins at 10:00am, so you're welcome to enter the venue from then on
 
+### Rubric
+
+[Judge Rubric _ Showcase 2025 - Rubric.pdf](https://github.com/user-attachments/files/19638665/Judge.Rubric._.Showcase.2025.-.Rubric.pdf)
+
 ### Schedule
 
 |         |     |         |                             |
