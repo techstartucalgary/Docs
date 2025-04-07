@@ -26,6 +26,9 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 
 [Judge Rubric _ Showcase 2025 - Rubric.pdf](https://github.com/user-attachments/files/19638665/Judge.Rubric._.Showcase.2025.-.Rubric.pdf)
 
+### Sample Presentation (2024 - CampusBuddy)
+[Final Showcase- CampusBuddy2024.pdf](https://github.com/user-attachments/files/19638790/Final.Showcase-compressed.pdf)
+
 ### Schedule
 
 |         |     |         |                             |
