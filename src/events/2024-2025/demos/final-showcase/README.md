@@ -1,5 +1,7 @@
 # Final Showcase
 
+NOTE: THIS IS FROM LAST YEAR - ONLY USE AS A REFERENCE FOR WHAT THE EVENT WILL LOOK LIKE => WILL UPDATE WITH NEW DETAILS AS WE GET CLOSER TO THE DATE
+
 ## Objectives
 
 Share your hard work over the last year to the club, our sponsors, and industry guests.
@@ -24,9 +26,10 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 
 ### Rubric
 
-[Judge Rubric _ Showcase 2025 - Rubric.pdf](https://github.com/user-attachments/files/19638665/Judge.Rubric._.Showcase.2025.-.Rubric.pdf)
+[Judge Rubric \_ Showcase 2025 - Rubric.pdf](https://github.com/user-attachments/files/19638665/Judge.Rubric._.Showcase.2025.-.Rubric.pdf)
 
 ### Sample Presentation (2024 - CampusBuddy)
+
 [Final Showcase- CampusBuddy2024.pdf](https://github.com/user-attachments/files/19638790/Final.Showcase-compressed.pdf)
 
 ### Schedule
@@ -50,7 +53,6 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 4. Earth's Echo
 5. Callia
 
-
 ### Presentation Time Limit
 
 15 minutes for presentation (hard limit)
@@ -59,7 +61,7 @@ We will have a timer clearly visible for you
 
 5 minutes for questions
 
-We will also be allowing 3 mins for each team during the judging break to let the judges play with their product. 
+We will also be allowing 3 mins for each team during the judging break to let the judges play with their product.
 
 ### Presentation Logistics
 
