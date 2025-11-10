@@ -62,14 +62,10 @@ These are just suggestions and not at all mandatory, but may help get you starte
 
 ### The Solution
 
-**Resources**
-
 - From a business strategy perspective try to hit [these points](https://docs.google.com/presentation/d/1mRlbxn7ncUjm4cV_T04s72d1DXkzxf9_hVXNGaahJa8/edit?slide=id.g3a1154b21f0_0_604#slide=id.g3a1154b21f0_0_604).
 - Think about your HMW statement [(Slide 23 from the Nov. 6 Design Workshop)](https://docs.google.com/presentation/d/1OX46neZQS6Qhlrp1whw0s8F714-llLPgDtOPStFBOn8/edit?slide=id.g398c218c898_0_419#slide=id.g398c218c898_0_419) and look at this FigJam example [(Slide 26 from the Nov. 6 Design Workshop](https://docs.google.com/presentation/d/1OX46neZQS6Qhlrp1whw0s8F714-llLPgDtOPStFBOn8/edit?slide=id.g3a132d63d4b_0_14#slide=id.g3a132d63d4b_0_14), and think about how you could integrate them into the explanation of your solution.
 
 ### The Target Audience
-
-**Resources**
 
 - From a business strategy perspective look at these resources:
 
