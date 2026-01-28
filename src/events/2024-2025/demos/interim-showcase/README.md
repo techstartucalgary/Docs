@@ -80,3 +80,6 @@ Business casual, try to coordinate with your team for a professional cohesive lo
 
 - Have 2-3 designated presenters for your team
 - No need to show/explain code live, but be ready to answer questions about your tech stack, and how you implemented specific features of your project.
+
+### Important Note
+**Please send your final presentations to the presidents via discord by February 11 at noon** 
