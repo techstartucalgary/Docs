@@ -1,8 +1,8 @@
 # Interim Showcase
 
-NOTE: THIS IS FROM LAST YEAR - ONLY USE AS A REFERENCE FOR WHAT THE EVENT WILL LOOK LIKE => WILL UPDATE WITH NEW DETAILS AS WE GET CLOSER TO THE DATE
+## 12 February 2026
 
-## 13 February 2025
+The Interim Showcase is your second opportunity to clearly communicate what you’re building, why it matters, and why your solution stands out to industry guests, and for the first time this semester, the general public. In a concise 7-minute pitch, we’re looking for a strong demo, a clear problem and target audience, an explanation of how your solution works, and confidence in both the technical and business aspects. By the end, the audience should understand your product’s vision, value, and potential impact.
 
 ### Time
 
@@ -10,11 +10,13 @@ NOTE: THIS IS FROM LAST YEAR - ONLY USE AS A REFERENCE FOR WHAT THE EVENT WILL L
 
 ### Location
 
-Engineering Atrium
+ENG 03
 
 ### Time per team
 
-7 minutes for your presentation, 3 minutes for Q&A
+Hard cutoff at 15mins
+
+Target 7 minutes for your presentation, 3 minutes for Q&A (10 minutes total - remember that your pitch going for much longer than the other teams can make it feel less focused and polished in comparison.)
 
 ### Dress code
 
@@ -43,6 +45,7 @@ Business casual, try to coordinate with your team for a professional cohesive lo
 #### Solution
 
 - How you are solving the problem and why people would be willing to pay for your solution
+   - If you’re introducing a new or unique workflow or technology, talk about it and briefly discuss how it's implemented.
 
 #### Go-To-Market Strategy & Roadmap
 
@@ -56,19 +59,6 @@ Business casual, try to coordinate with your team for a professional cohesive lo
 #### Competitive Analysis (Market Landscape & Why You’re Better)
 
 - Compare your solution to existing competitors, highlighting your unique advantages through a competitive matrix.
-
-#### (Required but not presented) Tech Stack Documents
-
-1. A document containing a list of every technology your team has been using / plan to use, with a short paragraph for each technology that answers the following questions:
-
-   - What is it being used for?
-   - How will it fit with the rest of the tech stack?
-   - How does it stack up to its alternatives (pros/cons)?
-   - What experience does your team have with it / what difficulty has your team been having with it?
-
-2. A near final diagram of how all of your technologies link together (how does information move between technologies?)
-
-**NOTE:** Due to Earth's Echo being a video game made with Unity, they are exempt from these requirements, although please still come well informed and prepared to answer questions on what tools you used in Unity to create the different components of the game.
 
 #### (Optional) Team Composition & Skills
 
