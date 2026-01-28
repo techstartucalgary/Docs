@@ -66,10 +66,6 @@ Business casual, try to coordinate with your team for a professional cohesive lo
 
 ### [Example Pitch Presentation](https://docs.google.com/file/d/1P3JH9HGTV9xSUeaNL65b_6SZ6GduVNrC/edit?filetype=mspresentation)
 
-### EMERGENCY BACKUP
-
-- In case of technical issues, send your presentation to VP Internal (Maheen) by noon Feb 13
-
 ### Keys to Success
 
 - Understand your audience:
