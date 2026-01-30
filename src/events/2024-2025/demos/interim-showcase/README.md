@@ -10,7 +10,7 @@ The Interim Showcase is your second opportunity to clearly communicate what youâ
 
 ### Location
 
-ENG 03
+ICT 114
 
 ### Time per team
 
