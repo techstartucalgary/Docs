@@ -1,0 +1,369 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A good README.md - Tech Start UCalgary Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Tech Start UCalgary Documentation</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Events</li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/index.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../../events/2025-2026/demos/elevator-pitch/index.html"><strong aria-hidden="true">2.</strong> Elevator Pitch</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/interim-showcase/index.html"><strong aria-hidden="true">3.</strong> Interim Showcase</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/final-showcase/index.html"><strong aria-hidden="true">4.</strong> Final Showcase</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="../../installation/installfest/index.html"><strong aria-hidden="true">5.</strong> Installfest: from zero to hero</a></li><li class="chapter-item expanded "><a href="../../installation/wsl2/index.html"><strong aria-hidden="true">6.</strong> WSL2 Installation</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="../../projects/motivation/index.html"><strong aria-hidden="true">7.</strong> Motivation</a></li><li class="chapter-item expanded "><a href="../../projects/readme/index.html" class="active"><strong aria-hidden="true">8.</strong> A good README.md</a></li><li class="chapter-item expanded "><a href="../../projects/license/index.html"><strong aria-hidden="true">9.</strong> A LICENSE.md</a></li><li class="chapter-item expanded "><a href="../../projects/roadmap/index.html"><strong aria-hidden="true">10.</strong> A RoadMap</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Software Development</li><li class="chapter-item expanded "><a href="../../software/career-paths/index.html"><strong aria-hidden="true">11.</strong> Career Paths</a></li><li class="chapter-item expanded "><a href="../../software/front-end/index.html"><strong aria-hidden="true">12.</strong> Front End</a></li><li class="chapter-item expanded "><a href="../../software/devops/index.html"><strong aria-hidden="true">13.</strong> DevOps</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Guides</li><li class="chapter-item expanded "><a href="../../guides/Tech_Demo/index.html"><strong aria-hidden="true">14.</strong> Giving a good Technical Demo</a></li><li class="chapter-item expanded "><a href="../../guides/Django_Guide/index.html"><strong aria-hidden="true">15.</strong> Django</a></li><li class="chapter-item expanded "><a href="../../guides/Git_Guide/index.html"><strong aria-hidden="true">16.</strong> Git</a></li><li class="chapter-item expanded "><a href="../../guides/API_Guide/index.html"><strong aria-hidden="true">17.</strong> APIs</a></li><li class="chapter-item expanded "><a href="../../guides/React_Guide/index.html"><strong aria-hidden="true">18.</strong> React</a></li><li class="chapter-item expanded "><a href="../../guides/React_Native_Guide/index.html"><strong aria-hidden="true">19.</strong> React Native</a></li><li class="chapter-item expanded "><a href="../../guides/Web_Dev_Guide/index.html"><strong aria-hidden="true">20.</strong> Web Dev</a></li><li class="chapter-item expanded "><a href="../../guides/UI_UX_Design_Guide/index.html"><strong aria-hidden="true">21.</strong> UI/UX Design</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/index.html"><strong aria-hidden="true">22.</strong> Cloud Computing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/index.html"><strong aria-hidden="true">22.1.</strong> Amazon Web Services (AWS)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/index.html"><strong aria-hidden="true">22.1.1.</strong> Database Services</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/DynamoDB/index.html"><strong aria-hidden="true">22.1.1.1.</strong> DynamoDB</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/RDS/index.html"><strong aria-hidden="true">22.1.1.2.</strong> RDS</a></li></ol></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/Lambda/index.html"><strong aria-hidden="true">22.1.2.</strong> Lambda</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Curated online resources</li><li class="chapter-item expanded "><a href="../../topics/conflict-management-styles/index.html"><strong aria-hidden="true">23.</strong> Dealing With Conflict</a></li><li class="chapter-item expanded "><a href="../../topics/css/index.html"><strong aria-hidden="true">24.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../../topics/html/index.html"><strong aria-hidden="true">25.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../../topics/management-styles/index.html"><strong aria-hidden="true">26.</strong> Management Styles</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Workshops</li><li class="chapter-item expanded "><a href="../../workshops/secrets-management/index.html"><strong aria-hidden="true">27.</strong> Secrets Management</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../CONTRIBUTING.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="../../CREDITS.html">Credits</a></li><li class="chapter-item expanded affix "><a href="../../LICENSE.html">License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tech Start UCalgary Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs/edit/main/src/projects/readme/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="a-good-readmemd"><a class="header" href="#a-good-readmemd">A good <code>README.md</code></a></h1>
+<p>A <code>README.md</code> file in the root of the repository
+is going to be the first things your users see.
+GitHub renders this file on the main page of the repository.</p>
+<p>This is an example from the <a href="https://github.com/NixOS/nixpkgs">NixOS organization</a>:</p>
+<p><img src="./nixos-readme.png" alt="NixOS README" /></p>
+<p>It's important that it's professional and colorful, and that it grabs the user's attention.</p>
+<p>I highly recommend the following elements
+are present on the first page:</p>
+<ol>
+<li>
+<p><strong>Logo and name</strong>:
+A good logo is going to make the project look respected
+and professional.</p>
+<p>A good name is able to encapsulate the project's purpose,
+or, at the very least, should give the project an identity.</p>
+<p>This is an example from the
+<a href="https://github.com/prettier/prettier">Prettier</a>
+project:</p>
+<p><img src="./prettier-logo.svg" alt="Prettier logo" /></p>
+<p>It looks good.</p>
+<p>On the other hand, it encapsulates the purpose of the project:
+&quot;Making your code prettier&quot;.</p>
+</li>
+<li>
+<p><strong>Slogan</strong>:
+A short, catchy phrase,
+summarizing what the project does and its most hot features.</p>
+<p>This is an example from the
+<a href="https://github.com/tiangolo/fastapi">FastAPI</a>
+project:</p>
+<blockquote>
+<p>FastAPI framework, high performance, easy to learn, fast to code, ready for production.</p>
+</blockquote>
+<p>Wow. Yes, I want high-performance APIs.
+I want things easy to learn,
+with no boilerplate,
+and robust enough for production.</p>
+<p>While short,
+this slogan is very important
+because it's displayed on the project card:</p>
+<p><img src="./fastapi-slogan.png" alt="FastAPI slogan" /></p>
+<p>It can be the first thing a new visitor sees
+and therefore can be the decisive factor
+for a user to click on it.</p>
+<p>It's also displayed on the top of the project home page:</p>
+<p><img src="./fast-api-about.png" alt="FastAPI about" /></p>
+<p>And sets the expectations for what comes next,
+it needs to be good.</p>
+</li>
+<li>
+<p><strong>Description</strong>:
+Here you will have a few paragraphs to
+explain what your project does,
+what problem it solves for your users,
+and why should a user be using it right now.</p>
+<p>This is an example from the
+<a href="https://github.com/tiangolo/fastapi">FastAPI</a>
+project:</p>
+<blockquote>
+<p>FastAPI is a modern, fast (high-performance),
+web framework for building APIs with Python 3.6+
+based on standard Python type hints.</p>
+<p>The key features are:</p>
+<ul>
+<li>
+<p><strong>Fast</strong>: Very high performance, on par with <strong>NodeJS</strong> and <strong>Go</strong> (thanks to Starlette and Pydantic). <a href="#performance">One of the fastest Python frameworks available</a>.</p>
+</li>
+<li>
+<p><strong>Fast to code</strong>: Increase the speed to develop features by about 200% to 300%. *</p>
+</li>
+<li>
+<p><strong>Fewer bugs</strong>: Reduce about 40% of human (developer) induced errors. *</p>
+</li>
+<li>
+<p><strong>Intuitive</strong>: Great editor support. <abbr title="also known as auto-complete, autocompletion, IntelliSense">Completion</abbr> everywhere. Less time debugging.</p>
+</li>
+<li>
+<p><strong>Easy</strong>: Designed to be easy to use and learn. Less time reading docs.</p>
+</li>
+<li>
+<p><strong>Short</strong>: Minimize code duplication. Multiple features from each parameter declaration. Fewer bugs.</p>
+</li>
+<li>
+<p><strong>Robust</strong>: Get production-ready code. With automatic interactive documentation.</p>
+</li>
+<li>
+<p><strong>Standards-based</strong>: Based on (and fully compatible with) the open standards for APIs: <a href="https://github.com/OAI/OpenAPI-Specification" class="external-link" target="_blank">OpenAPI</a> (previously known as Swagger) and <a href="https://json-schema.org/" class="external-link" target="_blank">JSON Schema</a>.</p>
+</li>
+</ul>
+<p><small>* estimation based on tests on an internal development team, building production applications.</small></p>
+</blockquote>
+<p>Here the user knows that FastAPI helps build APIs with Python.
+They should be using FastAPI right now
+because it's fast, intuitive, easy, and so on.</p>
+<p>It's always a good idea to throw a few power-words like: &quot;Fast&quot;, &quot;Powerful&quot;, &quot;Secure&quot;, and &quot;Reliable&quot;,
+but of course, make sure that this is true.</p>
+<p>You can further improve this section by adding emojis.</p>
+<p>This is an example from the
+<a href="https://github.com/kamadorueda/alejandra">Alejandra</a>
+project:</p>
+<p><img src="./alejandra-description.png" alt="Alejandra description" /></p>
+<p>To this point, your users should have a clear understanding of:</p>
+<ul>
+<li>What problem does your project solve?</li>
+<li>How does it make the user's life easier?</li>
+<li>What is special about it? What are the key features?</li>
+</ul>
+<p>But also make sure not to show unnecessary details.
+Try to find a balance.
+Too short and you'll leave questions unanswered.
+Too long and you'll bore or confuse them.</p>
+</li>
+<li>
+<p><strong>Getting Started</strong>:
+Users are interested at this point,
+they want action now.</p>
+<p>Here we place the shortest path a user can take
+to interact with the project.
+If there are many, show the fastest/easiest one first,
+and then slowly introduce them to the more complex ones.</p>
+<p>This is an example from the
+<a href="https://github.com/kamadorueda/alejandra">Alejandra</a>
+project:</p>
+<p><img src="./alejandra-getting-started.png" alt="Alejandra Getting Started" /></p>
+<p>It simply tells the user to use a web version of the project.
+Everybody knows how to click a link, that's easy and nice.</p>
+<p>This is an example from the
+<a href="https://github.com/prettier/prettier">Prettier</a>
+project:</p>
+<p><img src="./prettier-getting-started.png" alt="Prettier Getting Started" /></p>
+<p>Users familiar with Node JS
+will find the instructions easy to follow.
+However,
+some steps could have been removed
+and it would have worked the same.
+There is no need to overwhelm the user with details at this point.
+We can introduce the details later.</p>
+<p>For example, a better version would be:</p>
+<blockquote>
+<p>Install prettier with:</p>
+<p><code>$ npm install --save-dev prettier</code></p>
+<p>Make your code beautiful with:</p>
+<p><code>$ npx prettier --write .</code></p>
+</blockquote>
+<p>Remember to keep the first impression simple and intuitive.</p>
+<p>Simplicity is key here.</p>
+</li>
+</ol>
+<p>Altogether, the following are examples of a good README:</p>
+<ul>
+<li>
+<p>Prettier:</p>
+<p><img src="./prettier-readme.png" alt="Prettier Readme" /></p>
+</li>
+<li>
+<p>FastAPI:</p>
+<p><img src="./fast-api-readme.png" alt="FastAPI Readme" /></p>
+</li>
+<li>
+<p>Alejandra:</p>
+<p><img src="./alejandra-readme.png" alt="Alejandra Readme" /></p>
+</li>
+</ul>
+<p>Lastly,
+<a href="https://www.makeareadme.com/">makeareadme.com</a> also offers some templates and tips.</p>
+<p>You may want to have a look over there.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../projects/motivation/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../projects/license/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../projects/motivation/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../projects/license/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

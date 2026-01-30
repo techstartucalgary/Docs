@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Web Dev - Tech Start UCalgary Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Tech Start UCalgary Documentation</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Events</li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/index.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../../events/2025-2026/demos/elevator-pitch/index.html"><strong aria-hidden="true">2.</strong> Elevator Pitch</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/interim-showcase/index.html"><strong aria-hidden="true">3.</strong> Interim Showcase</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/final-showcase/index.html"><strong aria-hidden="true">4.</strong> Final Showcase</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="../../installation/installfest/index.html"><strong aria-hidden="true">5.</strong> Installfest: from zero to hero</a></li><li class="chapter-item expanded "><a href="../../installation/wsl2/index.html"><strong aria-hidden="true">6.</strong> WSL2 Installation</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="../../projects/motivation/index.html"><strong aria-hidden="true">7.</strong> Motivation</a></li><li class="chapter-item expanded "><a href="../../projects/readme/index.html"><strong aria-hidden="true">8.</strong> A good README.md</a></li><li class="chapter-item expanded "><a href="../../projects/license/index.html"><strong aria-hidden="true">9.</strong> A LICENSE.md</a></li><li class="chapter-item expanded "><a href="../../projects/roadmap/index.html"><strong aria-hidden="true">10.</strong> A RoadMap</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Software Development</li><li class="chapter-item expanded "><a href="../../software/career-paths/index.html"><strong aria-hidden="true">11.</strong> Career Paths</a></li><li class="chapter-item expanded "><a href="../../software/front-end/index.html"><strong aria-hidden="true">12.</strong> Front End</a></li><li class="chapter-item expanded "><a href="../../software/devops/index.html"><strong aria-hidden="true">13.</strong> DevOps</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Guides</li><li class="chapter-item expanded "><a href="../../guides/Tech_Demo/index.html"><strong aria-hidden="true">14.</strong> Giving a good Technical Demo</a></li><li class="chapter-item expanded "><a href="../../guides/Django_Guide/index.html"><strong aria-hidden="true">15.</strong> Django</a></li><li class="chapter-item expanded "><a href="../../guides/Git_Guide/index.html"><strong aria-hidden="true">16.</strong> Git</a></li><li class="chapter-item expanded "><a href="../../guides/API_Guide/index.html"><strong aria-hidden="true">17.</strong> APIs</a></li><li class="chapter-item expanded "><a href="../../guides/React_Guide/index.html"><strong aria-hidden="true">18.</strong> React</a></li><li class="chapter-item expanded "><a href="../../guides/React_Native_Guide/index.html"><strong aria-hidden="true">19.</strong> React Native</a></li><li class="chapter-item expanded "><a href="../../guides/Web_Dev_Guide/index.html" class="active"><strong aria-hidden="true">20.</strong> Web Dev</a></li><li class="chapter-item expanded "><a href="../../guides/UI_UX_Design_Guide/index.html"><strong aria-hidden="true">21.</strong> UI/UX Design</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/index.html"><strong aria-hidden="true">22.</strong> Cloud Computing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/index.html"><strong aria-hidden="true">22.1.</strong> Amazon Web Services (AWS)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/index.html"><strong aria-hidden="true">22.1.1.</strong> Database Services</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/DynamoDB/index.html"><strong aria-hidden="true">22.1.1.1.</strong> DynamoDB</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/RDS/index.html"><strong aria-hidden="true">22.1.1.2.</strong> RDS</a></li></ol></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/Lambda/index.html"><strong aria-hidden="true">22.1.2.</strong> Lambda</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Curated online resources</li><li class="chapter-item expanded "><a href="../../topics/conflict-management-styles/index.html"><strong aria-hidden="true">23.</strong> Dealing With Conflict</a></li><li class="chapter-item expanded "><a href="../../topics/css/index.html"><strong aria-hidden="true">24.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../../topics/html/index.html"><strong aria-hidden="true">25.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../../topics/management-styles/index.html"><strong aria-hidden="true">26.</strong> Management Styles</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Workshops</li><li class="chapter-item expanded "><a href="../../workshops/secrets-management/index.html"><strong aria-hidden="true">27.</strong> Secrets Management</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../CONTRIBUTING.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="../../CREDITS.html">Credits</a></li><li class="chapter-item expanded affix "><a href="../../LICENSE.html">License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tech Start UCalgary Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs/edit/main/src/guides/Web_Dev_Guide/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+</tbody></table>
+</div>
+<h1 id="tech-starts-super-awesome-mega-web-dev-guide"><a class="header" href="#tech-starts-super-awesome-mega-web-dev-guide">Tech Start's Super Awesome Mega Web Dev Guide:)</a></h1>
+<p><strong>Want to get into web dev?</strong> This guide should be your best friend. It covers some of the basic tools and languages you'll need to dive into the world of web development. Rather than providing tutorials, this guide focuses on directing you towards the best free online content to teach you the fundamentals.</p>
+<p>Our advice:</p>
+<ul>
+<li>Go through at your own pace! You may need to spend more or less time on a particular topic depending on your experience level.</li>
+<li>Build practice websites and apps as you learn - you learn by doing.</li>
+<li>Take your own notes, especially for problems you encounter frequently</li>
+<li>Go beyond this guide! Tons of resources, courses, and tutorials are out there if you want to learn. Remember: google is a programmer's best friend.</li>
+</ul>
+<p>This guide was originally developed for Tech Start UCalgary, an undergraduate club for software development and entrepreneurship at the University of Calgary. Check us out here -----&gt; <a href="https://linktr.ee/techstartuofc">https://linktr.ee/techstartuofc</a> &lt;-----</p>
+<p>Or at our website here ---&gt; <a href="https://techstartucalgary.com">https://techstartucalgary.com</a> &lt;-----</p>
+<p>If you're interested in contributing to this guide or in building similar guides for other areas (like Git, project management, or mobile development), please send me an email at <a href="mailto:joel.happ1@ucalgary.ca">joel.happ1@ucalgary.ca</a></p>
+<p>Good luck on your web dev journey and enjoy the guide!</p>
+<h1 id="part-1---html"><a class="header" href="#part-1---html">Part 1 - HTML</a></h1>
+<p>HTML is the building block of all webpages. It's ubiquitous throughout application design - everything from websites to mobile apps to desktop apps use HTML as the base for their frontend. </p>
+<p><img src="images/image8.png" alt="alt_text" title="image_tooltip" /></p>
+<p>Luckily for you, HTML is also very simple. Don't spend too much time learning it as a beginner - while more advanced HTML concepts do exist, all you need to get started is a basic understanding of how it works.</p>
+<p>To get started, I recommend watching this video and experimenting by building your own HTML document alongside it: <a href="https://www.youtube.com/watch?v=UB1O30fR-EE">https://www.youtube.com/watch?v=UB1O30fR-EE</a></p>
+<p>To generate a favicon for your site, use this site: <a href="https://realfavicongenerator.net/">https://realfavicongenerator.net/</a></p>
+<p>No matter which text editor you use (Atom, VSCode, Sublime Text, or something else), I recommend searching for editor plugins to improve your experience writing HTML. Google is your friend here.</p>
+<h1 id="part-2---css"><a class="header" href="#part-2---css">Part 2 - CSS</a></h1>
+<p>If HTML is the backbone of frontends, CSS is the paint. It's an extremely versatile and powerful way of styling and beautifying your content. CSS is easy to get into, but very difficult to master- if front-end development interests you, I recommend dedicating a significant amount of time towards learning CSS.</p>
+<p><img src="images/image6.png" alt="alt_text" title="image_tooltip" /></p>
+<p>To get started, check out this 1 hour introductory video to CSS:</p>
+<p><a href="https://www.youtube.com/watch?v=yfoY53QXEnI">https://www.youtube.com/watch?v=yfoY53QXEnI</a></p>
+<p>Another alternative is this free course on Scrimba, which also covers HTML: <a href="https://scrimba.com/learn/htmlcss">https://scrimba.com/learn/htmlcss</a></p>
+<p>One topic that isn't covered in much detail in the previous video is CSS selectors. For most purposes, you'll probably want to keep your selectors simple (using only class names the vast majority of the time). If you want to learn more about advanced selectors, check out this video: <a href="https://www.youtube.com/watch?v=Bcr70LIJcOk">https://www.youtube.com/watch?v=Bcr70LIJcOk</a></p>
+<p>When working on projects with other people, I recommend avoiding element-level selectors, as they can easily screw with work that others are doing. </p>
+<p>Once you have a good grasp of the basics of CSS, one area that I highly recommend learning is <strong>CSS Grid.</strong> CSS Grid is a fantastic way of organizing and positioning html content, and it comes with loads of features that make it easy to build adaptive web pages. By combining CSS Grid with CSS breakpoints, you can design interfaces that look great on any size of screen, whether it's a big desktop computer or a small mobile phone. </p>
+<p>Highly recommended course for CSS Grid:  <a href="https://scrimba.com/learn/cssgrid">https://scrimba.com/learn/cssgrid</a></p>
+<p>(Warning: CSS grid is not supported by some outdated browsers and browsers like Opera Mini which are used mostly in third world countries to save data. If your intended audience includes these people, do not use CSS Grid.)</p>
+<p>How should you organize and refactor your CSS? I recommend using the BEM strategy for your CSS selectors. <a href="https://css-tricks.com/bem-101/">https://css-tricks.com/bem-101/</a></p>
+<p>BEM is a particularly helpful methodology to adopt when you're building websites from components like in React, since you can keep the CSS for each component in a separate file. However, it's far from the only strategy for CSS organization, so you can research and adopt others if they suit your needs better.</p>
+<p>Knowing CSS Flexbox is also helpful for arranging the layouts of websites. It's like </p>
+<p>Finally, here is a great video to watch for some simple, powerful tips for writing modern CSS:</p>
+<p><a href="https://www.youtube.com/watch?v=Qhaz36TZG5Y">https://www.youtube.com/watch?v=Qhaz36TZG5Y</a></p>
+<h1 id=""><a class="header" href="#"></a></h1>
+<h1 id="part-3---javascript"><a class="header" href="#part-3---javascript">Part 3 - Javascript</a></h1>
+<p>JavaScript drives the interactivity and functionality of websites. Using it, you can respond to the user's interactions on your website and you can modify the properties of your HTML dynamically. </p>
+<p><img src="images/image4.png" alt="alt_text" title="image_tooltip" /></p>
+<p>To get started with JavaScript, you can watch this playlist: <a href="https://www.youtube.com/playlist?list=PLDyQo7g0_nsX8_gZAB8KD1lL4j4halQBJ">https://www.youtube.com/playlist?list=PLDyQo7g0_nsX8_gZAB8KD1lL4j4halQBJ</a></p>
+<p>If you're brand new to programming, you should spend more time learning the fundamentals of JavaScript. </p>
+<p>There are a few areas of JavaScript which may be confusing to any newcomers to the language, even if you have previously learned other languages. I recommend practicing and studying to get used to these features.</p>
+<p><strong><em>Array functions:</em></strong> <a href="https://www.youtube.com/watch?v=rRgD1yVwIvE">https://www.youtube.com/watch?v=rRgD1yVwIvE</a></p>
+<p><strong>_Asynchronous JavaScript (Await, Promises, Callbacks): _</strong><a href="https://www.youtube.com/watch?v=_8gHHBlbziw">https://www.youtube.com/watch?v=_8gHHBlbziw</a></p>
+<p><strong>_JSON (JavaScript object notation): _</strong><a href="https://www.youtube.com/watch?v=wI1CWzNtE-M">https://www.youtube.com/watch?v=wI1CWzNtE-M</a></p>
+<p>If you encounter another area of JavaScript that gives you troubles let me know and I'll add a section to this guide.</p>
+<h2 id="31-nodejs"><a class="header" href="#31-nodejs">3.1 Node.js</a></h2>
+<p><img src="images/image5.png" alt="alt_text" title="image_tooltip" /></p>
+<p>Here's an introduction to Node.js: JavaScript, but for your operating system instead of your browser. <a href="https://www.youtube.com/watch?v=ENrzD9HAZK4">https://www.youtube.com/watch?v=ENrzD9HAZK4</a> Node.js is frequently used as the backend for the server side of an application or web app. </p>
+<p><strong>Installing Node.js</strong></p>
+<p>We recommend using NVM (node version manager) to install node.js. It allows you to install, uninstall, and switch between different versions of node.js very quickly. Often, you'll need to switch between different versions of node for different projects, so you'll save time by using nvm from the start.</p>
+<p>NVM (Mac/Linux): <a href="https://github.com/nvm-sh/nvm">https://github.com/nvm-sh/nvm</a></p>
+<p>NVM for windows: <a href="https://github.com/coreybutler/nvm-windows">https://github.com/coreybutler/nvm-windows</a> </p>
+<p>Once installed, you can type &quot;nvm&quot; in your CLI to see a red list of commands you can use. Follow instructions on GitHub for proper usage!</p>
+<p><strong>Express</strong></p>
+<p>One of the most common Node.js frameworks is Express. Express is an unopinionated_ (meaning, it doesn't force you to do things any particular way) _framework that excels at allowing you to write APIs. We may include more content on Express here in the future.</p>
+<p><img src="images/image1.png" alt="alt_text" title="image_tooltip" /></p>
+<h2 id="-1"><a class="header" href="#-1"></a></h2>
+<h2 id="32-typescript"><a class="header" href="#32-typescript">3.2** TypeScript**</a></h2>
+<p>TypeScript is a superset of Javascript that introduces new features mostly related to strong typing: this lets you safeguard your variables and functions and helps you catch the most frequent mistakes and bugs from JavaScript code. </p>
+<p><img src="images/image7.png" alt="alt_text" title="image_tooltip" /></p>
+<p>TypeScript is contained in .ts files, and using a compiler you can compile it into vanilla JavaScript .js files which run as expected on a computer. If you anticipate doing a lot of work with JavaScript, I highly recommend learning TypeScript - although it isn't necessary for every project, it immensely improves the quality of the coding experience and it can guide you towards mastering tricky concepts from JavaScript like promises and callbacks.</p>
+<p>TypeScript tutorial by NetNinja:</p>
+<p><a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI">https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI</a></p>
+<p>TypeScript Basics by JavaBrains: (also includes small project incl. API usage)</p>
+<p><a href="https://www.youtube.com/playlist?list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU">https://www.youtube.com/playlist?list=PLqq-6Pq4lTTanfgsbnFzfWUhhAz3tIezU</a></p>
+<h1 id="-2"><a class="header" href="#-2"></a></h1>
+<h1 id="part-4---react"><a class="header" href="#part-4---react">Part 4 - React</a></h1>
+<p>NOTE: here is a more indepth <a href="../React_Guide/README.html">React Guide</a>, the better version!!</p>
+<p>HTML, CSS, and JS are great and all, but what if you want to make a modern, reactive website? Several frontend frameworks exist to empower dynamic, reactive sites, and as of 2021 React is by far the most popular among them. It's a great way to get an introduction into the world of web frameworks and it's a fun tool to use. </p>
+<p><img src="images/image2.png" alt="alt_text" title="image_tooltip" /></p>
+<p>Here's a good free overview of the basics of React: <a href="https://scrimba.com/learn/learnreact">https://scrimba.com/learn/learnreact</a></p>
+<p>Plenty of similar courses are available on YouTube and other course platforms. </p>
+<p>When in doubt, consult the React documentation: <a href="https://reactjs.org/docs/">https://reactjs.org/docs/</a></p>
+<p>Note that much of the documentation still uses class-based components, as opposed to function-based components. Nowadays, it is 99% preferable to use function-based components whenever possible. It cuts down on the amount of boilerplate you need to write and enables helpful features from hooks.</p>
+<p>Learn more about React Hooks: <a href="https://www.youtube.com/watch?v=TNhaISOUy6Q&amp;t=396s">https://www.youtube.com/watch?v=TNhaISOUy6Q</a></p>
+<p>The 2 hooks in particular you should be very familiar with:</p>
+<ul>
+<li>**useState - **for basic state/data management</li>
+<li><strong>useEffect</strong> - ubiquitous in React. It is used for creating consequences (&quot;effects&quot;) for changes in data. It's a critical part of designing React applications to have a functional (not object-oriented) architecture, and you should be using it to create custom hooks.</li>
+</ul>
+<p>Other hooks that are handy to know about are useRef, useCallback, and useLayoutEffect.</p>
+<p>To learn React, you should know HTML, CSS, and JS before. You can also build React apps with TypeScript instead of JavaScript. <a href="https://www.typescriptlang.org/docs/handbook/react.html">https://www.typescriptlang.org/docs/handbook/react.html</a></p>
+<p><strong>React Context API</strong></p>
+<p>The context API is a tool you can use in React to share state from an upper level component (a provider) to its children. If you have state that needs to be shared across many children, you can use the context API rather than pass everything down manually as props.</p>
+<p>To learn about the context API, I recommend watching this video:</p>
+<p><a href="https://www.youtube.com/watch?v=35lXWvCuM8o">https://www.youtube.com/watch?v=35lXWvCuM8o</a></p>
+<p>**React Router **</p>
+<p>If you want to make React websites with multiple pages, you can use React Router.  It is a package that enables your app to have multiple routes. This series gives a quick overview of React Router:</p>
+<p><a href="https://www.youtube.com/watch?v=aZGzwEjZrXc&amp;list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&amp;index=21">https://www.youtube.com/watch?v=aZGzwEjZrXc&amp;list=PL4cUxeGkcC9gZD-Tvwfod2gaISzfRiP9d&amp;index=21</a></p>
+<p>React Router is lightweight and best suited for very small projects. If you plan on building a larger website with React, we recommend using Next.js instead - it has a lot more features including pre-rendering pages on the server for SEO optimization. Next.js is also widely used and has industry-level support.</p>
+<p><img src="images/image3.png" alt="alt_text" title="image_tooltip" /></p>
+<p>React Redux is a commonly used package for managing global state. It allows you to take care of state in a global store that can be accessed or modified from anywhere in your application. </p>
+<p><a href="https://www.youtube.com/watch?v=CVpUuw9XSjY">https://www.youtube.com/watch?v=CVpUuw9XSjY</a></p>
+<p><strong>Using React with Typescript</strong></p>
+<p>Here is a great cheatsheet that you should read to get started with using React in combination with Typescript:</p>
+<p><a href="https://github.com/typescript-cheatsheets/react">https://github.com/typescript-cheatsheets/react</a></p>
+<p>That's it! .. for now :)</p>
+<p>Happy hacking!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../guides/React_Native_Guide/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../guides/UI_UX_Design_Guide/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../guides/React_Native_Guide/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../guides/UI_UX_Design_Guide/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

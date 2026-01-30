@@ -1,0 +1,403 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>UI/UX Design - Tech Start UCalgary Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Tech Start UCalgary Documentation</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Events</li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/index.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../../events/2025-2026/demos/elevator-pitch/index.html"><strong aria-hidden="true">2.</strong> Elevator Pitch</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/interim-showcase/index.html"><strong aria-hidden="true">3.</strong> Interim Showcase</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/final-showcase/index.html"><strong aria-hidden="true">4.</strong> Final Showcase</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="../../installation/installfest/index.html"><strong aria-hidden="true">5.</strong> Installfest: from zero to hero</a></li><li class="chapter-item expanded "><a href="../../installation/wsl2/index.html"><strong aria-hidden="true">6.</strong> WSL2 Installation</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="../../projects/motivation/index.html"><strong aria-hidden="true">7.</strong> Motivation</a></li><li class="chapter-item expanded "><a href="../../projects/readme/index.html"><strong aria-hidden="true">8.</strong> A good README.md</a></li><li class="chapter-item expanded "><a href="../../projects/license/index.html"><strong aria-hidden="true">9.</strong> A LICENSE.md</a></li><li class="chapter-item expanded "><a href="../../projects/roadmap/index.html"><strong aria-hidden="true">10.</strong> A RoadMap</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Software Development</li><li class="chapter-item expanded "><a href="../../software/career-paths/index.html"><strong aria-hidden="true">11.</strong> Career Paths</a></li><li class="chapter-item expanded "><a href="../../software/front-end/index.html"><strong aria-hidden="true">12.</strong> Front End</a></li><li class="chapter-item expanded "><a href="../../software/devops/index.html"><strong aria-hidden="true">13.</strong> DevOps</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Guides</li><li class="chapter-item expanded "><a href="../../guides/Tech_Demo/index.html"><strong aria-hidden="true">14.</strong> Giving a good Technical Demo</a></li><li class="chapter-item expanded "><a href="../../guides/Django_Guide/index.html"><strong aria-hidden="true">15.</strong> Django</a></li><li class="chapter-item expanded "><a href="../../guides/Git_Guide/index.html"><strong aria-hidden="true">16.</strong> Git</a></li><li class="chapter-item expanded "><a href="../../guides/API_Guide/index.html"><strong aria-hidden="true">17.</strong> APIs</a></li><li class="chapter-item expanded "><a href="../../guides/React_Guide/index.html"><strong aria-hidden="true">18.</strong> React</a></li><li class="chapter-item expanded "><a href="../../guides/React_Native_Guide/index.html"><strong aria-hidden="true">19.</strong> React Native</a></li><li class="chapter-item expanded "><a href="../../guides/Web_Dev_Guide/index.html"><strong aria-hidden="true">20.</strong> Web Dev</a></li><li class="chapter-item expanded "><a href="../../guides/UI_UX_Design_Guide/index.html" class="active"><strong aria-hidden="true">21.</strong> UI/UX Design</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/index.html"><strong aria-hidden="true">22.</strong> Cloud Computing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/index.html"><strong aria-hidden="true">22.1.</strong> Amazon Web Services (AWS)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/index.html"><strong aria-hidden="true">22.1.1.</strong> Database Services</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/DynamoDB/index.html"><strong aria-hidden="true">22.1.1.1.</strong> DynamoDB</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/RDS/index.html"><strong aria-hidden="true">22.1.1.2.</strong> RDS</a></li></ol></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/Lambda/index.html"><strong aria-hidden="true">22.1.2.</strong> Lambda</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Curated online resources</li><li class="chapter-item expanded "><a href="../../topics/conflict-management-styles/index.html"><strong aria-hidden="true">23.</strong> Dealing With Conflict</a></li><li class="chapter-item expanded "><a href="../../topics/css/index.html"><strong aria-hidden="true">24.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../../topics/html/index.html"><strong aria-hidden="true">25.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../../topics/management-styles/index.html"><strong aria-hidden="true">26.</strong> Management Styles</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Workshops</li><li class="chapter-item expanded "><a href="../../workshops/secrets-management/index.html"><strong aria-hidden="true">27.</strong> Secrets Management</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../CONTRIBUTING.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="../../CREDITS.html">Credits</a></li><li class="chapter-item expanded affix "><a href="../../LICENSE.html">License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tech Start UCalgary Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs/edit/main/src/guides/UI_UX_Design_Guide/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="uiux-design-guide"><a class="header" href="#uiux-design-guide">UI/UX Design Guide</a></h1>
+<p>Welcome to Tech Start’s UI/UX design guide, your roadmap to mastering the art of crafting user-friendly and visually appealing digital experiences!</p>
+<p>Our goal is simple: to provide you with the tools and guidance necessary to understand the principles of effective design and apply them to your projects. Instead of overwhelming you with tutorials, we've curated a selection of online resources that cover everything from the basics to advanced techniques.</p>
+<p>While this guide is a good starting point, there's a ton of resources available online. Everyone learns differently, so we encourage you to explore and find what methods work best for you!</p>
+<p>Enjoy the guide and have fun designing! :)</p>
+</br>
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#designprocess">Design Process</a></li>
+<li><a href="#userresearch">User Research</a></li>
+<li><a href="#usabilitytesting">Usability Testing</a></li>
+<li><a href="#workinginfigma">Working in Figma</a></li>
+<li><a href="#otherdesignconsiderations">Other Design Considerations</a></li>
+</ul>
+</br>
+<h2 id="design-process"><a class="header" href="#design-process">Design Process <a name="designprocess"></a></a></h2>
+<p><strong>Purpose:</strong> a design process helps you break down a project into manageable chunks and gives your work structure.</p>
+<p>Terms like “design thinking” and “human-centered design” all boil down to the idea of understanding the needs and behaviors of users, and translating that understanding into a well-designed interface. So, <strong>keep the user front and center in your design approach!</strong></p>
+<p>There’s various design processes out there but we recommend using the double diamond design process.</p>
+<p><strong>The double diamond design process has 4 stages:</strong></p>
+<ol>
+<li>Discover</li>
+<li>Define</li>
+<li>Develop</li>
+<li>Deliver</li>
+</ol>
+<p><strong>Note:</strong> this design process is not linear— it’s iterative. That means you may be revisiting certain stages to tweak and improve your designs as you work through the process.</p>
+<p><img src="images/doublediamond.jpeg" alt="alt_text" title="double diamond design process" /></p>
+</br>
+<p>We recommend taking a look at the following resources to get started:</p>
+<ul>
+<li><a href="https://www.uxpin.com/studio/blog/double-diamond-design-process/">Article</a></li>
+<li><a href="https://www.youtube.com/watch?v=ExFeZaMJ6yA">Video (walkthrough of the process)</a></li>
+<li><a href="https://www.youtube.com/watch?v=rYH7AErVd7w">Video (process with examples)</a></li>
+</ul>
+</br>
+<h3 id="tasks-to-do-at-each-stage-methods-to-use"><a class="header" href="#tasks-to-do-at-each-stage-methods-to-use">Tasks to do at each stage/ Methods to use</a></h3>
+<p>As you make your way through the design process there’s various tasks/ methods you may use at each stage.</p>
+<p><strong>Discover phase:</strong></p>
+<ul>
+<li>Competitive analysis</li>
+<li>User research</li>
+</ul>
+<p><strong>Define phase</strong>(at this stage you’ll be synthesizing your user research findings):</p>
+<ul>
+<li>Affinity mapping</li>
+<li>Empathy mapping</li>
+<li>Form a problem statement and How Might We (HMW) questions</li>
+<li>Ideate potential solutions</li>
+<li>Product Requirement Doc (PRD)</li>
+</ul>
+<p><strong>Note:</strong> to make your work easier, use FigJam templates to do the tasks for this phase.</p>
+<p>Here’s some great FigJam Templates:</p>
+<ul>
+<li><a href="https://www.figma.com/community/file/973596233310955890">Affinity mapping</a></li>
+<li><a href="https://www.figma.com/community/file/1157607115950793533">Empathy mapping</a></li>
+</ul>
+<p><strong>Develop phase:</strong></p>
+<ul>
+<li>User flows &amp; site maps</li>
+<li>Wireframes &amp; low-fidelity prototypes</li>
+<li>User testing prototypes and iterating on your designs based on user feedback</li>
+</ul>
+<p>Here’s some great FigJam Templates:</p>
+<ul>
+<li><a href="https://www.figma.com/community/file/1174820493855619258">User flow diagram</a></li>
+<li><a href="https://www.figma.com/templates/wireframe-kits/">Wireframing</a></li>
+</ul>
+<p><strong>Deliver phase:</strong></p>
+<ul>
+<li>High-fidelity prototypes (in Figma)</li>
+</ul>
+<p>Below are some great resources to get you started with the tasks/ methods:</p>
+<ul>
+<li><a href="https://www.codecademy.com/learn/intro-to-ui-ux">Course - Covers intro to UI/UX, wireframing, prototyping with Figma</a></li>
+<li><a href="https://www.notion.so/Competitive-Analysis-69b2749ddfb7449baabb80504aef84c6?pvs=4">Template - Competitive analysis</a></li>
+<li><a href="https://www.usertesting.com/blog/affinity-mapping">Article - Affinity mapping</a></li>
+<li><a href="https://www.nngroup.com/articles/empathy-mapping/">Article - Empathy mapping</a></li>
+<li><a href="https://careerfoundry.com/en/blog/ux-design/problem-statement-ux/">Article - Problem statement</a></li>
+<li><a href="https://www.nngroup.com/articles/how-might-we-questions/">Article - How Might We (HMW) questions</a></li>
+<li><a href="https://www.atlassian.com/agile/product-management/requirements">Article - Product requirement doc</a></li>
+<li><a href="https://careerfoundry.com/en/blog/ux-design/how-to-create-a-user-flow/">Article - User flows</a></li>
+<li><a href="https://nulab.com/learn/design-and-ux/what-is-a-ux-sitemap-and-why-is-it-important/">Article - Sitemaps</a></li>
+</ul>
+</br>
+<h2 id="user-research"><a class="header" href="#user-research">User Research <a name="userresearch"></a></a></h2>
+<p><strong>Purpose:</strong> user research is conducted to understand user needs and preferences— it’ll ensure that your designs are intuitive and meet user expectations.</p>
+<p>User research happens throughout the design process and there’s different methods you can use at each stage. Some user research methods provide qualitative data (like user interviews) and others may provide more quantitative data (like close-ended surveys). Choosing which research method to use depends on various things like time availability, your research goals, type of product you’re building, etc.</p>
+<p><img src="images/researchmethods.png" alt="alt_text" title="research methods" /></p>
+<p><strong>We recommend starting with simple methods such as surveys and user interviews.</strong></p>
+<p>Best practices to keep in mind for your research questions:</p>
+<ul>
+<li>Keep it short (5-10 questions)</li>
+<li>Keep it simple (use clear and concise language)</li>
+<li>Avoid leading questions</li>
+</ul>
+<p>Best practices to keep in mind for user interviews:</p>
+<ul>
+<li>Use active listing techniques (build rapport with the participant, ask relevant follow-up questions)</li>
+<li>Record &amp; transcribe your interviews</li>
+</ul>
+<p>Here’s an example of what a good survey question may look like:</p>
+<ul>
+<li>What problems do you face while trying to do (<em>given task</em>)? (select all that apply)</li>
+</ul>
+<p>Here’s some examples of what good user interview questions may look like:</p>
+<ul>
+<li>How do you currently go about doing (<em>given task</em>)?</li>
+<li>What do you like about how you currently perform (<em>given task</em>)?</li>
+<li>What is the biggest pain point when performing (<em>given task</em>)?</li>
+</ul>
+<p>Below are some great resources to get started with user research:</p>
+<ul>
+<li><a href="https://www.nngroup.com/articles/ux-research-cheat-sheet/">Article - UX research cheat sheet</a></li>
+<li><a href="https://www.interaction-design.org/literature/article/ux-surveys">Article - Surveys</a></li>
+<li><a href="https://www.confirmkit.com/guides/user-interview-discovery-questions">Article - User interviews</a></li>
+</ul>
+</br>
+<h2 id="usability-testing"><a class="header" href="#usability-testing">Usability Testing <a name="usabilitytesting"></a></a></h2>
+<p><strong>Purpose:</strong> usability testing will identify and address any usability issues— it’ll ensure your designs are intuitive and easy to use for its intended audience.</p>
+<p>Once you have a working prototype, you’ll want to test that with users to get feedback on your designs.</p>
+<p>With your usability testing, focus on exploratory tasks where you give users a realistic scenario and tasks to perform. For example, you could ask the user “add an item to your cart”, or “find an event to attend”. You want to see if (and where) users may get stuck doing a task— this will let you know which part of your design needs more work.</p>
+<p><strong>NOTE:</strong> testing with at least 5 users will give you sufficient feedback on your designs (these users can be fellow students, etc.)</p>
+<p>Resources to get your started:</p>
+<ul>
+<li><a href="https://maze.co/blog/prototype-testing/#:~:text=Prototype%20testing%20is%20the%20process,meets%20user%20needs%20and%20expectations">Article - A comprehensive guide on prototype testing</a></li>
+</ul>
+</br>
+<h2 id="working-in-figma"><a class="header" href="#working-in-figma">Working in Figma <a name="workinginfigma"></a></a></h2>
+<p><strong>Purpose:</strong> use Figma to create your low and high fidelity prototypes that you can share with your team.</p>
+<p><a href="https://help.figma.com/hc/en-us">Figma's official website</a> offers a ton of learning resources to guide you on your Figma learning journey!</p>
+<p><img src="images/figmascreen.png" alt="alt_text" title="Figma screen" /></p>
+<p>An important consideration as you work on your designs is to share your Figma file with your team members to <strong>get feedback on the technical feasibility of your designs.</strong></p>
+<p>Resources to get started with Figma:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=FTFaQWZBqQ8">Video - Figma for beginners</a></li>
+</ul>
+</br>
+<p>Knowing how to use various things in Figma like: components, auto layout, and grids will help you design more efficiently.</p>
+</br>
+<h3 id="using-components"><a class="header" href="#using-components">Using Components</a></h3>
+<p>“Components are elements you can reuse across your designs. They help to create and manage consistent designs across projects.” - Figma</p>
+<p><img src="images/component.png" alt="alt_text" title="Figma component" /></p>
+<p>Here’s a great resource to get your stated:</p>
+<ul>
+<li><a href="https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma#:~:text=Components%20are%20elements%20you%20can,icons%2C%20layouts%2C%20and%20more">Article + video - Components</a></li>
+</ul>
+</br>
+<h3 id="using-auto-layout"><a class="header" href="#using-auto-layout">Using Auto Layout</a></h3>
+<p>Auto layout is important for creating responsive interfaces. “It lets you create designs that grow to fill or shrink to fit, and reflow as their contents change” - Figma</p>
+<p>Resources for learning auto layout:</p>
+<ul>
+<li><a href="https://help.figma.com/hc/en-us/articles/5731482952599-Using-auto-layout">Article - Using auto layout</a></li>
+<li><a href="https://www.youtube.com/watch?v=42uQGucQA9o">Video - Auto layout tutorial</a></li>
+</ul>
+</br>
+<h3 id="using-grids"><a class="header" href="#using-grids">Using Grids</a></h3>
+<p>Using grids will provide visual structure to your designs. They’ll make your designs look clean &amp; organized.</p>
+<p><img src="images/grid.png" alt="alt_text" title="Figma grids" /></p>
+<p>Here’s a good rule of thumb to follow for designing layouts for different screen sizes:</p>
+<ul>
+<li>For desktops - 12 columns</li>
+<li>For tablets - 8 columns</li>
+<li>For mobile devices - 4 columns</li>
+</ul>
+<p>Resources to learn more:</p>
+<ul>
+<li><a href="https://www.figma.com/best-practices/everything-you-need-to-know-about-layout-grids/">Article - Layout grids in Figma</a></li>
+<li><a href="https://bootcamp.uxdesign.cc/12-8-4-column-system-for-responsive-grids-df207a58ebc">Article - A comprehensive guide on layouts</a></li>
+</ul>
+</br>
+<h3 id="other-resources"><a class="header" href="#other-resources">Other Resources</a></h3>
+<p>There’s various Figma plugins, UI kits, and other resources you can use to make your workflow easier.</p>
+<p>What you use will depend on your needs &amp; project— so feel free to find ones suited for you!</p>
+<p>Here’s an example of a plugin for Figma:</p>
+<ul>
+<li><a href="https://www.figma.com/community/plugin/852192486284901337/streamline-plugin-for-icons-illustrations-assets-emoji-ui-ux-icons-library-svg-png">Streamline plugin for icons</a></li>
+</ul>
+<p><a href="https://www.figma.com/community">Figma community</a> is also a great resource for finding templates, plugins and UI kits.</p>
+<p>Also, for a more comprehensive guide on design methods, take a look at this <a href="https://www.designmethods.co.uk/">article</a>.</p>
+</br>
+<h2 id="other-design-considerations"><a class="header" href="#other-design-considerations">Other Design Considerations <a name="otherdesignconsiderations"></a></a></h2>
+<h3 id="where-to-look-for-inspiration"><a class="header" href="#where-to-look-for-inspiration">Where to Look for Inspiration</a></h3>
+<p>You might want to look at existing user interfaces to get inspiration for your own project. We recommend the following resources:</p>
+<ul>
+<li><a href="https://dribbble.com/">Dribbble</a></li>
+<li><a href="https://www.behance.net/">Behance</a></li>
+<li>Scope existing platforms that are similar to your app that have good UI/UX &amp; take inspo from their designs</li>
+</ul>
+</br>
+<h3 id="design-documentation"><a class="header" href="#design-documentation">Design Documentation</a></h3>
+<p>It’s essential to document your designs. It’ll help you communicate the specifics of your designs with your team members and others.</p>
+<p>Below is a good example of a card that documents the design of a screen. Your major screens and user flows should be documented.</p>
+<p><img src="images/designdocumentation.png" alt="alt_text" title="design documentation" /></p>
+</br>
+<h3 id="accessibility-and-inclusion-in-design"><a class="header" href="#accessibility-and-inclusion-in-design">Accessibility and Inclusion in Design</a></h3>
+<p>Here’s something important to keep in mind as you design. You want to ensure that everyone can use your designs— regardless of their abilities.</p>
+<p>That means using colors, typography, etc. that are accessible to all users.</p>
+<p>Here’s a great article to get started: <a href="https://uxdesign.cc/accessibility-guidelines-for-a-ux-designer-c3ba775539be">Accessibility Guidelines for UX Designers</a></p>
+</br>
+<p>That’s all for now! :)</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../guides/Web_Dev_Guide/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../software/cloud-computing/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../guides/Web_Dev_Guide/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../software/cloud-computing/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

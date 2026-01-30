@@ -1,0 +1,1335 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>React Native - Tech Start UCalgary Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Tech Start UCalgary Documentation</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Events</li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/index.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../../events/2025-2026/demos/elevator-pitch/index.html"><strong aria-hidden="true">2.</strong> Elevator Pitch</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/interim-showcase/index.html"><strong aria-hidden="true">3.</strong> Interim Showcase</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/final-showcase/index.html"><strong aria-hidden="true">4.</strong> Final Showcase</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="../../installation/installfest/index.html"><strong aria-hidden="true">5.</strong> Installfest: from zero to hero</a></li><li class="chapter-item expanded "><a href="../../installation/wsl2/index.html"><strong aria-hidden="true">6.</strong> WSL2 Installation</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="../../projects/motivation/index.html"><strong aria-hidden="true">7.</strong> Motivation</a></li><li class="chapter-item expanded "><a href="../../projects/readme/index.html"><strong aria-hidden="true">8.</strong> A good README.md</a></li><li class="chapter-item expanded "><a href="../../projects/license/index.html"><strong aria-hidden="true">9.</strong> A LICENSE.md</a></li><li class="chapter-item expanded "><a href="../../projects/roadmap/index.html"><strong aria-hidden="true">10.</strong> A RoadMap</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Software Development</li><li class="chapter-item expanded "><a href="../../software/career-paths/index.html"><strong aria-hidden="true">11.</strong> Career Paths</a></li><li class="chapter-item expanded "><a href="../../software/front-end/index.html"><strong aria-hidden="true">12.</strong> Front End</a></li><li class="chapter-item expanded "><a href="../../software/devops/index.html"><strong aria-hidden="true">13.</strong> DevOps</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Guides</li><li class="chapter-item expanded "><a href="../../guides/Tech_Demo/index.html"><strong aria-hidden="true">14.</strong> Giving a good Technical Demo</a></li><li class="chapter-item expanded "><a href="../../guides/Django_Guide/index.html"><strong aria-hidden="true">15.</strong> Django</a></li><li class="chapter-item expanded "><a href="../../guides/Git_Guide/index.html"><strong aria-hidden="true">16.</strong> Git</a></li><li class="chapter-item expanded "><a href="../../guides/API_Guide/index.html"><strong aria-hidden="true">17.</strong> APIs</a></li><li class="chapter-item expanded "><a href="../../guides/React_Guide/index.html"><strong aria-hidden="true">18.</strong> React</a></li><li class="chapter-item expanded "><a href="../../guides/React_Native_Guide/index.html" class="active"><strong aria-hidden="true">19.</strong> React Native</a></li><li class="chapter-item expanded "><a href="../../guides/Web_Dev_Guide/index.html"><strong aria-hidden="true">20.</strong> Web Dev</a></li><li class="chapter-item expanded "><a href="../../guides/UI_UX_Design_Guide/index.html"><strong aria-hidden="true">21.</strong> UI/UX Design</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/index.html"><strong aria-hidden="true">22.</strong> Cloud Computing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/index.html"><strong aria-hidden="true">22.1.</strong> Amazon Web Services (AWS)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/index.html"><strong aria-hidden="true">22.1.1.</strong> Database Services</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/DynamoDB/index.html"><strong aria-hidden="true">22.1.1.1.</strong> DynamoDB</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/RDS/index.html"><strong aria-hidden="true">22.1.1.2.</strong> RDS</a></li></ol></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/Lambda/index.html"><strong aria-hidden="true">22.1.2.</strong> Lambda</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Curated online resources</li><li class="chapter-item expanded "><a href="../../topics/conflict-management-styles/index.html"><strong aria-hidden="true">23.</strong> Dealing With Conflict</a></li><li class="chapter-item expanded "><a href="../../topics/css/index.html"><strong aria-hidden="true">24.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../../topics/html/index.html"><strong aria-hidden="true">25.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../../topics/management-styles/index.html"><strong aria-hidden="true">26.</strong> Management Styles</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Workshops</li><li class="chapter-item expanded "><a href="../../workshops/secrets-management/index.html"><strong aria-hidden="true">27.</strong> Secrets Management</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../CONTRIBUTING.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="../../CREDITS.html">Credits</a></li><li class="chapter-item expanded affix "><a href="../../LICENSE.html">License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tech Start UCalgary Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs/edit/main/src/guides/React_Native_Guide/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+</tbody></table>
+</div>
+<h1 id="tech-starts-react-native-guide"><a class="header" href="#tech-starts-react-native-guide">Tech Start's React Native Guide</a></h1>
+<p>Please get acquainted with our <a href="https://docs.techstartucalgary.com/guides/React_Guide/index.html">React Guide</a> before you read this page, this is just a recommendation though. Transitioning from a good background in React to React Native is a relatively smooth process, as many concepts carry over. However, there are specific topics and components you should learn to effectively work with React Native. Here's an outline of the topics you need to cover:</p>
+<ol>
+<li>
+<p><a href="#video-resources">Video Resources (If you don't Like Reading)</a></p>
+</li>
+<li>
+<p><a href="#react-native-main-concepts">React Native Basics Main Concepts</a></p>
+<ul>
+<li><a href="#components">Components</a></li>
+<li><a href="#styling">Styling</a></li>
+<li><a href="#layout">Layout</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#navigation">Navigation</a></p>
+</li>
+<li>
+<p><a href="#platform-specific">Platform-Specific Code</a></p>
+</li>
+<li>
+<p><a href="#device-features">Accessing Device Features</a></p>
+</li>
+<li>
+<p><a href="#modules-bridges">Native Modules and Bridges</a></p>
+</li>
+<li>
+<p><a href="#state-managment">State Management</a></p>
+</li>
+<li>
+<p><a href="#async-storage">Async Storage</a></p>
+</li>
+<li>
+<p><a href="#network-requests">Network Requests</a></p>
+</li>
+<li>
+<p><a href="#advanced-topics">Advanced Topics;</a></p>
+<ul>
+<li><a href="#debugging">Debugging and Troubleshooting</a></li>
+<li><a href="#testing">Testing</a></li>
+<li><a href="#performance">Performance Optimization</a></li>
+<li><a href="#deployment">Publishing and Deployment</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#third-party">Third-Party Integration</a></p>
+</li>
+<li>
+<p><a href="#security">Security</a></p>
+</li>
+<li>
+<p><a href="#conclusion">conclusion</a></p>
+</li>
+</ol>
+<h2 id="video-resources"><a class="header" href="#video-resources">Video Resources: <a name="video-resources"></a></a></h2>
+<p>These tutorials should be sufficient to get started but this guide gives many more subtle topics that are not covered in these videos. Choose your weapon wisely.</p>
+<ul>
+<li>https://www.youtube.com/playlist?list=PL4cUxeGkcC9ixPU-QkScoRBVxtPPzVjrQ</li>
+<li>https://www.youtube.com/watch?v=0-S5a0eXPoc</li>
+</ul>
+<h2 id="react-native-basics"><a class="header" href="#react-native-basics">React Native Basics: <a name="react-native-main-concepts"></a></a></h2>
+<h3 id="components-in-react-native"><a class="header" href="#components-in-react-native">Components in React Native <a name="components"></a></a></h3>
+<p>Components in React Native are similar to those in React, but with some variations and additional elements. Here's a more detailed breakdown:</p>
+<h4 id="1-core-components"><a class="header" href="#1-core-components">1. Core Components:</a></h4>
+<p>React Native provides a set of core components that are similar to HTML elements. These include:</p>
+<ul>
+<li><code>View</code>: The fundamental component for creating UI layouts.</li>
+<li><code>Text</code>: Used for displaying text.</li>
+<li><code>Image</code>: For displaying images.</li>
+<li><code>ScrollView</code>: For scrollable content.</li>
+<li><code>TextInput</code>: For text input fields.</li>
+<li>And many more.</li>
+</ul>
+<h4 id="2-custom-components"><a class="header" href="#2-custom-components">2. Custom Components:</a></h4>
+<p>You can create your custom components just like in React. These components can be stateless functional components or class components. To create a custom component, use the <code>View</code>, <code>Text</code>, <code>Image</code>, and other core components to compose your UI.</p>
+<h2 id="styling-in-react-native"><a class="header" href="#styling-in-react-native">Styling in React Native <a name="styling"></a></a></h2>
+<p>Styling in React Native is different from traditional web development. You have various options for styling your components:</p>
+<h4 id="a-inline-styles"><a class="header" href="#a-inline-styles">a. Inline Styles:</a></h4>
+<p>React Native supports inline styles using JavaScript objects. You can apply styles directly to components, like this:</p>
+<pre><code class="language-javascript">&lt;View style={{ flex: 1, backgroundColor: 'lightblue' }}&gt;
+  &lt;Text style={{ fontSize: 20, color: 'black' }}&gt;Hello, React Native!&lt;/Text&gt;
+&lt;/View&gt;
+</code></pre>
+<h4 id="b-stylesheets"><a class="header" href="#b-stylesheets">b. Stylesheets:</a></h4>
+<p>Using stylesheets, you can create reusable style definitions:</p>
+<pre><code class="language-javascript">const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'lightblue',
+  },
+  text: {
+    fontSize: 20,
+    color: 'black',
+  },
+});
+
+&lt;View style={styles.container}&gt;
+  &lt;Text style={styles.text}&gt;Hello, React Native!&lt;/Text&gt;
+&lt;/View&gt;
+</code></pre>
+<h4 id="c-flexbox-layout"><a class="header" href="#c-flexbox-layout">c. Flexbox Layout:</a></h4>
+<p>React Native relies heavily on flexbox for layout design. It's similar to CSS flexbox but with a few differences. You can use properties like <code>flex</code>, <code>alignItems</code>, and <code>justifyContent</code> to control layout.</p>
+<pre><code class="language-javascript">&lt;View style={{ flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}&gt;
+  &lt;Text&gt;Hello, React Native!&lt;/Text&gt;
+&lt;/View&gt;
+</code></pre>
+<h2 id="layout-in-react-native"><a class="header" href="#layout-in-react-native">Layout in React Native <a name="layout"></a></a></h2>
+<p>Understanding layout is vital in React Native to create responsive and visually appealing designs.</p>
+<ol>
+<li>
+<p>Flexbox Layout: Flexbox is the primary layout system in React Native. It allows you to design flexible and adaptive layouts. Key properties include:</p>
+<ul>
+<li><code>flex</code>: Determines how space is distributed among children.</li>
+<li><code>alignItems</code>: Aligns items along the cross-axis (vertical alignment).</li>
+<li><code>justifyContent</code>: Aligns items along the main axis (horizontal alignment).</li>
+<li><code>flexDirection</code>: Sets the direction of the main axis.</li>
+</ul>
+</li>
+<li>
+<p><strong>Positioning:</strong> You can control the position of elements using properties like <code>position</code>, <code>top</code>, <code>left</code>, <code>right</code>, and <code>bottom</code>.</p>
+</li>
+<li>
+<p><strong>Dimensions:</strong> Set dimensions using <code>width</code> and <code>height</code>. You can use percentages, fixed values, or dynamic values like <code>flex</code>.</p>
+</li>
+<li>
+<p><strong>Responsive Design:</strong> React Native allows you to create responsive designs using <code>Dimensions</code> and the <code>onLayout</code> event.</p>
+</li>
+<li>
+<p><strong>Orientation Handling:</strong> Handle changes in device orientation by adjusting your layout accordingly. Use the <code>Dimensions</code> API to detect changes.</p>
+</li>
+<li>
+<p><strong>Stylesheet Composition:</strong> Compose styles using stylesheets and conditionally apply styles based on screen dimensions or other criteria.</p>
+</li>
+<li>
+<p><strong>Best Practices</strong>:</p>
+<ul>
+<li>
+<p>Separation of Concerns: Keep styles, logic, and presentation separate for better maintainability and code clarity.</p>
+</li>
+<li>
+<p>Optimizing Styles: Optimize styles to reduce unnecessary re-renders and improve app performance.</p>
+</li>
+</ul>
+</li>
+</ol>
+<p>By mastering these concepts related to components, styling, and layout in React Native, you can create rich and visually appealing mobile app user interfaces. Flexbox, in particular, is a powerful tool for creating flexible layouts, and understanding the nuances of styling is crucial for developing a professional-looking app.</p>
+<h2 id="navigation"><a class="header" href="#navigation">Navigation: <a name="navigation"></a></a></h2>
+<p>Navigation is a crucial aspect of building mobile applications with React Native. It involves creating the structure and flow of your app, allowing users to move between different screens or views. The most common library for implementing navigation in React Native is <strong>React Navigation</strong>. Here's a more detailed overview of navigation in React Native:</p>
+<p><strong>1. Installing React Navigation:</strong></p>
+<ul>
+<li>To get started with React Navigation, you need to install it in your project using npm or yarn:
+<pre><code class="language-bash">npm install @react-navigation/native @react-navigation/stack
+</code></pre>
+</li>
+</ul>
+<p><strong>2. Stack Navigator:</strong></p>
+<ul>
+<li>The Stack Navigator is one of the most commonly used navigators in React Navigation. It allows you to create a stack of screens where each screen is placed on top of the previous one. You can navigate between screens by pushing and popping them from the stack.</li>
+<li>To set up a Stack Navigator, you need to import it and define your screens.
+<pre><code class="language-javascript">import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+</code></pre>
+</li>
+</ul>
+<p><strong>3. Defining Screens:</strong></p>
+<ul>
+<li>Each screen in your app is defined as a React component. For example, you might have a HomeScreen and a ProfileScreen.
+<pre><code class="language-javascript">function HomeScreen() {
+  // Your screen's content
+}
+
+function ProfileScreen() {
+  // Your screen's content
+}
+</code></pre>
+</li>
+</ul>
+<p><strong>4. Navigating Between Screens:</strong></p>
+<ul>
+<li>You can navigate between screens using navigation functions provided by React Navigation. For example, to navigate from the HomeScreen to the ProfileScreen:
+<pre><code class="language-javascript">import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Stack = createStackNavigator();
+
+function App() {
+    return (
+        &lt;NavigationContainer&gt;
+        &lt;Stack.Navigator&gt;
+            &lt;Stack.Screen name=&quot;Home&quot; component={HomeScreen} /&gt;
+            &lt;Stack.Screen name=&quot;Profile&quot; component={ProfileScreen} /&gt;
+        &lt;/Stack.Navigator&gt;
+        &lt;/NavigationContainer&gt;
+    );
+}
+</code></pre>
+In your HomeScreen component, you can use <code>navigation.navigate('Profile')</code> to navigate to the ProfileScreen.</li>
+</ul>
+<p><strong>5. Passing Data Between Screens:</strong></p>
+<ul>
+<li>You can pass data from one screen to another using parameters. For example, you can send a user's ID to the ProfileScreen:
+<pre><code class="language-javascript">// In HomeScreen
+navigation.navigate('Profile', { userId: 123 });
+
+// In ProfileScreen
+const userId = route.params.userId;
+</code></pre>
+</li>
+</ul>
+<p><strong>6. Drawer Navigation and Tab Navigation:</strong></p>
+<ul>
+<li>React Navigation also supports Drawer and Tab navigations. The Drawer Navigator creates a sidebar menu for navigation, while the Tab Navigator allows you to switch between different tabs within an app.</li>
+</ul>
+<p><strong>7. Nested Navigation:</strong></p>
+<p>React Navigation allows you to nest navigators within each other, creating complex navigation structures. This can be useful when you have a tab navigator and want to use a stack navigator within one of the tabs, or if you want to combine different types of navigators for more intricate navigation patterns.</p>
+<p>Here's an example of nesting a Stack Navigator within a Tab Navigator:</p>
+<pre><code class="language-javascript">import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createStackNavigator } from '@react-navigation/stack';
+
+const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
+
+// Define a tab navigator with a stack navigator in one of the tabs
+function TabNavigator() {
+  return (
+    &lt;Tab.Navigator&gt;
+      &lt;Tab.Screen name=&quot;Tab1&quot; component={Tab1Component} /&gt;
+      &lt;Tab.Screen name=&quot;Tab2&quot; component={Tab2Component} /&gt;
+      &lt;Tab.Screen name=&quot;Tab3&quot; component={StackScreen} /&gt;
+    &lt;/Tab.Navigator&gt;
+  );
+}
+
+// Define a stack navigator to use within a tab
+function StackScreen() {
+  return (
+    &lt;Stack.Navigator&gt;
+      &lt;Stack.Screen name=&quot;StackScreen1&quot; component={StackScreen1Component} /&gt;
+      &lt;Stack.Screen name=&quot;StackScreen2&quot; component={StackScreen2Component} /&gt;
+    &lt;/Stack.Navigator&gt;
+  );
+}
+</code></pre>
+<p><strong>8. Navigation Lifecycle:</strong></p>
+<p>React Navigation provides navigation lifecycle events that allow you to perform actions when a screen comes into view or goes out of view. Common lifecycle events include:</p>
+<ul>
+<li><code>focus</code>: Triggered when a screen comes into focus.</li>
+<li><code>blur</code>: Triggered when a screen loses focus.</li>
+<li><code>didFocus</code>: Triggered after the screen has come into focus.</li>
+</ul>
+<p>You can add listeners to these events to perform actions or fetch data when a screen is in focus.</p>
+<pre><code class="language-javascript">import { useFocusEffect } from '@react-navigation/native';
+
+function MyScreen({ navigation }) {
+  // Add a focus event listener
+  useFocusEffect(
+    React.useCallback(() =&gt; {
+      // Perform actions when the screen comes into focus
+      console.log('Screen is in focus');
+      // You can also fetch data or make API calls here
+    }, [])
+  );
+
+  // ... rest of the screen component
+}
+</code></pre>
+<p><strong>9. Screen Options:</strong></p>
+<p>You can customize the appearance and behavior of each screen's navigation using the <code>options</code> property in your screen component. This allows you to set options like the screen title, header style, and more.</p>
+<pre><code class="language-javascript">function MyScreen({ route, navigation }) {
+  // Define screen-specific options
+  React.useLayoutEffect(() =&gt; {
+    navigation.setOptions({
+      title: 'Custom Title',
+      headerStyle: {
+        backgroundColor: 'blue',
+      },
+      headerTintColor: 'white',
+    });
+  }, [navigation]);
+
+  // ... rest of the screen component
+}
+</code></pre>
+<p><strong>10. Navigation Methods:</strong></p>
+<p>React Navigation provides a set of methods that allow you to navigate between screens programmatically. Common methods include:</p>
+<ul>
+<li><code>navigate</code>: Navigate to a new screen in the same stack.</li>
+<li><code>push</code>: Push a new screen onto the stack.</li>
+<li><code>pop</code>: Pop the current screen from the stack.</li>
+<li><code>goBack</code>: Navigate back to the previous screen.</li>
+</ul>
+<p>These methods are accessible through the <code>navigation</code> prop in your screen components.</p>
+<pre><code class="language-javascript">function MyScreen({ navigation }) {
+  return (
+    &lt;View&gt;
+      &lt;Button title=&quot;Go to Screen2&quot; onPress={() =&gt; navigation.navigate('Screen2')} /&gt;
+      &lt;Button title=&quot;Push Screen3&quot; onPress={() =&gt; navigation.push('Screen3')} /&gt;
+      &lt;Button title=&quot;Go Back&quot; onPress={() =&gt; navigation.goBack()} /&gt;
+    &lt;/View&gt;
+  );
+}
+</code></pre>
+<p>These features offer extensive flexibility in designing complex navigation structures and allow you to respond to navigation events and customize screen-specific options. Understanding these concepts is crucial for building intuitive and feature-rich navigation in your React Native applications.</p>
+<h2 id="platform-specific-code"><a class="header" href="#platform-specific-code">Platform-Specific Code: <a name="platform-specific"></a></a></h2>
+<p>Platform-specific code in React Native involves writing code that is specific to either iOS or Android platforms. This is sometimes necessary when you want to implement platform-specific features, handle platform-specific behaviors, or optimize your app for a particular platform. Here's a more detailed overview of this topic:</p>
+<p><strong>1. Platform-Specific Components and Styling:</strong></p>
+<ul>
+<li>
+<p>React Native allows you to conditionally render components or apply styles based on the platform. For example, you can use the <code>Platform.OS</code> property to determine the platform:</p>
+<pre><code class="language-javascript">import { View, Text } from 'react-native';
+import { Platform } from 'react-native';
+
+const MyComponent = () =&gt; (
+  &lt;View&gt;
+    &lt;Text&gt;Common Text&lt;/Text&gt;
+    {Platform.OS === 'ios' &amp;&amp; &lt;Text&gt;iOS only Text&lt;/Text&gt;}
+    {Platform.OS === 'android' &amp;&amp; &lt;Text&gt;Android only Text&lt;/Text&gt;}
+  &lt;/View&gt;
+);
+</code></pre>
+</li>
+<li>
+<p>Similarly, you can conditionally apply styles:</p>
+<pre><code class="language-javascript">import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  commonStyle: {
+    // Common styles
+  },
+  iosStyle: {
+    // iOS-specific styles
+  },
+  androidStyle: {
+    // Android-specific styles
+  },
+});
+
+const MyComponent = () =&gt; (
+  &lt;View&gt;
+    &lt;Text style={[styles.commonStyle, Platform.OS === 'ios' ? styles.iosStyle : styles.androidStyle]}&gt;
+      Platform-specific styling
+    &lt;/Text&gt;
+  &lt;/View&gt;
+);
+</code></pre>
+</li>
+</ul>
+<p><strong>2. Platform-Specific Modules:</strong></p>
+<ul>
+<li>
+<p>In some cases, you might need to use platform-specific modules or APIs. React Native provides a way to do this using the <code>.ios.js</code> and <code>.android.js</code> file extensions. For example, you can have separate implementations for iOS and Android as follows:</p>
+<ul>
+<li><code>MyModule.ios.js</code> for iOS-specific code.</li>
+<li><code>MyModule.android.js</code> for Android-specific code.</li>
+</ul>
+</li>
+<li>
+<p>React Native will automatically pick the right file based on the platform. This is useful when dealing with platform-specific features or APIs.</p>
+</li>
+</ul>
+<p><strong>3. Conditional Logic:</strong></p>
+<ul>
+<li>
+<p>You can use conditional logic to handle platform-specific behaviors. For instance, you might need to request permissions differently on iOS and Android or use platform-specific libraries.</p>
+<pre><code class="language-javascript">import { PermissionsAndroid, Platform } from 'react-native';
+
+async function requestLocationPermission() {
+  if (Platform.OS === 'android') {
+    // Android-specific logic for requesting permissions
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+      );
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        console.log('Location permission granted.');
+      } else {
+        console.log('Location permission denied.');
+      }
+    } catch (err) {
+      console.warn(err);
+    }
+  } else if (Platform.OS === 'ios') {
+    // iOS-specific logic for requesting permissions
+    // ...
+  }
+}
+</code></pre>
+</li>
+</ul>
+<p><strong>4. Platform-Specific Libraries:</strong></p>
+<ul>
+<li>
+<p>There are times when you need to use platform-specific libraries or modules. React Native allows you to conditionally include these libraries based on the platform. You can use conditional <code>require</code> statements to achieve this:</p>
+<pre><code class="language-javascript">let platformSpecificLibrary;
+if (Platform.OS === 'ios') {
+  platformSpecificLibrary = require('ios-specific-library');
+} else {
+  platformSpecificLibrary = require('android-specific-library');
+}
+</code></pre>
+</li>
+</ul>
+<p><strong>5. Native Modules:</strong></p>
+<ul>
+<li>For highly platform-specific tasks, you might need to write native code (Objective-C/Swift for iOS or Java/Kotlin for Android) and create native modules. These native modules can be called from your React Native code, allowing you to perform platform-specific tasks.</li>
+</ul>
+<p>Understanding how to handle platform-specific code is important for ensuring your React Native app functions correctly and efficiently on both iOS and Android devices. By using these techniques, you can create a seamless and native-like experience for users on each platform.</p>
+<h2 id="accessing-device-features"><a class="header" href="#accessing-device-features">Accessing Device Features: <a name="device-features"></a></a></h2>
+<p>Accessing device features in React Native involves interacting with native device functionality, such as the camera, geolocation, sensors, and more. Here, I'll provide more detail on this topic and examples of how to access specific device features:</p>
+<ol>
+<li>
+<p><strong>Camera:</strong></p>
+<ul>
+<li>To access the camera in React Native, you can use the <code>react-native-camera</code> library. This library allows you to capture photos and record videos. You can also customize the camera settings, switch between front and back cameras, and apply real-time image processing.</li>
+<li>Example:
+<pre><code class="language-javascript">import { RNCamera } from 'react-native-camera';
+
+// In your component
+&lt;RNCamera
+  type={RNCamera.Constants.Type.back}
+  flashMode={RNCamera.Constants.FlashMode.auto}
+/&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Geolocation:</strong></p>
+<ul>
+<li>To access the device's location, you can use the built-in <code>Geolocation</code> module in React Native. It provides methods for retrieving the user's current location and monitoring changes in real-time.</li>
+<li>Example:
+<pre><code class="language-javascript">import Geolocation from '@react-native-community/geolocation';
+
+// Get the current location
+Geolocation.getCurrentPosition((position) =&gt; {
+  console.log(position.coords.latitude, position.coords.longitude);
+});
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Sensors:</strong></p>
+<ul>
+<li>React Native provides access to various device sensors, including the accelerometer, gyroscope, and magnetometer, through the <code>react-native-sensors</code> library. You can use this library to collect data from these sensors.</li>
+<li>Example:
+<pre><code class="language-javascript">import { Accelerometer } from 'react-native-sensors';
+
+const accelerometerObservable = new Accelerometer();
+
+const subscription = accelerometerObservable.subscribe((data) =&gt; {
+  console.log('Acceleration X:', data.x);
+  console.log('Acceleration Y:', data.y);
+  console.log('Acceleration Z:', data.z);
+});
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Contacts:</strong></p>
+<ul>
+<li>Accessing device contacts can be achieved using the <code>react-native-contacts</code> library. This allows you to read and write contacts to the user's address book.</li>
+<li>Example:
+<pre><code class="language-javascript">import Contacts from 'react-native-contacts';
+
+// Fetch all contacts
+Contacts.getAll()
+  .then((contacts) =&gt; {
+    console.log(contacts);
+  })
+  .catch((error) =&gt; {
+    console.error(error);
+  });
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Device Information:</strong></p>
+<ul>
+<li>React Native provides device information through the <code>react-native-device-info</code> library. You can retrieve details like the device's manufacturer, model, unique identifier, and more.</li>
+<li>Example:
+<pre><code class="language-javascript">import DeviceInfo from 'react-native-device-info';
+
+// Get device information
+console.log('Device Model:', DeviceInfo.getModel());
+console.log('Device ID:', DeviceInfo.getUniqueId());
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Bluetooth and NFC:</strong></p>
+<ul>
+<li>To work with Bluetooth and NFC, you can use libraries like <code>react-native-ble-manager</code> and <code>react-native-nfc-manager</code>. These libraries enable communication with nearby devices and NFC tags.</li>
+<li>Examples can get quite involved, as working with Bluetooth and NFC often requires handling various events and connections. You can refer to the library <a href="https://github.com/innoveit/react-native-ble-manager">documentation</a> for detailed examples.</li>
+</ul>
+</li>
+</ol>
+<p>When accessing device features in React Native, it's essential to follow the documentation and best practices for the specific libraries and modules you're using. Additionally, consider handling permissions appropriately, especially for features like camera, geolocation, and contacts, which may require user consent.</p>
+<h2 id="native-modules-and-bridges"><a class="header" href="#native-modules-and-bridges">Native Modules and Bridges: <a name="modules-bridges"></a></a></h2>
+<p>Native modules and bridges in React Native are a way to access native code (Java or Objective-C) from JavaScript and vice versa. They are essential for tasks that require platform-specific functionality or performance optimization. Let's dive into more detail and provide examples of how to create and use native modules and bridges in React Native.</p>
+<h3 id="native-modules"><a class="header" href="#native-modules">Native Modules</a></h3>
+<p>Native modules allow you to expose native code to JavaScript in a structured manner. Here's how to create a simple native module:</p>
+<ol>
+<li>
+<p><strong>Create a Native Module for iOS (Objective-C):</strong></p>
+<p>Let's say you want to create a native module that shows a native iOS alert.</p>
+<pre><code class="language-objective-c">// AlertModule.h
+#import &lt;React/RCTBridgeModule.h&gt;
+
+@interface AlertModule : NSObject &lt;RCTBridgeModule&gt;
+@end
+</code></pre>
+<pre><code class="language-objective-c">// AlertModule.m
+#import &quot;AlertModule.h&quot;
+#import &lt;React/RCTLog.h&gt;
+
+@implementation AlertModule
+
+RCT_EXPORT_MODULE();
+
+RCT_EXPORT_METHOD(showAlert:(NSString *)title message:(NSString *)message)
+{
+    UIAlertController *alert = [UIAlertController
+        alertControllerWithTitle:title
+        message:message
+        preferredStyle:UIAlertControllerStyleAlert];
+
+    UIAlertAction *ok = [UIAlertAction
+        actionWithTitle:@&quot;OK&quot;
+        style:UIAlertActionStyleDefault
+        handler:nil];
+
+    [alert addAction:ok];
+    
+    UIViewController *rootViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
+    [rootViewController presentViewController:alert animated:YES completion:nil];
+}
+
+@end
+</code></pre>
+</li>
+<li>
+<p><strong>Create a Native Module for Android (Java):</strong></p>
+<p>To do the same thing in Android, create a native module to show an alert dialog.</p>
+<pre><code class="language-java">// AlertModule.java
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactMethod;
+
+public class AlertModule extends ReactContextBaseJavaModule {
+    public AlertModule(ReactApplicationContext reactContext) {
+        super(reactContext);
+    }
+
+    @Override
+    public String getName() {
+        return &quot;AlertModule&quot;;
+    }
+
+    @ReactMethod
+    public void showAlert(String title, String message) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getCurrentActivity());
+        builder.setTitle(title);
+        builder.setMessage(message);
+        builder.setPositiveButton(&quot;OK&quot;, null);
+        builder.show();
+    }
+}
+</code></pre>
+</li>
+<li>
+<p><strong>Using Native Modules in JavaScript:</strong></p>
+<p>In your JavaScript code, you can now use the native module you created:</p>
+<pre><code class="language-javascript">import { NativeModules } from 'react-native';
+
+// For iOS
+NativeModules.AlertModule.showAlert('Hello', 'This is an alert!');
+
+// For Android
+NativeModules.AlertModule.showAlert('Hello', 'This is an alert!');
+</code></pre>
+</li>
+</ol>
+<h3 id="native-bridges"><a class="header" href="#native-bridges">Native Bridges</a></h3>
+<p>Bridges in React Native are responsible for connecting JavaScript and native code. React Native's native modules use bridges to enable communication between the two sides. In the examples above, the React Native framework handles the bridge for you. </p>
+<p>Behind the scenes, React Native's bridge system serializes and deserializes data and manages the communication between JavaScript and native modules. It abstracts away many of the complexities, making it easier for developers to work with native modules in a JavaScript-friendly way.</p>
+<p>By using native modules and bridges, you can incorporate platform-specific functionality into your React Native app while maintaining a unified JavaScript codebase. This is particularly helpful when you need to integrate with device-specific features, third-party libraries, or optimize performance.</p>
+<p>Here are some tutorials that dive super in depth for creating a calender native module for <a href="https://reactnative.dev/docs/native-modules-android">Android</a> or <a href="https://reactnative.dev/docs/native-modules-ios">IOS</a>.</p>
+<h2 id="state-management"><a class="header" href="#state-management">State Management: <a name="state-managment"></a></a></h2>
+<p>let's dive into more detail on state management in React Native and provide examples. State management is crucial for handling the data and UI state in your mobile applications. There are various options for managing state in React Native, similar to React for the web, including React's built-in state management, the Context API, and external libraries like Redux or MobX. Below, we'll cover these options and provide examples for better understanding:</p>
+<h3 id="1-reacts-built-in-state-management"><a class="header" href="#1-reacts-built-in-state-management">1. <strong>React's Built-in State Management:</strong></a></h3>
+<p>React Native, like React, allows you to manage state locally within a component using the <code>useState</code> hook.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-jsx">import React, { useState } from 'react';
+import { View, Text, Button } from 'react-native';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  const increment = () =&gt; setCount(count + 1);
+  const decrement = () =&gt; setCount(count - 1);
+
+  return (
+    &lt;View&gt;
+      &lt;Text&gt;Count: {count}&lt;/Text&gt;
+      &lt;Button title=&quot;Increment&quot; onPress={increment} /&gt;
+      &lt;Button title=&quot;Decrement&quot; onPress={decrement} /&gt;
+    &lt;/View&gt;
+  );
+}
+</code></pre>
+<p>In this example, the <code>useState</code> hook is used to manage the <code>count</code> state variable within the <code>Counter</code> component.</p>
+<h3 id="2-context-api"><a class="header" href="#2-context-api">2. <strong>Context API:</strong></a></h3>
+<p>The Context API allows you to manage global state that can be accessed by multiple components without having to pass props down through the component tree.</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-jsx">import React, { createContext, useContext, useState } from 'react';
+import { View, Text, Button } from 'react-native';
+
+const CountContext = createContext();
+
+function Counter() {
+  const [count, setCount] = useContext(CountContext);
+
+  const increment = () =&gt; setCount(count + 1);
+  const decrement = () =&gt; setCount(count - 1);
+
+  return (
+    &lt;View&gt;
+      &lt;Text&gt;Count: {count}&lt;/Text&gt;
+      &lt;Button title=&quot;Increment&quot; onPress={increment} /&gt;
+      &lt;Button title=&quot;Decrement&quot; onPress={decrement} /&gt;
+    &lt;/View&gt;
+  );
+}
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;CountContext.Provider value={[count, setCount]}&gt;
+      &lt;View&gt;
+        &lt;Text&gt;My App&lt;/Text&gt;
+        &lt;Counter /&gt;
+      &lt;/View&gt;
+    &lt;/CountContext.Provider&gt;
+  );
+}
+</code></pre>
+<p>In this example, the <code>CountContext</code> is created and used to share the <code>count</code> state between the <code>Counter</code> component and the <code>App</code> component.</p>
+<h3 id="3-redux"><a class="header" href="#3-redux">3. <strong>Redux:</strong></a></h3>
+<p>Redux is a popular external state management library for React Native. It provides a central store for managing application state and allows for predictable state updates using actions and reducers.</p>
+<p><strong>Example:</strong></p>
+<p>To use Redux in React Native, you need to set up a store, actions, and reducers. Here's a simplified example:</p>
+<pre><code class="language-javascript">// Define actions
+const increment = () =&gt; ({ type: 'INCREMENT' });
+const decrement = () =&gt; ({ type: 'DECREMENT' });
+
+// Define a reducer
+const counterReducer = (state = 0, action) =&gt; {
+  switch (action.type) {
+    case 'INCREMENT':
+      return state + 1;
+    case 'DECREMENT':
+      return state - 1;
+    default:
+      return state;
+  }
+};
+
+// Create the Redux store
+import { createStore } from 'redux';
+const store = createStore(counterReducer);
+
+// Connect components to the store
+import { connect } from 'react-redux';
+
+function Counter({ count, increment, decrement }) {
+  return (
+    &lt;View&gt;
+      &lt;Text&gt;Count: {count}&lt;/Text&gt;
+      &lt;Button title=&quot;Increment&quot; onPress={increment} /&gt;
+      &lt;Button title=&quot;Decrement&quot; onPress={decrement} /&gt;
+    &lt;/View&gt;
+  );
+}
+
+const mapStateToProps = (state) =&gt; ({ count: state });
+const mapDispatchToProps = { increment, decrement };
+
+const ConnectedCounter = connect(mapStateToProps, mapDispatchToProps)(Counter);
+</code></pre>
+<p>This example demonstrates a basic setup of Redux in React Native. It involves defining actions, a reducer, creating the store, and connecting a component to the store.</p>
+<p>The choice of state management in your React Native project depends on the complexity and scalability of your application. React's built-in state management and the Context API are great for simple state needs, while Redux or MobX are more suitable for larger, complex applications with extensive state management requirements.</p>
+<h2 id="async-storage"><a class="header" href="#async-storage">Async Storage: <a name="async-storage"></a></a></h2>
+<p>AsyncStorage is a crucial concept in React Native, allowing you to store data locally on the user's device. It's similar to the <code>localStorage</code> in web development but tailored for mobile applications. AsyncStorage is often used to store user preferences, app settings, or any data that needs to persist across app sessions. Here, I'll dive into more detail about AsyncStorage and provide some examples.</p>
+<h3 id="using-asyncstorage-in-react-native"><a class="header" href="#using-asyncstorage-in-react-native">Using AsyncStorage in React Native</a></h3>
+<ol>
+<li>
+<p><strong>Importing AsyncStorage:</strong>
+To use AsyncStorage, you need to import it from 'react-native':</p>
+<pre><code class="language-javascript">import { AsyncStorage } from 'react-native';
+</code></pre>
+</li>
+<li>
+<p><strong>Storing Data:</strong>
+You can store data in AsyncStorage by using the <code>setItem</code> method. Here's an example of how to store a simple string:</p>
+<pre><code class="language-javascript">AsyncStorage.setItem('username', 'JohnDoe')
+  .then(() =&gt; {
+    console.log('Data stored successfully');
+  })
+  .catch((error) =&gt; {
+    console.error('Error storing data: ', error);
+  });
+</code></pre>
+</li>
+<li>
+<p><strong>Retrieving Data:</strong>
+To retrieve data, you can use the <code>getItem</code> method:</p>
+<pre><code class="language-javascript">AsyncStorage.getItem('username')
+  .then((value) =&gt; {
+    if (value !== null) {
+      console.log('Retrieved data: ', value);
+    } else {
+      console.log('Data not found');
+    }
+  })
+  .catch((error) =&gt; {
+    console.error('Error retrieving data: ', error);
+  });
+</code></pre>
+</li>
+<li>
+<p><strong>Updating Data:</strong>
+You can update stored data by simply setting a new value for the same key:</p>
+<pre><code class="language-javascript">AsyncStorage.setItem('username', 'NewUsername')
+  .then(() =&gt; {
+    console.log('Data updated successfully');
+  })
+  .catch((error) =&gt; {
+    console.error('Error updating data: ', error);
+  });
+</code></pre>
+</li>
+<li>
+<p><strong>Deleting Data:</strong>
+To remove data from AsyncStorage, use the <code>removeItem</code> method:</p>
+<pre><code class="language-javascript">AsyncStorage.removeItem('username')
+  .then(() =&gt; {
+    console.log('Data removed successfully');
+  })
+  .catch((error) =&gt; {
+    console.error('Error removing data: ', error);
+  });
+</code></pre>
+</li>
+<li>
+<p><strong>Handling Errors:</strong>
+It's essential to handle errors, as reading from or writing to AsyncStorage may fail due to various reasons, such as storage limitations or permissions. Always use <code>try...catch</code> or promise-based error handling to ensure your app gracefully handles errors.</p>
+</li>
+<li>
+<p><strong>Working with JSON Data:</strong>
+AsyncStorage stores data as strings, so if you need to store complex data structures like objects or arrays, you should serialize them to JSON when storing and parse them when retrieving:</p>
+<pre><code class="language-javascript">const user = {
+  name: 'John Doe',
+  email: 'john@example.com',
+};
+
+AsyncStorage.setItem('user', JSON.stringify(user))
+  .then(() =&gt; {
+    console.log('User data stored successfully');
+  })
+  .catch((error) =&gt; {
+    console.error('Error storing user data: ', error);
+  });
+
+// Retrieving and parsing the user data
+AsyncStorage.getItem('user')
+  .then((value) =&gt; {
+    if (value !== null) {
+      const userData = JSON.parse(value);
+      console.log('Retrieved user data: ', userData);
+    } else {
+      console.log('User data not found');
+    }
+  })
+  .catch((error) =&gt; {
+    console.error('Error retrieving user data: ', error);
+  });
+</code></pre>
+</li>
+</ol>
+<p>Remember that AsyncStorage is a simple key-value store and should be used for relatively small amounts of data. For larger datasets, consider using a more robust storage solution or a database. Additionally, be mindful of security considerations when storing sensitive information and ensure that you have the necessary permissions to access AsyncStorage on the user's device.</p>
+<h2 id="network-requests"><a class="header" href="#network-requests">Network Requests: <a name="network-requests"></a></a></h2>
+<p>Making network requests in React Native is a common task when you need to fetch data from an API or send data to a server. You can use libraries like Axios or the built-in <code>fetch</code> API to perform these requests. Here, I'll dive into more detail about how to make network requests in React Native using both Axios and <code>fetch</code>, and provide examples for each:</p>
+<h3 id="using-axios"><a class="header" href="#using-axios">Using Axios</a></h3>
+<p><a href="https://github.com/axios/axios">Axios</a> is a popular library for making HTTP requests. You can use it in your React Native project by following these steps:</p>
+<ol>
+<li>
+<p><strong>Installation</strong>:</p>
+<p>First, you need to install Axios in your project. You can do this with npm or yarn:</p>
+<pre><code class="language-bash">npm install axios
+# or
+yarn add axios
+</code></pre>
+</li>
+<li>
+<p><strong>Making a GET Request</strong>:</p>
+<p>Here's an example of making a GET request to a remote API using Axios:</p>
+<pre><code class="language-javascript">import axios from 'axios';
+
+const fetchUserData = async () =&gt; {
+  try {
+    const response = await axios.get('https://api.example.com/users');
+    const userData = response.data;
+    console.log(userData);
+  } catch (error) {
+    console.error('Error fetching user data:', error);
+  }
+};
+
+// Call the function to fetch user data
+fetchUserData();
+</code></pre>
+</li>
+<li>
+<p><strong>Making a POST Request</strong>:</p>
+<p>To make a POST request with Axios, you can do the following:</p>
+<pre><code class="language-javascript">import axios from 'axios';
+
+const sendDataToServer = async (data) =&gt; {
+  try {
+    const response = await axios.post('https://api.example.com/postData', data);
+    console.log('Data sent successfully:', response.data);
+  } catch (error) {
+    console.error('Error sending data:', error);
+  }
+};
+
+const dataToSend = {
+  key1: 'value1',
+  key2: 'value2',
+};
+
+// Call the function to send data to the server
+sendDataToServer(dataToSend);
+</code></pre>
+</li>
+</ol>
+<h3 id="using-the-fetch-api"><a class="header" href="#using-the-fetch-api">Using the <code>fetch</code> API</a></h3>
+<p>The <code>fetch</code> API is a built-in way to make network requests in JavaScript and is available in React Native:</p>
+<ol>
+<li>
+<p><strong>Making a GET Request</strong>:</p>
+<p>Here's an example of making a GET request using the <code>fetch</code> API:</p>
+<pre><code class="language-javascript">const fetchUserData = () =&gt; {
+  fetch('https://api.example.com/users')
+    .then((response) =&gt; {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then((userData) =&gt; {
+      console.log(userData);
+    })
+    .catch((error) =&gt; {
+      console.error('Error fetching user data:', error);
+    });
+};
+
+// Call the function to fetch user data
+fetchUserData();
+</code></pre>
+</li>
+<li>
+<p><strong>Making a POST Request</strong>:</p>
+<p>Making a POST request with <code>fetch</code> involves a similar structure:</p>
+<pre><code class="language-javascript">const sendDataToServer = (data) =&gt; {
+  fetch('https://api.example.com/postData', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) =&gt; {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then((responseData) =&gt; {
+      console.log('Data sent successfully:', responseData);
+    })
+    .catch((error) =&gt; {
+      console.error('Error sending data:', error);
+    });
+};
+
+const dataToSend = {
+  key1: 'value1',
+  key2: 'value2',
+};
+
+// Call the function to send data to the server
+sendDataToServer(dataToSend);
+</code></pre>
+</li>
+</ol>
+<p>Both Axios and the <code>fetch</code> API allow you to make various types of requests (GET, POST, PUT, DELETE, etc.) and handle responses. The choice between the two often comes down to personal preference and specific project requirements. Axios is a popular choice due to its simplicity and ease of use for handling requests and responses.</p>
+<h1 id="advanced-topics"><a class="header" href="#advanced-topics">Advanced Topics <a name="advanced-topics"></a></a></h1>
+<h2 id="debugging-and-troubleshooting"><a class="header" href="#debugging-and-troubleshooting">Debugging and Troubleshooting: <a name="debugging"></a></a></h2>
+<ul>
+<li>Familiarize yourself with debugging tools, error messages, and common troubleshooting techniques specific to React Native.</li>
+<li>RESOURCE: https://reactnative.dev/docs/debugging</li>
+</ul>
+<h2 id="testing"><a class="header" href="#testing">Testing:<a name="testing"></a></a></h2>
+<ul>
+<li>Learn how to write unit tests and integration tests for your React Native components using testing frameworks like Jest.</li>
+<li>RESOURCE: https://reactnative.dev/docs/testing-overview</li>
+</ul>
+<h2 id="performance-optimization"><a class="header" href="#performance-optimization">Performance Optimization: <a name="performance"></a></a></h2>
+<ul>
+<li>Explore techniques for optimizing the performance of your app, including reducing renders and optimizing images.</li>
+<li>RESOURCE: https://reactnative.dev/docs/performance</li>
+</ul>
+<h2 id="publishing-and-deployment"><a class="header" href="#publishing-and-deployment">Publishing and Deployment: <a name="deployment"></a></a></h2>
+<ul>
+<li>Understand how to build, sign, and deploy your app to the Google Play Store and Apple App Store.</li>
+<li>IOS RESOURCE: https://reactnative.dev/docs/publishing-to-app-store</li>
+<li>ANDROID RESOURCE: https://reactnative.dev/docs/signed-apk-android</li>
+</ul>
+<h1 id="third-party-integrations"><a class="header" href="#third-party-integrations">Third-Party Integrations: <a name="third-party"></a></a></h1>
+<p>Third-party integrations in React Native are crucial for adding functionality and features to your app without having to build everything from scratch. Here, I'll provide more detail on some common third-party integrations in React Native along with links to the relevant libraries:</p>
+<ol>
+<li>
+<p><strong>Push Notifications:</strong></p>
+<ul>
+<li>Implementing push notifications is essential for engaging users. Libraries like <code>react-native-firebase</code> or <code>react-native-push-notification</code> provide the tools to send and receive push notifications on both iOS and Android.</li>
+<li><a href="https://rnfirebase.io/">react-native-firebase</a></li>
+<li><a href="https://github.com/zo0r/react-native-push-notification">react-native-push-notification</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Analytics:</strong></p>
+<ul>
+<li>Tracking user behavior and app performance is essential. Libraries like <code>react-native-firebase/analytics</code>, <code>react-native-google-analytics</code>, and <code>react-native-flurry-analytics</code> enable integration with analytics platforms like Firebase Analytics, Google Analytics, and Flurry.</li>
+<li><a href="https://rnfirebase.io/analytics/usage">react-native-firebase/analytics</a></li>
+<li><a href="https://github.com/idehub/react-native-google-analytics">react-native-google-analytics</a></li>
+<li><a href="https://github.com/juspay/react-native-flurry-analytics">react-native-flurry-analytics</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Maps and Location:</strong></p>
+<ul>
+<li>If your app requires mapping or location-based features, libraries like <code>react-native-maps</code> and <code>react-native-geolocation-service</code> provide access to Google Maps and geolocation services.</li>
+<li><a href="https://github.com/react-native-maps/react-native-maps">react-native-maps</a></li>
+<li><a href="https://github.com/Agontuk/react-native-geolocation-service">react-native-geolocation-service</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Camera and Image Capture:</strong></p>
+<ul>
+<li>For camera and image-related functionality, libraries like <code>react-native-camera</code> and <code>react-native-image-picker</code> allow you to access the device's camera and image gallery.</li>
+<li><a href="https://github.com/react-native-camera/react-native-camera">react-native-camera</a></li>
+<li><a href="https://github.com/react-native-image-picker/react-native-image-picker">react-native-image-picker</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Social Media Sharing:</strong></p>
+<ul>
+<li>To enable users to share content on social media platforms, libraries like <code>react-native-share</code> provide sharing functionality with support for various services.</li>
+<li><a href="https://github.com/react-native-share/react-native-share">react-native-share</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Payment Gateways:</strong></p>
+<ul>
+<li>If your app involves in-app purchases or payment processing, libraries like <code>react-native-in-app-utils</code> or specific SDKs for payment gateways like Stripe can be integrated.</li>
+<li><a href="https://github.com/chirag04/react-native-in-app-utils">react-native-in-app-utils</a></li>
+<li><a href="https://stripe.com/docs/stripe-react-native">Stripe for React Native</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Authentication:</strong></p>
+<ul>
+<li>Implementing user authentication is a common requirement. Libraries like <code>react-native-firebase/auth</code> and <code>react-native-auth0</code> offer easy integration with Firebase Authentication and Auth0, respectively.</li>
+<li><a href="https://rnfirebase.io/auth/usage">react-native-firebase/auth</a></li>
+<li><a href="https://github.com/auth0/react-native-auth0">react-native-auth0</a></li>
+</ul>
+</li>
+<li>
+<p><strong>In-App Messaging:</strong></p>
+<ul>
+<li>If your app needs real-time chat or messaging features, libraries like <code>react-native-gifted-chat</code> can be used to quickly add chat functionality.</li>
+<li><a href="https://github.com/FaridSafi/react-native-gifted-chat">react-native-gifted-chat</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Audio and Video Playback:</strong></p>
+<ul>
+<li>Libraries like <code>react-native-video</code> and <code>react-native-sound</code> provide support for playing audio and video files within your app.</li>
+<li><a href="https://github.com/react-native-video/react-native-video">react-native-video</a></li>
+<li><a href="https://github.com/zmxv/react-native-sound">react-native-sound</a></li>
+</ul>
+</li>
+<li>
+<p><strong>AR/VR Integration:</strong></p>
+<ul>
+<li>If your app involves augmented reality (AR) or virtual reality (VR), libraries like <code>react-native-arkit</code> or <code>react-viro</code> offer AR and VR capabilities.</li>
+<li><a href="https://github.com/react-native-ar/react-native-arkit">react-native-arkit</a></li>
+<li><a href="https://github.com/viromedia/viro">ViroReact (formerly react-viro)</a></li>
+</ul>
+</li>
+</ol>
+<p>When integrating third-party libraries, make sure to check their documentation for installation and usage instructions, as well as any specific requirements or configurations. Carefully consider your app's requirements and select the libraries that best meet your needs while ensuring they are well-maintained and compatible with your React Native version.</p>
+<h2 id="security-best-practices"><a class="header" href="#security-best-practices">Security Best Practices: <a name="security"></a></a></h2>
+<p>Security is a critical aspect of any mobile app, including those built with React Native. Here are some security best practices in React Native, along with examples:</p>
+<ol>
+<li>
+<p><strong>Secure Storage:</strong></p>
+<ul>
+<li>Use secure storage mechanisms to store sensitive data, such as user authentication tokens and API keys. Avoid storing them in plain text or insecure locations.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// Insecure storage
+const apiKey = 'my-insecure-api-key';
+
+// Secure storage using a library like react-native-secure-storage
+import SecureStorage from 'react-native-secure-storage';
+
+SecureStorage.set('api_key', 'my-secure-api-key');
+</code></pre>
+</li>
+<li>
+<p><strong>API Key Management:</strong></p>
+<ul>
+<li>Avoid hardcoding API keys directly in your source code. Instead, use environment variables or configuration files that are excluded from source control.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// Insecure API key storage
+const apiKey = 'my-insecure-api-key';
+
+// Secure API key storage using environment variables
+const apiKey = process.env.REACT_NATIVE_API_KEY;
+</code></pre>
+</li>
+<li>
+<p><strong>Authentication and Authorization:</strong></p>
+<ul>
+<li>Implement secure authentication and authorization mechanisms to protect user data and control access to sensitive parts of your app.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// Use a secure authentication library like Firebase Authentication or Auth0
+import { Firebase } from 'react-native-firebase';
+
+// Ensure that only authenticated users can access certain features
+if (user.isAuthenticated) {
+  // Display sensitive data or allow certain actions
+}
+</code></pre>
+</li>
+<li>
+<p><strong>Network Security:</strong></p>
+<ul>
+<li>Use HTTPS for all network requests to encrypt data in transit. Avoid sending sensitive information via unencrypted HTTP.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// Use HTTPS for network requests
+fetch('https://api.example.com/data', {
+  method: 'GET',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer ' + user.token,
+  },
+})
+</code></pre>
+</li>
+<li>
+<p><strong>Code Obfuscation:</strong></p>
+<ul>
+<li>Obfuscate your JavaScript code to make it more difficult for malicious actors to reverse engineer your app. Obfuscation is typically done using third-party tools, and the specific steps and tools used may vary depending on the project.</li>
+</ul>
+</li>
+<li>
+<p><strong>Secure Communication with Native Modules:</strong></p>
+<ul>
+<li>When communicating with native modules, validate and sanitize data to prevent injection attacks.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">import { NativeModules } from 'react-native';
+
+// Ensure the data passed to a native module is properly sanitized
+const userInput = 'user-input-data';
+NativeModules.MyModule.someMethod(validateInput(userInput));
+</code></pre>
+</li>
+<li>
+<p><strong>Input Validation:</strong></p>
+<ul>
+<li>Validate user input to prevent common security issues like SQL injection and cross-site scripting (XSS).</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// Validate and sanitize user input to prevent XSS
+const userInput = '&lt;script&gt;alert(&quot;XSS attack&quot;);&lt;/script&gt;';
+const sanitizedInput = sanitizeInput(userInput);
+</code></pre>
+</li>
+<li>
+<p><strong>Error Handling:</strong></p>
+<ul>
+<li>Implement proper error handling to prevent sensitive information from being exposed to users in error messages.</li>
+</ul>
+<p><strong>Example:</strong></p>
+<pre><code class="language-javascript">// Handle errors gracefully and do not expose sensitive information to the user
+try {
+  // Code that may throw an error
+} catch (error) {
+  console.error('An error occurred. Please try again later.');
+}
+</code></pre>
+</li>
+</ol>
+<p>These are essential security best practices for React Native apps, but it's important to note that the specific implementation details may vary depending on your project and the libraries you use. Regularly staying informed about security developments in the React Native ecosystem and taking proactive measures to address vulnerabilities will help ensure the security of your app.</p>
+<h1 id="conclusion"><a class="header" href="#conclusion">Conclusion: <a name="conclusion"></a></a></h1>
+<p>This guide was meant to be a starting/middle point for learning React Native across its many topics, ranging from front-end to back-end(mainly back-end because that is what really matters, am I right!). Jokes aside, as you progress through these topics, you'll find that your React experience serves as a strong foundation for learning React Native. React Native allows you to leverage your JavaScript skills to build mobile apps for both iOS and Android, making it a valuable addition to your toolkit.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../guides/React_Guide/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../guides/Web_Dev_Guide/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../guides/React_Guide/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../guides/Web_Dev_Guide/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

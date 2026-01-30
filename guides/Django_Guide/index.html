@@ -1,0 +1,910 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Django - Tech Start UCalgary Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Tech Start UCalgary Documentation</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Events</li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/index.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../../events/2025-2026/demos/elevator-pitch/index.html"><strong aria-hidden="true">2.</strong> Elevator Pitch</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/interim-showcase/index.html"><strong aria-hidden="true">3.</strong> Interim Showcase</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/final-showcase/index.html"><strong aria-hidden="true">4.</strong> Final Showcase</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="../../installation/installfest/index.html"><strong aria-hidden="true">5.</strong> Installfest: from zero to hero</a></li><li class="chapter-item expanded "><a href="../../installation/wsl2/index.html"><strong aria-hidden="true">6.</strong> WSL2 Installation</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="../../projects/motivation/index.html"><strong aria-hidden="true">7.</strong> Motivation</a></li><li class="chapter-item expanded "><a href="../../projects/readme/index.html"><strong aria-hidden="true">8.</strong> A good README.md</a></li><li class="chapter-item expanded "><a href="../../projects/license/index.html"><strong aria-hidden="true">9.</strong> A LICENSE.md</a></li><li class="chapter-item expanded "><a href="../../projects/roadmap/index.html"><strong aria-hidden="true">10.</strong> A RoadMap</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Software Development</li><li class="chapter-item expanded "><a href="../../software/career-paths/index.html"><strong aria-hidden="true">11.</strong> Career Paths</a></li><li class="chapter-item expanded "><a href="../../software/front-end/index.html"><strong aria-hidden="true">12.</strong> Front End</a></li><li class="chapter-item expanded "><a href="../../software/devops/index.html"><strong aria-hidden="true">13.</strong> DevOps</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Guides</li><li class="chapter-item expanded "><a href="../../guides/Tech_Demo/index.html"><strong aria-hidden="true">14.</strong> Giving a good Technical Demo</a></li><li class="chapter-item expanded "><a href="../../guides/Django_Guide/index.html" class="active"><strong aria-hidden="true">15.</strong> Django</a></li><li class="chapter-item expanded "><a href="../../guides/Git_Guide/index.html"><strong aria-hidden="true">16.</strong> Git</a></li><li class="chapter-item expanded "><a href="../../guides/API_Guide/index.html"><strong aria-hidden="true">17.</strong> APIs</a></li><li class="chapter-item expanded "><a href="../../guides/React_Guide/index.html"><strong aria-hidden="true">18.</strong> React</a></li><li class="chapter-item expanded "><a href="../../guides/React_Native_Guide/index.html"><strong aria-hidden="true">19.</strong> React Native</a></li><li class="chapter-item expanded "><a href="../../guides/Web_Dev_Guide/index.html"><strong aria-hidden="true">20.</strong> Web Dev</a></li><li class="chapter-item expanded "><a href="../../guides/UI_UX_Design_Guide/index.html"><strong aria-hidden="true">21.</strong> UI/UX Design</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/index.html"><strong aria-hidden="true">22.</strong> Cloud Computing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/index.html"><strong aria-hidden="true">22.1.</strong> Amazon Web Services (AWS)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/index.html"><strong aria-hidden="true">22.1.1.</strong> Database Services</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/DynamoDB/index.html"><strong aria-hidden="true">22.1.1.1.</strong> DynamoDB</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/RDS/index.html"><strong aria-hidden="true">22.1.1.2.</strong> RDS</a></li></ol></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/Lambda/index.html"><strong aria-hidden="true">22.1.2.</strong> Lambda</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Curated online resources</li><li class="chapter-item expanded "><a href="../../topics/conflict-management-styles/index.html"><strong aria-hidden="true">23.</strong> Dealing With Conflict</a></li><li class="chapter-item expanded "><a href="../../topics/css/index.html"><strong aria-hidden="true">24.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../../topics/html/index.html"><strong aria-hidden="true">25.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../../topics/management-styles/index.html"><strong aria-hidden="true">26.</strong> Management Styles</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Workshops</li><li class="chapter-item expanded "><a href="../../workshops/secrets-management/index.html"><strong aria-hidden="true">27.</strong> Secrets Management</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../CONTRIBUTING.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="../../CREDITS.html">Credits</a></li><li class="chapter-item expanded affix "><a href="../../LICENSE.html">License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tech Start UCalgary Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs/edit/main/src/guides/Django_Guide/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="tech-starts-django-guide"><a class="header" href="#tech-starts-django-guide">Tech Start's Django Guide</a></h1>
+<p>Django is a free and open source python framework that lets you build awesome backends for websites, apps, and more. You can use it to host databases and build secure APIs for them without writing a line of SQL. You can also use it to create multi-page applications with dynamically served content. It makes it easy to get started building complex functionalities by automating a lot of the boilerplate code that you'd normally have to write. </p>
+<p>We recommend that you have a basic knowledge of python before using django! This will help you debug any errors that you get.</p>
+<p><img src="images/image1.png" alt="alt_text" title="image_tooltip" /></p>
+<p>(Img src: <a href="https://medium.com/crowdbotics/when-to-use-django-and-when-not-to-9f62f55f693b">https://medium.com/crowdbotics/when-to-use-django-and-when-not-to-9f62f55f693b</a>)</p>
+<h4 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h4>
+<ul>
+<li><a href="#Requirements">Requirements</a></li>
+<li><a href="#Setup">Setup</a></li>
+<li><a href="#Installing-Dotenv">Installing Dotenv</a></li>
+<li><a href="#Installing-Postgres-and-psycopg2">Installing Postgres and psycopg2</a></li>
+<li><a href="#Creating-a-Postgres-database">Creating a Postgres database</a></li>
+<li><a href="#Connecting-Django-to-Postgres">Connecting Django to Postgres</a></li>
+<li><a href="#Writing-Models">Writing Models</a></li>
+<li><a href="#Run-your-app">Run your app</a></li>
+<li><a href="#URLs">URLs</a></li>
+<li><a href="#Views">Views</a></li>
+<li><a href="#Django-REST-Framework">Django REST Framework</a></li>
+<li><a href="#Serializers">Serializers</a></li>
+<li><a href="#Django-REST-Framework:-Class-based-Views">Django REST Framework: Class based Views</a></li>
+<li><a href="#Test-out-your-Django-REST-API">Testing your API</a></li>
+</ul>
+<h4 id="requirements"><a class="header" href="#requirements">Requirements</a></h4>
+<p>First you will need to install Homebrew, Python, Pip, and Pyenv. If you have not done so already, please follow the instructions in the <a href="../../installation/installfest/README.html">Installfest</a> section.</p>
+<h4 id="setup"><a class="header" href="#setup">Setup</a></h4>
+<p>To create a Django project first wee need to create a directory for the project. To do so, run the following command:</p>
+<pre><code class="language-bash">mkdir &lt;project-name&gt;
+</code></pre>
+<p>Then, we need to navigate to the directory we just created. To do so, run the following command:</p>
+<pre><code class="language-bash">cd &lt;project-name&gt;
+</code></pre>
+<p>Now, we need to create a virtual environment for our project. To do so, run the following command:</p>
+<pre><code class="language-bash">pyenv virtualenv .venv
+</code></pre>
+<p>Then, we need to activate the virtual environment. You need to do this every time you want to run your project. To do so, run the following command:</p>
+<pre><code class="language-bash">source .venv/bin/activate
+</code></pre>
+<p>If you want to deactivate your virtual environment when you're done working on your project, run the following command:</p>
+<pre><code class="language-bash">deactivate
+</code></pre>
+<p>Now, we need to install Django. To do so, run the following command:</p>
+<pre><code class="language-bash">pip install django
+</code></pre>
+<p>To check if Django is installed, run the following command:</p>
+<pre><code class="language-bash">python3 -m django --version 
+</code></pre>
+<p>Next, let's create a project.</p>
+<pre><code class="language-bash">django-admin startproject &lt;project-name&gt; . # the dot is important! it will create the project in the current directory
+</code></pre>
+<pre><code>Good to know: Projects vs. apps
+What's the difference between a django project and a django app? An app is a Web application that does something – e.g., a Weblog system, a database of public records or a small poll app. A project is a collection of configuration and apps for a particular website. A project can contain multiple apps. An app can be in multiple projects.
+</code></pre>
+<pre><code class="language-bash">python3 manage.py startapp &lt;your-app-name&gt;
+</code></pre>
+<p>This creates an app within your project. You can create as many apps as you want within a project.</p>
+<p>Next step: include your app in the INSTALLED_APPS fields in settings.py (just the name)</p>
+<pre><code class="language-python">INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+
+    ...
+    'your-app-name',
+]
+</code></pre>
+<h4 id="installing-dotenv"><a class="header" href="#installing-dotenv">Installing Dotenv</a></h4>
+<p>Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology. To install dotenv, run the following command:</p>
+<pre><code class="language-bash">pip install python-dotenv
+</code></pre>
+<p>Then freeze the requirements. To do so, run the following command:</p>
+<pre><code class="language-bash">pip freeze &gt; requirements.txt
+</code></pre>
+<p>This will create a file called requirements.txt that will contain all the packages that are installed in your virtual environment. This file will be useful for when you need to install the same packages in another virtual environment. <strong>After adding a new package to your virtual environment, you will need to freeze the requirements again.</strong></p>
+<p>Next, go to your project and create a .env file. To do so, run the following command:</p>
+<pre><code class="language-bash">touch .env
+</code></pre>
+<p>Then go to your settings.py file and add the following code:</p>
+<pre><code class="language-python">from django.core.management.utils import get_random_secret_key
+from dotenv import load_dotenv
+
+...
+
+load_dotenv()
+
+# SECURITY WARNING: keep the secret key used in production secret!
+# Copy the secret key from the .env file
+SECRET_KEY = os.getenv(&quot;DJANGO_SECRET_KEY&quot;, get_random_secret_key())
+</code></pre>
+<p>Your .env file should look like this:</p>
+<pre><code class="language-.env">DJANGO_SECRET_KEY=your-secret-key
+</code></pre>
+<h4 id="installing-postgres-and-psycopg2"><a class="header" href="#installing-postgres-and-psycopg2">Installing Postgres and psycopg2</a></h4>
+<p>PostgreSQL is a powerful, open source object-relational database system with over 30 years of active development that has earned it a strong reputation for reliability, feature robustness, and performance. To install Postgres, run the following command:</p>
+<pre><code class="language-bash">brew install postgresql
+</code></pre>
+<p>To check if Postgres is installed, run the following command:</p>
+<pre><code class="language-bash">postgres --version
+</code></pre>
+<p>psycopg2 is a PostgreSQL database adapter for the Python programming language. To install psycopg2, run the following command:</p>
+<pre><code class="language-bash">pip install psycopg2
+</code></pre>
+<p>Then freeze the requirements. To do so, run the following command:</p>
+<pre><code class="language-bash">pip freeze &gt; requirements.txt
+</code></pre>
+<p>Then go to your settings.py file and add the following code:</p>
+<pre><code class="language-python">INSTALLED_APPS = [
+    ...
+    'psycopg2',
+]
+</code></pre>
+<h4 id="creating-a-postgres-database"><a class="header" href="#creating-a-postgres-database">Creating a Postgres database</a></h4>
+<p>To create a Postgres database, run the following command:</p>
+<pre><code class="language-bash">createdb &lt;database-name&gt;
+</code></pre>
+<p>Remember your credentials for the database. You will need them later.</p>
+<p>It is also recommended to install pgAdmin, a free and open-source administration and development platform for PostgreSQL and its related database management systems. To install pgAdmin, run the following command:</p>
+<pre><code class="language-bash">brew install --cask pgadmin4
+</code></pre>
+<h4 id="connecting-django-to-postgres"><a class="header" href="#connecting-django-to-postgres">Connecting Django to Postgres</a></h4>
+<p>Add the following code to your .env file:</p>
+<pre><code class="language-bash">DATABASE_NAME=&lt;database-name&gt;
+DATABASE_USER=&lt;database-user&gt;
+DATABASE_PASSWORD=&lt;database-password&gt;
+</code></pre>
+<p>Now go to your settings.py file and add the following code:</p>
+<pre><code class="language-python">import os
+
+...
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.getenv('DATABASE_NAME'),
+        'USER': os.getenv('DATABASE_USER'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD'),
+        'HOST': &quot;127.0.0.1&quot;,
+        'PORT': &quot;5432&quot;,
+    }
+}
+</code></pre>
+<h4 id="writing-models"><a class="header" href="#writing-models">Writing Models</a></h4>
+<p><strong>Models</strong> allow you to define the content of your database. <span style="text-decoration:underline;">If you don't need content in your database, you won't need models.</span></p>
+<p>You can follow along with this section here:</p>
+<p><a href="https://docs.djangoproject.com/en/3.1/intro/tutorial02/">https://docs.djangoproject.com/en/3.1/intro/tutorial02/</a></p>
+<p>More about models: <a href="https://docs.djangoproject.com/en/3.1/topics/db/models/">https://docs.djangoproject.com/en/3.1/topics/db/models/</a></p>
+<p>You will define all your models in models.py, located within the folder for your app.</p>
+<pre><code class="language-python">from django.db import models
+
+# Create your models here.
+class Album(models.Model):
+    name = models.CharField(max_length=200)
+    artist = models.CharField(max_length=100)
+    year_released = models.DateField()
+    def __str__(self):
+        return str(self.name)
+
+class Song(models.Model):
+    song_name = models.CharField(max_length=100)
+    album = models.ForeignKey(Album, on_delete=models.CASCADE)
+    num_streams = models.IntegerField()
+    def __str__(self):
+        return str(self.song_name)
+</code></pre>
+<p>Each model should correspond to the structure of a table of a relational model of a database. If you don't know what this means, ask someone who has taken CPSC 471 (or an equivalent databases course)</p>
+<p>Django can convert these into real SQL tables!</p>
+<ul>
+<li><strong><em>Good to know: Primary Keys</em></strong>: In the above example we didn't specify any ids for our models (normally, with databases, you want an id to be your primary key). Django automatically creates an ID field to be the primary key for each model and takes care of auto-incrementing, unless you specifically override it. I don't recommend overriding, it's not worth the effort (and its doubly complicated and not worth it to have a primary key composed of several fields)</li>
+<li><strong><em>Good to know: <strong>str</strong>:</em></strong> the <strong>str</strong> function is Python's default function for string representation. In this case, it's good practice to override this for your models. This will help you understand your data if you login via the admin view (I'll show how to do this later)</li>
+<li><strong><em>Good to know: Foreign Keys</em></strong>: See the Song model class for how you can reference a foreign key belonging to another model (in this case it refers to Album). You don't need to refer to a foreign model's keys directly, all you need to do is specify which table you are referencing. Also note: if you are referring to a table, it needs to be defined above the point in the code where you are referring to it. </li>
+</ul>
+<p>There are more options that can be explored about how you can define your models, but this should be a good base for you to do your own research :)</p>
+<p>Now we're ready to convert these into a real database! By default, Django will make a migration file that has your database.</p>
+<pre><code>Converting models into your database
+
+https://docs.djangoproject.com/en/3.1/intro/tutorial02/
+
+&gt;&gt; python3 manage.py makemigrations appName
+Creates migrations for the changes you made in appName
+
+&gt;&gt; python3 manage.py migrate
+Migrates the changes you made into your database
+
+</code></pre>
+<h4 id="run-your-app"><a class="header" href="#run-your-app">Run your app</a></h4>
+<p>Whenever you are ready to run your server, just call this command!</p>
+<pre><code class="language-bash">python3 manage.py runserver 
+</code></pre>
+<p>You should see something like this:</p>
+<p><img src="./images/django-initial-page.png" alt="django-initial-page" /></p>
+<p>By default, this will run the Django server on localhost:8000. View the django documentation to see how you can run it on a different port. You can now access it from your web browser by visiting <a href="http://localhost:8000">http://localhost:8000</a> !</p>
+<p>You can also create a superuser (admin) to view the inner contents of your database. To do this, you first need to create them from the command line using the following command:</p>
+<pre><code class="language-bash">python3 manage.py createsuperuser --username yourNameHere --email yours@email.ca
+</code></pre>
+<p>This will create a super user with your provided info (it will prompt you to enter a password as well). </p>
+<p>The following command creates a token for the superuser that you can use for authentication in requests. If you are not using Django Rest Framework, this is not applicable to you.</p>
+<pre><code class="language-bash">python3 manage.py drf_create_token yourSuperUserName
+</code></pre>
+<p><strong><em>Note:</em></strong> if you're trying to run these for your deployed app on heroku, you need to prepend <code>heroku run </code>before those commands! See the Heroku section for a description on how you can deploy it. </p>
+<p>You can see the admin page of your website to view the inner content of your database. This is automatically created by Django. Visit <a href="http://localhost:8000/admin">http://localhost:8000/admin</a> and enter your passcode. </p>
+<p>If you want your models to show up in the admin page, you will need to specify them in admin.py like this:</p>
+<pre><code>from django.contrib import admin
+from .models import Album, Song
+# Register your models here.
+
+admin.site.register(Album)
+admin.site.register(Song)
+</code></pre>
+<p>Once you log in to the admin site, you should see something like this. From here, you can add &amp; remove database entries. 
+<img src="images/image19.png" alt="alt_text" title="image_tooltip" /></p>
+<h2 id="urls"><a class="header" href="#urls">URLs</a></h2>
+<p><strong>URLs</strong> allow you to define the paths that exist in your system, and what happens when you call them.</p>
+<p>URLs documentation: <a href="https://docs.djangoproject.com/en/3.1/ref/urls/">https://docs.djangoproject.com/en/3.1/ref/urls/</a></p>
+<p>How URLs are processed in Django: <a href="https://docs.djangoproject.com/en/3.1/topics/http/urls/#how-django-processes-a-request">https://docs.djangoproject.com/en/3.1/topics/http/urls/#how-django-processes-a-request</a></p>
+<p>Read more: <a href="https://docs.djangoproject.com/en/3.1/intro/tutorial03/">https://docs.djangoproject.com/en/3.1/intro/tutorial03/</a></p>
+<p>If you're constructing a big application, it's standard practice in django to include different _apps _for each part of your system, and link them to the main project.</p>
+<p><img src="images/image6.png" alt="alt_text" title="image_tooltip" /></p>
+<p>However, since we're only making small-scale side-projects, it's fine to ignore this best-practice and include everything in a single app. Just understand that in a large industrial scale project you wouldn't necessarily want to do this.</p>
+<p>// urls.py in a project:</p>
+<pre><code>from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('myApp/', include('myApp.urls'))
+]
+</code></pre>
+<p>// example urls.py in myApp folder:</p>
+<pre><code>from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('hello_world', views.ping, name='Hello World!'),
+    path('hello-x/&lt;str:hello_to&gt;', views.hellox, name='Hello to x'),
+    path('hello-x/&lt;print_me&gt;/print', views.printx, name='Print this!'),
+    path('goodbye', views.goodbye, name='goodbye'),
+]
+</code></pre>
+<p>Now you can visit a path using <a href="http://localhost:8000/myApp/hello-world">http://localhost:8000/myApp/hello-world</a>, for example.</p>
+<h2 id="views"><a class="header" href="#views">Views</a></h2>
+<p>**Views **allow you to define what happens when you access a certain url in your system (using your browser, an API tool like Postman, or something else altogether). In your views, you could define interactions with the model (your database) or entirely different interactions altogether. You can use the definition of the view to call external processes.</p>
+<p>If you want to make more complicated views and understand the Request and Response items, read this: </p>
+<p><a href="https://docs.djangoproject.com/en/3.1/ref/request-response/">https://docs.djangoproject.com/en/3.1/ref/request-response/</a></p>
+<p>To understand views more in-depth, read the documentation: <a href="https://docs.djangoproject.com/en/3.1/topics/http/views/">https://docs.djangoproject.com/en/3.1/topics/http/views/</a></p>
+<p>Here are some simple examples of what you <em>can</em> do with a view. Note that these are just examples and don't represent best practice at all. </p>
+<pre><code>from django.http import HttpResponse, response
+# views.py
+def ping(request):
+    myRes = &quot;Hello World!&quot;
+    return HttpResponse(myRes)
+
+def hellox(request, hello_to):
+    myRes = {&quot;My Reply&quot;: &quot;Hello &quot; + hello_to}
+    return response.JsonResponse(myRes)
+
+def printx(request, print_me):
+    print(&quot;Hello to &quot; + print_me)
+    return response.HttpResponseNotFound(&quot;I printed it!&quot;)
+
+def goodbye(request):
+    if not (request.method == 'GET'):
+        return response.HttpResponseBadRequest()
+    queryParams = request.GET
+    msg = queryParams.get('msg', &quot;Gamers&quot;)
+    return response.JsonResponse({&quot;Reply&quot;: &quot;Goodbye &quot; + msg})
+</code></pre>
+<p>Now, we want to adhere to DRY (Don't repeat yourself) when creating views. Therefore, it is almost always best to define your views as Class-Based views (CBVs) which handle more of the boiler plate code for you and help ensure your views follow standards.</p>
+<p>Please read more about class-based views here: <a href="https://docs.djangoproject.com/en/3.1/topics/class-based-views/">https://docs.djangoproject.com/en/3.1/topics/class-based-views/</a></p>
+<p>Both the above docs and the docs for views also show how you can interact with your database items through a view. But, if you're building an API, I highly recommend using the tools in the following section: Django REST Framework.</p>
+<p>Once you have defined your views and given them a corresponding url, you can test them out. </p>
+<pre><code class="language-bash">python3 manage.py runserver 
+</code></pre>
+<p>Run your server, and using either a web browser, or preferably an API testing tool like Postman (<a href="https://www.postman.com/">https://www.postman.com/</a>)  access the proper urls (ex. <a href="http://localhost:8000/myApp/hello_world">http://localhost:8000/myApp/hello_world</a>) to see if they have the expected behavior. </p>
+<h4 id="django-rest-framework"><a class="header" href="#django-rest-framework">Django REST Framework</a></h4>
+<p>Django REST Framework is an add-on to Django that makes it simple to develop REST-compliant APIs. There is great documentation here: <a href="https://www.django-rest-framework.org/">https://www.django-rest-framework.org/</a> <strong><em>&lt;--- FOLLOW INSTALL INSTRUCTIONS</em></strong></p>
+<p><em>What is a RESTful framework? Learn more here: <a href="https://restfulapi.net/">https://restfulapi.net/</a></em></p>
+<p>Django REST Framework provides you with tools to make class-based views to easily implement database CRUD (Create Read Update Destroy) operations, as well as define more complex operations. </p>
+<p>Before we define any endpoints with Django REST Framework, let's make some serializers.</p>
+<p><img src="images/image15.png" alt="alt_text" title="image_tooltip" /></p>
+<h4 id="serializers"><a class="header" href="#serializers">Serializers</a></h4>
+<p>Django REST Framework uses serializers as a way to perform **translation **of your models from your python code and your database into data formats like JSON and XML that an API might use. Read more about them here:</p>
+<p><a href="https://www.django-rest-framework.org/api-guide/serializers/">https://www.django-rest-framework.org/api-guide/serializers/</a></p>
+<p>We should define some basic serializers so that we can make API endpoints that interact with the content of our database models.</p>
+<ol>
+<li>Create a new file called serializers.py inside the app you want to use serializers with. </li>
+<li>Create your serializers. Give them a relevant name (though the exact syntax is not important)</li>
+<li>List the fields that you want your serializer to translate. If you don't want it to translate a particular field, then don't include it. </li>
+</ol>
+<p>Here's an example, using the Song and Album models we defined earlier. Here's what's at the top of serializers.py:</p>
+<pre><code class="language-python">from rest_framework import serializers
+from .models import *
+
+class SongSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Song
+        fields = (&quot;id&quot;, &quot;song_name&quot;, &quot;num_streams&quot;)
+
+class AlbumSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Album
+        fields = (&quot;name&quot;, &quot;year_released&quot;, &quot;artist&quot;, &quot;id&quot;)
+</code></pre>
+<p>Make sure your fields match exactly the names that you used in your models.</p>
+<p>You may be curious why I also included an id, when we didn't define one in our models- this is because Django auto generated an id for us in this models because we didn't specify a primary key. This id field always has the name id. It is often useful for our API, so we'll include it. </p>
+<p>We can also create multiple serializers for the same models, if we wanted different behavior. For example, what if we wanted to include the album id of the song?</p>
+<pre><code class="language-python">class SongSerializerWithAlbumId(serializers.ModelSerializer):
+    class Meta: 
+        model = Song
+        fields = (&quot;id&quot;, &quot;song_name&quot;, &quot;num_streams&quot;, &quot;album&quot;)
+</code></pre>
+<p>This would include the album's PK (in this case, it's id, but if the PK was different, it'd be something else).</p>
+<p>What if we wanted to include the full album info when an api request was made to see the song? Here's another example serializer that we could make:</p>
+<pre><code class="language-python">class SongSerializerFullAlbum(serializers.ModelSerializer):
+    myFullAlbumDesc = AlbumSerializer(&quot;album&quot;, read_only=True)
+    class Meta:
+        model = Song
+        fields = (&quot;id&quot;, &quot;song_name&quot;, &quot;num_streams&quot;, &quot;myFullAlbumDesc&quot;)
+</code></pre>
+<p>It's using our album serializer from earlier to serialize a field, which must (read only is an optional parameter that makes it so that it's only included in reading requests, not create/update/destroy.)</p>
+<p>This was just an introduction to serializers. If you want to use more complex behaviors, you'll have to do the research on your own.</p>
+<h4 id="django-rest-framework-class-based-views"><a class="header" href="#django-rest-framework-class-based-views">Django REST Framework: Class based Views</a></h4>
+<pre><code>Pre-requisite to this section: understand URLS and views in vanilla Django, and read the serializers section
+</code></pre>
+<p>More reading: <a href="https://www.django-rest-framework.org/tutorial/3-class-based-views/">https://www.django-rest-framework.org/tutorial/3-class-based-views/</a></p>
+<p>Video overview of similar topic: <a href="https://www.youtube.com/watch?v=akvFA5VMXJU">https://www.youtube.com/watch?v=akvFA5VMXJU</a></p>
+<p>You can use Django's Class Based Views to quickly create views that can do CRUD (Create, Read, Update, Destroy) operations on your database.</p>
+<p>In views.py:</p>
+<pre><code class="language-python">from rest_framework.views import APIView
+from rest_framework import generics
+from rest_framework import status
+from .models import *
+from .serializers import *
+</code></pre>
+<p>Some class based views that we'll define. Right now these are just the generic create, read, update, destroy views. By defining these views with the classes, Django REST Framework takes care of the default behavior for us. It's that easy!</p>
+<pre><code class="language-python">class SaveSong(generics.CreateAPIView):
+    queryset = Song.objects.all()
+    serializer_class = SongSerializerWithAlbumId
+
+class GetSongs(generics.ListAPIView):
+    queryset = Song.objects.all()
+    serializer_class = SongSerializer
+
+class DeleteSong(generics.DestroyAPIView):
+    queryset = Song.objects.all()
+    serializer_class = SongSerializer
+
+class UpdateSong(generics.RetrieveUpdateAPIView):
+    queryset = Song.objects.all()
+    serializer_class = SongSerializerWithAlbumId
+</code></pre>
+<p>Notice that we need to make the create and update serializers include the album ID- if we didn't then you couldn't create song objects since their album id must be _not null._This same principal applies to any model that has a foreign key which isn't allowed to be null. </p>
+<p>Before we can use the views we created, we need to hook them up to a URL, just like you would for any other view. Do keep in mind that we need to call the as-view function on them, though. Here is an example of the URLs for the previous views. This pattern is how we normally define CRUD endpoint urls for any entity in a database</p>
+<pre><code class="language-python">    path('song', views.GetSongs.as_view(), name='songs'),
+    # Create a song
+    path('song/create', views.SaveSong.as_view(), name='Save Song'),
+    #Updates a specified license with information
+    path('song/&lt;int:pk&gt;', views.UpdateSong.as_view(), name='Update Song'),
+    # Deletes a song specified by pk
+    path('song/&lt;int:pk&gt;/delete', views.DeleteSong.as_view(), name='Delete Song'),
+</code></pre>
+<p>If you are using a pk that is not an int (you manually defined a pk instead of using the default id generated), you'll have to specify that accordingly.</p>
+<p>What if we want more complex behavior beyond the default predefined classes? We can modify them to add more conditions to what is returned.</p>
+<p>In this example, we added an optional way to filter songs by album, using a query_param called album. You'll need to read documentation and tutorials if you want to know more about the custom behavior you can define within your Django REST Framework views.</p>
+<pre><code class="language-python">class GetSongInAlbum(generics.ListAPIView):
+    serializer_class = SongSerializer
+    def get_queryset(self):
+        queryset = Song.objects.all()
+        alb = self.request.query_params.get('album', None)
+        queryset = queryset.filter(album=alb)
+        return queryset
+</code></pre>
+<p>If you have a view that isn't necessarily linked to CRUD actions, or has more complex usage and needs more custom defined behavior, you can use APIView. </p>
+<h4 id="test-out-your-django-rest-api"><a class="header" href="#test-out-your-django-rest-api">Test out your Django REST API</a></h4>
+<p>Compile and run your app with </p>
+<pre><code class="language-bash">python3 manage.py runserver 
+</code></pre>
+<p>Use your bugfixing wizardry to fix any errors that might show up. Now you should be ready to give those predefined endpoints you made for a spin!</p>
+<p>Here's some examples that I did using <strong><span style="text-decoration:underline;">Postman</span></strong> for API testing. If you used Django REST Framework, it should also come with a built-in API testing tool that you can use in your browser.</p>
+<p>Here's a simple GET request. This is a database read operation, and it's pretty simple. Your browser is making GET requests to every URL you visit while you surf the web.</p>
+<table>
+  <tr>
+   <td>Request
+   </td>
+   <td>
+<img src="images/image4.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+  <tr>
+   <td>Response
+   </td>
+   <td>
+<img src="images/image2.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+</table>
+<p>Here's a POST request (it's post because we're _creating _or <em>Posting</em> new data) to our create route. We should include the key-value pairs for the song we want to create in the **_Body _**of our request.</p>
+<table>
+  <tr>
+   <td>Request
+   </td>
+   <td>
+<img src="images/image11.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+  <tr>
+   <td>Response
+   </td>
+   <td>
+<img src="images/image20.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+</table>
+<p>To update, let's follow the URL pattern we defined with the pk of the song we want to update. We can use PUT or PATCH. The info you're sending should be in the _Body _of the request, just like it was for our POST request.</p>
+<table>
+  <tr>
+   <td>Request
+   </td>
+   <td>
+<img src="images/image5.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+  <tr>
+   <td>Response
+   </td>
+   <td>
+<img src="images/image10.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+</table>
+<p>Let's do the same thing for our deleteSong view, but let's delete Taylor's song this time (pk: 2). I'm sure it was no good anyways. </p>
+<table>
+  <tr>
+   <td>Request
+   </td>
+   <td>
+<img src="images/image16.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+  <tr>
+   <td>Response
+   </td>
+   <td>
+<img src="images/image21.png" width="" alt="alt_text" title="image_tooltip">
+<img src="images/image7.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+</table>
+<p>Let's use our GET view to see what's inside the DB now:</p>
+<p><img src="images/image4.png" alt="alt_text" title="image_tooltip" /></p>
+<p><img src="images/image25.png" alt="alt_text" title="image_tooltip" /></p>
+<p><em>**unimportant note: in my zeal to delete taylor's song I had a mishap and accidentally deleted song 3, which I have readded here using a post request. but it's id is now 5 :[</em></p>
+<p>Finally, let's try out that &quot;song with album&quot; route. We'll add it to our urls.py:</p>
+<pre><code>    # Probably not the best naming convention
+    path('songInAlbum', views.GetSongInAlbum.as_view(), name='Get song in album'),
+</code></pre>
+<p><img src="images/image18.png" alt="alt_text" title="image_tooltip" /></p>
+<p>Here's what our request will look like.  ^^^^^^^^</p>
+<p>Here's the response:</p>
+<p><img src="images/image3.png" alt="alt_text" title="image_tooltip" /></p>
+<pre><code>Good to know: Query Parameters
+Notice how our query params don't have to be specified in urls.py - they are dynamically generated from the URL that we try access (everything that comes after a ? in a url is a query parameter, with keys and values separated by '='. If you had multiple query parameters they would be separated by '&amp;'. Next time you're browsing the web, notice how query parameters are used across the different websites you visit!
+It's easy to access query params within Django - see the getSongInAlbum view definition for an example.
+</code></pre>
+<h4 id="authtokens-users-logins-with-django-rest-framework"><a class="header" href="#authtokens-users-logins-with-django-rest-framework">Authtokens, users, logins with Django REST Framework</a></h4>
+<p>Up to now, we've covered the fundamentals of how to create a database, populate it, and create simple endpoints for creating, updating, and destroying. But what happens when we want our system to be used by real users? How do we store their information and their interactions with our system? There are a few important issues that we'll need to address:</p>
+<ul>
+<li>How do we make sure that users' personal information like their passcodes are being stored in a secure way that protects them from being stolen?</li>
+<li>How do we build a system that users can sign up for and log in to? How do we store info about their session?</li>
+<li>How do we make certain endpoints in our system behave differently depending on the user who is accessing them?</li>
+</ul>
+<p>The answer to these questions can be complicated. In order to save your time and energy, we're going to utilize the resources that Django and Django REST Framework provide for us as much as possible instead of developing our own solutions. Not only is this easier, but it's also much more secure- would you trust a system written from scratch by a novice undergrad student with your password and financial information?</p>
+<p><strong><em>How do we store user's personal info?</em></strong></p>
+<p>The answer to this question is usually to use Django's built-in User model. You can read the docs on User models here:</p>
+<p><a href="https://docs.djangoproject.com/en/3.1/ref/contrib/auth/">https://docs.djangoproject.com/en/3.1/ref/contrib/auth/</a></p>
+<p>The User model contains common fields that will be used by users, and in your serializers you can define which fields are relevant to your use case.</p>
+<p>By default, Django builds the User models for you. You can see them after you <em>runserver</em> and check inside the /admin route.</p>
+<p>We can also utilize the User model to build new endpoints in our API, just like we could with any other model. Here's an example:</p>
+<h4 id="modelspy"><a class="header" href="#modelspy">Models.py</a></h4>
+<pre><code class="language-python">from django.contrib.auth.models import User
+</code></pre>
+<p>…</p>
+<pre><code class="language-python">class UserLikesSong(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    song = models.ForeignKey(Song, on_delete=models.CASCADE)
+</code></pre>
+<h4 id="serializerspy"><a class="header" href="#serializerspy">Serializers.py</a></h4>
+<pre><code>class UserLikesSongSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserLikesSong
+        fields = (&quot;id&quot;, &quot;user&quot;, &quot;song&quot;)
+        #Id of the rel, Id of the user, ID of the song
+</code></pre>
+<p>You can now make endpoints with this just like you would with any other model/serializer. This specific example could be used to track what songs the User likes, like in Spotify. </p>
+<p>If you wanted to make a custom User model, you could read more about it here <a href="https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html">https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html</a> and do more research, as there are many methods you could use. For basic university usage though, it's 99% of the time going to be faster and easier to roll with the User model they give you out of the box.</p>
+<p>If you want to give different categories of users different permissions, see the_ permissions _section (TODO: this won't be done for a while. In the meantime, these links may help: <a href="https://www.django-rest-framework.org/api-guide/permissions/">https://www.django-rest-framework.org/api-guide/permissions/</a> ← Technical overview</p>
+<p><a href="https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/">https://www.django-rest-framework.org/tutorial/4-authentication-and-permissions/</a> ← Basic usage example)</p>
+<p><strong><em>Signup, Login, Sessions: How do we do them?</em></strong></p>
+<p>I highly recommend using Django REST Framework's Authtokens to handle information about user sessions. You can read about authtokens, as well as the other options available, here: <a href="https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication">https://www.django-rest-framework.org/api-guide/authentication/#tokenauthentication</a></p>
+<p>To add Authtoken's, make sure the following items appear in settings.py:</p>
+<pre><code class="language-python">###### You will need to add the REST Framework part.
+###### INSTALLED_APPS should already exist.
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.TokenAuthentication',  
+    ],
+}
+
+INSTALLED_APPS = [ # There will be more here
+  'rest_framework',
+  'rest_framework.authtoken',
+]
+
+
+</code></pre>
+<p>Note: I couldn't get these to work, at least not with authtoken. Leaving them here in case some enterprising individual finds them useful, or message us on Discord if you figure this out :)</p>
+<p>To get REST Framework's default login and logout views (prebuilt), type this in your project's root urls.py file:</p>
+<pre><code class="language-python"> urlpatterns = [
+    ...
+    path('api-auth/', include('rest_framework.urls'))
+]
+</code></pre>
+<p>Your path doesn't have to be api-auth, it can be whatever you want.</p>
+<p>To use REST Framework's login view, include this in urls.py:</p>
+<pre><code class="language-python">    path('whateverPathYouWantToLogin', obtain_auth_token, name='API Token Login'),
+</code></pre>
+<p>Include this at top of your urls.py:</p>
+<pre><code class="language-python">from rest_framework.authtoken.views import obtain_auth_token
+</code></pre>
+<p>When you access this path and provide a real username and password in the request body, then you should receive an authtoken. This authtoken is associated with your account. Store this authtoken in a safe place. Now, you can use it in the &quot;authorization&quot; section of your next HTTP requests, and all requests you make from the client will be associated with the account you just logged in from.</p>
+<p>Creating views for signing up is more difficult.</p>
+<table>
+  <tr>
+   <td><strong>In serializers.py:</strong>
+<p>
+<code>from django.contrib.auth.models import User </code>
+<p>
+<code>class RegisterSerializer(serializers.ModelSerializer):</code>
+<p>
+<code>    class Meta:</code>
+<p>
+<code>        model = User</code>
+<p>
+<code>        fields = ('id','username','password')#Change fields if u want</code>
+<p>
+<code>        extra_kwargs = {</code>
+<p>
+<code>            'password':{'write_only': True},</code>
+<p>
+<code>        }</code>
+<p>
+<code>    def create(self, validated_data):</code>
+<p>
+<code>        user = User.objects.create_user(validated_data['username'],     password = validated_data['password'])</code>
+<p>
+<code>        return user</code>
+<p>
+This serializer will make sure that the password that the user makes is valid, and that it's write-only for security purposes. Choose which fields us
+   </td>
+  </tr>
+  <tr>
+   <td><strong>In views.py:</strong>
+<p>
+<code>from django.contrib.auth import get_user_model # If used custom user model</code>
+<p>
+<code>from rest_framework import permissions #We'll discuss more about perms later </code>
+<p>
+…
+<p>
+<code>class RegisterUserView(generics.CreateAPIView):</code>
+<p>
+<code>    model = get_user_model() #Will get the right one if you use custom</code>
+<p>
+<code>    permission_classes = [</code>
+<p>
+<code>        permissions.AllowAny # Or anon users can't register</code>
+<p>
+<code>    ]</code>
+<p>
+<code>    serializer_class = RegisterSerializer #What we defined above</code>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>In urls.py:</strong>
+<p>
+<code>    path('register', views.CreateUserView.as_view(), name='Register user'),</code>
+<p>
+(you may want to put your register / login views together in a different Django App (so they are in a distinct section of your API)
+   </td>
+  </tr>
+  <tr>
+   <td><strong>Test Request in Postman:</strong>
+<p>
+<img src="images/image8.png" width="" alt="alt_text" title="image_tooltip">
+<p>
+Response from request:
+<p>
+<img src="images/image12.png" width="" alt="alt_text" title="image_tooltip">
+</td>
+  </tr>
+</table>
+<p>Now let's quickly do a login from this user we just created!</p>
+<p>I did a login request to the login view I made earlier, but here's what I got:</p>
+<p><img src="images/image26.png" alt="alt_text" title="image_tooltip" /></p>
+<p>Whenever you see an error like &quot;no such table&quot;, that should be a clue that you need to rerun migrations. The app expected there to be a SQL table, but there was none made yet! Running migrations will ensure there is. Recall the commands for migrations are:</p>
+<blockquote>
+<blockquote>
+<p><code>python3 manage.py makemigrations yourAppName</code></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><code>python3 manage.py migrate</code></p>
+</blockquote>
+</blockquote>
+<p>In this case, just the second command will be sufficient</p>
+<p>Request:</p>
+<p><img src="images/image24.png" alt="alt_text" title="image_tooltip" /></p>
+<p>Response:</p>
+<p><img src="images/image22.png" alt="alt_text" title="image_tooltip" /></p>
+<p>Yay! It worked! Now we can include this token in our request headers to associate all future requests made with the user we logged in.</p>
+<p>In future requests, you should put the token as a value in your request headers, using the key: token.</p>
+<p><img src="images/image23.png" alt="alt_text" title="image_tooltip" /></p>
+<p><br />
+Depending on the front-end you build, you should use a different way to store the authtoken that you get from logging in. Usually storing in local memory is okay. Do your own research for how to store authtokens with whatever system you are using.</p>
+<p>If you want to improve security further, you can use JWT (JSON webtoken) instead, following the instructions here: <a href="https://simpleisbetterthancomplex.com/tutorial/2018/12/19/how-to-use-jwt-authentication-with-django-rest-framework.html">https://simpleisbetterthancomplex.com/tutorial/2018/12/19/how-to-use-jwt-authentication-with-django-rest-framework.html</a></p>
+<p><strong><em>How do we make endpoints behave differently depending on which user is accessing them?</em></strong></p>
+<p>If a user makes a request while they are authenticated (using authtoken, or some other alternative method), then the system will automatically know what user is associated with the user who made the request. </p>
+<p>You can access the user within a class-based view through </p>
+<pre><code class="language-python"> self.request.user
+</code></pre>
+<p>You can use this within your views in a variety of ways: to filter, to make more complex queries, and to check if the user should have access. </p>
+<p>For example, let's make a UserLikesSong endpoint that is limited to the songs that the currently logged in user has liked.</p>
+<pre><code class="language-python">class GetUserLikesSongs(generics.ListAPIView):
+    def get_queryset(self):
+        queryset = UserLikesSong.objects.all()
+        queryset = queryset.filter(user=self.request.user)
+	# Leftside of filter: from queryset. Rightside: how we're filtering
+        return queryset
+    serializer_class = UserLikesSongSerializer
+</code></pre>
+<p>We'll cover this in much more detail in the Permissions section.</p>
+<h4 id="permissions"><a class="header" href="#permissions">Permissions</a></h4>
+<pre><code>NOTE: Everything past here is incomplete - you will need to supplement it with your own research, like I did to make this guide!
+</code></pre>
+<p>To use generic permissions with Django, all you need to do is:</p>
+<ul>
+<li>In your views.py:</li>
+</ul>
+<pre><code class="language-python">from rest_framework.permissions import IsAdminUser, IsAuthenticated, IsAuthenticatedOrReadOnly
+</code></pre>
+<p>Now, on any class-based view you want to guard with permissions, you can add the following line:</p>
+<pre><code class="language-python">class deleteLicenseType(generics.DestroyAPIView):
+    permission_classes = [IsAdminUser]
+    queryset = License_Type.objects.all()
+    serializer_class = License_TypeSerializer
+</code></pre>
+<p>(this is from a different project)</p>
+<p>You can apply multiple permissions to the same view like this:</p>
+<pre><code class="language-python">    permission_classes = [IsAdminUser|IsAuthenticatedOrReadOnly]
+</code></pre>
+<h4 id="sessions--cookies"><a class="header" href="#sessions--cookies">Sessions &amp; Cookies</a></h4>
+<p>Sessions/cookies are very easy to make use of with Django. You can use cookies to store information in a user's browser that you'll be able to access in all subsequent requests that a user makes. One example of a good use of sessions/cookies is to store a user's shopping cart content.</p>
+<p>Some great videos for learning about sessions &amp; cookies:</p>
+<p><a href="https://www.youtube.com/watch?v=C75IW38hKI8">https://www.youtube.com/watch?v=C75IW38hKI8</a></p>
+<p><a href="https://www.youtube.com/watch?v=RjykNmVdcgI">https://www.youtube.com/watch?v=RjykNmVdcgI</a></p>
+<p><img src="images/image9.png" alt="alt_text" title="image_tooltip" /></p>
+<h4 id="deploy-to-heroku"><a class="header" href="#deploy-to-heroku">Deploy to Heroku</a></h4>
+<p><img src="images/image13.png" alt="alt_text" title="image_tooltip" /></p>
+<p>To get your projects online, you can deploy them to Heroku. Heroku is just one of several possible hosting services for Django- but it's base tier is free, easy to use, and simple to deploy to, so that's what I recommend you use. The biggest downside of using Heroku is that its free tier will automatically shut down your app after a period of downtime, meaning it'll take a long time to respond the next time you try to access it. </p>
+<p>A guide on getting started:</p>
+<p><a href="https://devcenter.heroku.com/articles/django-app-configuration">https://devcenter.heroku.com/articles/django-app-configuration</a></p>
+<p>Some useful commands:</p>
+<blockquote>
+<blockquote>
+<p>pip install gunicorn</p>
+</blockquote>
+</blockquote>
+<p>To deploy to Heroku, you will need to make a file called Procfile (no file ending), and add the following gunicorn text to it:</p>
+<pre><code>web: gunicorn yourAppName.wsgi
+</code></pre>
+<p>This gunicorn file should be at the same level as your manage.py file. When you deploy to Heroku, you should be deploying from this level of the project hierarchy to avoid issues.</p>
+<p>Your remote heroku environment needs to understand what requirements it will need to have to start up. You can do this by providing it with a requirements.txt file which will also be at the same level as your manage.py file.</p>
+<p>To get the right requirements in a .txt file, type</p>
+<blockquote>
+<blockquote>
+<p>pip freeze &gt; requirements.txt</p>
+</blockquote>
+</blockquote>
+<p>These commands will help initialize your heroku repository:</p>
+<blockquote>
+<blockquote>
+<p>heroku create</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>heroku run python3 manage.py migrate</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>heroku run python3 manage.py createsuperuser</p>
+</blockquote>
+</blockquote>
+<p>Important: Your database itself will not transfer to Heroku. You will need to recreate all entities, config, and users.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../guides/Tech_Demo/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../guides/Git_Guide/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../guides/Tech_Demo/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../guides/Git_Guide/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

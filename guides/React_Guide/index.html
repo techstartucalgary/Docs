@@ -1,0 +1,787 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>React - Tech Start UCalgary Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Tech Start UCalgary Documentation</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Events</li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/index.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../../events/2025-2026/demos/elevator-pitch/index.html"><strong aria-hidden="true">2.</strong> Elevator Pitch</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/interim-showcase/index.html"><strong aria-hidden="true">3.</strong> Interim Showcase</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/final-showcase/index.html"><strong aria-hidden="true">4.</strong> Final Showcase</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="../../installation/installfest/index.html"><strong aria-hidden="true">5.</strong> Installfest: from zero to hero</a></li><li class="chapter-item expanded "><a href="../../installation/wsl2/index.html"><strong aria-hidden="true">6.</strong> WSL2 Installation</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="../../projects/motivation/index.html"><strong aria-hidden="true">7.</strong> Motivation</a></li><li class="chapter-item expanded "><a href="../../projects/readme/index.html"><strong aria-hidden="true">8.</strong> A good README.md</a></li><li class="chapter-item expanded "><a href="../../projects/license/index.html"><strong aria-hidden="true">9.</strong> A LICENSE.md</a></li><li class="chapter-item expanded "><a href="../../projects/roadmap/index.html"><strong aria-hidden="true">10.</strong> A RoadMap</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Software Development</li><li class="chapter-item expanded "><a href="../../software/career-paths/index.html"><strong aria-hidden="true">11.</strong> Career Paths</a></li><li class="chapter-item expanded "><a href="../../software/front-end/index.html"><strong aria-hidden="true">12.</strong> Front End</a></li><li class="chapter-item expanded "><a href="../../software/devops/index.html"><strong aria-hidden="true">13.</strong> DevOps</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Guides</li><li class="chapter-item expanded "><a href="../../guides/Tech_Demo/index.html"><strong aria-hidden="true">14.</strong> Giving a good Technical Demo</a></li><li class="chapter-item expanded "><a href="../../guides/Django_Guide/index.html"><strong aria-hidden="true">15.</strong> Django</a></li><li class="chapter-item expanded "><a href="../../guides/Git_Guide/index.html"><strong aria-hidden="true">16.</strong> Git</a></li><li class="chapter-item expanded "><a href="../../guides/API_Guide/index.html"><strong aria-hidden="true">17.</strong> APIs</a></li><li class="chapter-item expanded "><a href="../../guides/React_Guide/index.html" class="active"><strong aria-hidden="true">18.</strong> React</a></li><li class="chapter-item expanded "><a href="../../guides/React_Native_Guide/index.html"><strong aria-hidden="true">19.</strong> React Native</a></li><li class="chapter-item expanded "><a href="../../guides/Web_Dev_Guide/index.html"><strong aria-hidden="true">20.</strong> Web Dev</a></li><li class="chapter-item expanded "><a href="../../guides/UI_UX_Design_Guide/index.html"><strong aria-hidden="true">21.</strong> UI/UX Design</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/index.html"><strong aria-hidden="true">22.</strong> Cloud Computing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/index.html"><strong aria-hidden="true">22.1.</strong> Amazon Web Services (AWS)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/index.html"><strong aria-hidden="true">22.1.1.</strong> Database Services</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/DynamoDB/index.html"><strong aria-hidden="true">22.1.1.1.</strong> DynamoDB</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/RDS/index.html"><strong aria-hidden="true">22.1.1.2.</strong> RDS</a></li></ol></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/Lambda/index.html"><strong aria-hidden="true">22.1.2.</strong> Lambda</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Curated online resources</li><li class="chapter-item expanded "><a href="../../topics/conflict-management-styles/index.html"><strong aria-hidden="true">23.</strong> Dealing With Conflict</a></li><li class="chapter-item expanded "><a href="../../topics/css/index.html"><strong aria-hidden="true">24.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../../topics/html/index.html"><strong aria-hidden="true">25.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../../topics/management-styles/index.html"><strong aria-hidden="true">26.</strong> Management Styles</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Workshops</li><li class="chapter-item expanded "><a href="../../workshops/secrets-management/index.html"><strong aria-hidden="true">27.</strong> Secrets Management</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../CONTRIBUTING.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="../../CREDITS.html">Credits</a></li><li class="chapter-item expanded affix "><a href="../../LICENSE.html">License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tech Start UCalgary Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs/edit/main/src/guides/React_Guide/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <div class="table-wrapper"><table><thead><tr><th></th></tr></thead><tbody>
+</tbody></table>
+</div>
+<h1 id="tech-starts-react-guide"><a class="header" href="#tech-starts-react-guide">Tech Start's React Guide</a></h1>
+<h2 id=""><a class="header" href="#"></a></h2>
+<p><img src="images/image2.png" alt="alt_text" title="image_tooltip" /></p>
+<p><a href="#react-main-concepts">React Main Concepts</a></p>
+<ul>
+<li><a href="#video-if-you-dont-like-reading">Video (If you don't Like Reading)</a></li>
+<li><a href="#components">Components</a></li>
+<li><a href="#jsx">JSX</a></li>
+<li><a href="#rendering">Rendering</a></li>
+<li><a href="#props">Props</a></li>
+<li><a href="#state">State</a></li>
+<li><a href="#lifecycle-methods">Lifecycle Methods</a></li>
+<li><a href="#handling-events">Handling Events</a></li>
+<li><a href="#conditional-rendering">Conditional Rendering</a></li>
+<li><a href="#lists-and-keys">Lists and Keys</a></li>
+</ul>
+<p><a href="#javascript-for-react">JavaScript For React</a></p>
+<ul>
+<li><a href="#arrow-functions">Arrow Functions</a></li>
+<li><a href="#classes">Classes</a></li>
+<li><a href="#callbacks">Callbacks</a></li>
+<li><a href="#promise">Promise</a></li>
+<li><a href="#awaitasync">Await/Async</a></li>
+</ul>
+<p><a href="#more-react">More React</a></p>
+<ul>
+<li><a href="#events">Events</a></li>
+<li><a href="#higher-order-components">Higher Order Components</a></li>
+<li><a href="#props-vs-state">Props vs State</a></li>
+<li><a href="#hooks">Hooks</a></li>
+</ul>
+<p><a href="#react-ecosystem">React Ecosystem</a></p>
+<ul>
+<li><a href="#handling-api-requests">Handling API Requests</a></li>
+<li><a href="#react-router">React Router</a></li>
+<li><a href="#redux">Redux</a></li>
+<li><a href="#nextjs">Next.js</a></li>
+</ul>
+<h1 id="react-main-concepts"><a class="header" href="#react-main-concepts">React Main Concepts <a name="react-main-concepts"></a></a></h1>
+<h2 id="react-video"><a class="header" href="#react-video">React Video <a name="video-if-you-dont-like-reading"></a></a></h2>
+<p>Check out this video as a crash course to React:</p>
+<p><a href="https://www.youtube.com/watch?v=Ke90Tje7VS0">https://www.youtube.com/watch ?v=Ke90Tje7VS0</a></p>
+<p>If you find this video confusing, or prefer a different one as a React intro, please let us know :)</p>
+<p>If you prefer reading to watching videos, this guide is helpful:</p>
+<h2 id="components"><a class="header" href="#components">Components <a name="components"></a></a></h2>
+<p>React is built around the concept of components. Components are reusable, self-contained units that encapsulate the UI and behavior of a part of the application. React applications are typically composed of many components.</p>
+<pre><code class="language-jsx">function MyComponent() {
+  return &lt;div&gt;Hello, World!&lt;/div&gt;;
+}
+</code></pre>
+<h2 id="jsx"><a class="header" href="#jsx">JSX <a name="jsx"></a></a></h2>
+<p>JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code within your JavaScript. It's used in React to define the structure of components.</p>
+<pre><code class="language-jsx">const element = &lt;h1&gt;Hello, world!&lt;/h1&gt;;
+</code></pre>
+<h2 id="rendering"><a class="header" href="#rendering">Rendering <a name="rendering"></a></a></h2>
+<p>React renders components into the DOM (Document Object Model). You can use the <code>ReactDOM</code> library to render a component into a specific HTML element.</p>
+<pre><code class="language-jsx">ReactDOM.render(&lt;MyComponent /&gt;, document.getElementById('root'));
+</code></pre>
+<h2 id="props"><a class="header" href="#props">Props <a name="props"></a></a></h2>
+<p>Props (short for properties) allow you to pass data from a parent component to a child component. This enables you to create dynamic and reusable components.</p>
+<pre><code class="language-jsx">function Greeting(props) {
+  return &lt;div&gt;Hello, {props.name}&lt;/div&gt;;
+}
+</code></pre>
+<h2 id="state"><a class="header" href="#state">State <a name="state"></a></a></h2>
+<p>State is a way to store and manage data that can change over time. It is used to make components dynamic and interactive.</p>
+<pre><code class="language-jsx">class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+}
+</code></pre>
+<h2 id="lifecycle-methods"><a class="header" href="#lifecycle-methods">Lifecycle Methods <a name="lifecycle-methods"></a></a></h2>
+<p>React components have a lifecycle, and you can use lifecycle methods to perform actions at various stages of a component's existence. For example, <code>componentDidMount</code> is called after a component is rendered.</p>
+<pre><code class="language-jsx">componentDidMount() {
+  // Perform initialization after rendering.
+}
+</code></pre>
+<h2 id="handling-events"><a class="header" href="#handling-events">Handling Events <a name="handling-events"></a></a></h2>
+<p>You can define event handlers in React components to respond to user interactions, such as clicks or input changes.</p>
+<pre><code class="language-jsx">function Button() {
+  function handleClick() {
+    console.log('Button clicked');
+  }
+
+  return &lt;button onClick={handleClick}&gt;Click me&lt;/button&gt;;
+}
+</code></pre>
+<h2 id="conditional-rendering"><a class="header" href="#conditional-rendering">Conditional Rendering <a name="conditional-rendering"></a></a></h2>
+<p>You can use conditional statements and expressions to conditionally render different parts of a component based on certain conditions.</p>
+<pre><code class="language-jsx">function Greeting(props) {
+  if (props.isLoggedIn) {
+    return &lt;div&gt;Welcome, User!&lt;/div&gt;;
+  } else {
+    return &lt;div&gt;Please log in.&lt;/div&gt;;
+  }
+}
+</code></pre>
+<h2 id="lists-and-keys"><a class="header" href="#lists-and-keys">Lists and Keys <a name="lists-and-keys"></a></a></h2>
+<p>React provides a way to render lists of elements efficiently and assigns unique keys to each item in the list for optimization.</p>
+<pre><code class="language-jsx">const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number) =&gt; &lt;li key={number}&gt;{number}&lt;/li&gt;);
+</code></pre>
+<p>React utilizes several JavaScript features and concepts like arrow functions, classes, callbacks, promises, and async/await to create dynamic and interactive user interfaces. Let's explore each of these in detail and discuss how they are related and integrated in React:</p>
+<h1 id="javascript-for-react"><a class="header" href="#javascript-for-react">Javascript For React: <a name="javascript-for-react"></a></a></h1>
+<p>Arrow functions, classes, callbacks, promises, and async/await are fundamental JavaScript concepts that are commonly used in React. Let's explore each of these topics and how they are related and integrated in React:</p>
+<h2 id="arrow-functions"><a class="header" href="#arrow-functions">Arrow Functions: <a name="arrow-functions"></a></a></h2>
+<p>Arrow functions are a concise way to write functions in JavaScript. They are commonly used in React for defining components and functions, as they have a more compact syntax compared to traditional function expressions. Arrow functions capture the <code>this</code> value of the enclosing context automatically, making them suitable for working within React components and event handlers.</p>
+<p>Example of an arrow function defining a React component:</p>
+<pre><code class="language-jsx">const MyComponent = () =&gt; {
+  return &lt;div&gt;Hello, World!&lt;/div&gt;;
+};
+</code></pre>
+<h2 id="classes"><a class="header" href="#classes">Classes: <a name="classes"></a></a></h2>
+<p>Classes in JavaScript are used to define and create objects with methods and properties. In React, components are often defined as classes, especially when they need to manage component state and lifecycle methods. React class components extend the <code>React.Component</code> class and can have methods like <code>render</code>, <code>componentDidMount</code>, and more for handling component behavior.</p>
+<p>Example of a React class component:</p>
+<pre><code class="language-jsx">class MyComponent extends React.Component {
+  render() {
+    return &lt;div&gt;Hello, World!&lt;/div&gt;;
+  }
+}
+</code></pre>
+<p><code>**Note on functional versus class-based components**</code></p>
+<p>When React was first created, class-based components were the standard. But functional components were introduced later, and they eclipse class-based components in every way.</p>
+<p><em>Our advice: Ironically, you should probably never use class-based components!</em></p>
+<p>Stick to functional components. They are more modern and more versatile.</p>
+<p>Lots of tutorial content online still uses class-based components. If you stumble upon a tutorial or explanation that uses a class-based component, and you're new to React, please search for a functional-component alternative instead!</p>
+<h2 id="callbacks"><a class="header" href="#callbacks">Callbacks: <a name="callbacks"></a></a></h2>
+<p>Callbacks are functions that are passed as arguments to other functions and are executed at a later time or in response to an event. React uses callbacks extensively, especially in event handling. For example, you can pass callback functions to event handlers to respond to user interactions.</p>
+<p>Example of a callback function for handling a button click:</p>
+<pre><code class="language-jsx">function handleClick() {
+  console.log('Button clicked');
+}
+
+&lt;button onClick={handleClick}&gt;Click me&lt;/button&gt;
+</code></pre>
+<h2 id="promises"><a class="header" href="#promises">Promises: <a name="promise"></a></a></h2>
+<p>Promises are a way to handle asynchronous operations in JavaScript. They represent a value that might be available now, or in the future, or never. Promises have three states: <code>pending</code>, <code>fulfilled</code>, and <code>rejected</code>.</p>
+<ul>
+<li>
+<p><strong>Creating Promises:</strong>
+You can create a promise using the <code>Promise</code> constructor. It takes a function with two arguments: <code>resolve</code> and <code>reject</code>. You typically perform an asynchronous operation in this function and call <code>resolve</code> when the operation is successful or <code>reject</code> when it fails.</p>
+<pre><code class="language-javascript">const myPromise = new Promise((resolve, reject) =&gt; {
+  // Asynchronous operation
+  if (operationSucceeded) {
+    resolve(result);
+  } else {
+    reject(error);
+  }
+});
+</code></pre>
+</li>
+<li>
+<p><strong>Chaining Promises:</strong>
+Promises can be chained together using <code>.then()</code> and <code>.catch()</code> to handle the resolved value or errors. This chaining allows you to compose complex asynchronous operations.</p>
+<pre><code class="language-javascript">myPromise
+  .then((result) =&gt; {
+    // Handle success
+  })
+  .catch((error) =&gt; {
+    // Handle error
+  });
+</code></pre>
+</li>
+</ul>
+<h2 id="asyncawait"><a class="header" href="#asyncawait"><code>async/await</code>: <a name="awaitasync"></a></a></h2>
+<p><code>async</code> and <code>await</code> are modern JavaScript features for working with asynchronous code. They make asynchronous code more readable and maintainable.</p>
+<ul>
+<li>
+<p><strong><code>async</code> Function:</strong>
+An <code>async</code> function is a function that always returns a promise. It allows you to use the <code>await</code> keyword inside the function to pause execution until the promise is resolved.</p>
+<pre><code class="language-javascript">async function fetchData() {
+  const data = await fetch('https://api.example.com/data');
+  return data.json();
+}
+</code></pre>
+</li>
+<li>
+<p><strong><code>await</code> Keyword:</strong>
+The <code>await</code> keyword can only be used inside an <code>async</code> function. It pauses the execution of the function until the promise is resolved, and it returns the resolved value.</p>
+<pre><code class="language-javascript">const result = await myPromise;
+// The code here will not execute until myPromise is resolved.
+</code></pre>
+</li>
+</ul>
+<h2 id="promises-and-aysncawait-integration-in-react"><a class="header" href="#promises-and-aysncawait-integration-in-react">Promises and Aysnc/Await Integration in React:</a></h2>
+<p>React applications often involve asynchronous operations, such as fetching data from APIs or making network requests. Promises, <code>async/await</code>, and React's lifecycle methods can be integrated for managing asynchronous tasks effectively:</p>
+<ul>
+<li>
+<p><strong>Fetching Data:</strong>
+You can use <code>async/await</code> to fetch data in React components. Typically, you do this inside <code>componentDidMount()</code> or within functional components using the <code>useEffect</code> hook.</p>
+<pre><code class="language-javascript">async componentDidMount() {
+  try {
+    const response = await fetch('https://api.example.com/data');
+    const data = await response.json();
+    this.setState({ data });
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
+</code></pre>
+</li>
+<li>
+<p><strong>Updating Component State:</strong>
+Once the data is fetched, you can update the component state to trigger a re-render with the new data.</p>
+</li>
+<li>
+<p><strong>Handling Errors:</strong>
+Use <code>try/catch</code> to handle errors gracefully. You can also integrate error boundaries in React to catch errors in the component tree.</p>
+</li>
+<li>
+<p><strong>Using Promises:</strong>
+React works well with Promises, and you can use <code>.then()</code> and <code>.catch()</code> to manage asynchronous operations. However, <code>async/await</code> is often preferred for its more readable and synchronous-like syntax.</p>
+</li>
+</ul>
+<p>Integrating Promises and <code>async/await</code> in React allows you to manage asynchronous operations in a clean and structured way, providing a better user experience by preventing UI blocking during data retrieval.</p>
+<h1 id="more-react"><a class="header" href="#more-react">More React: <a name="more-react"></a></a></h1>
+<h2 id="events-in-react"><a class="header" href="#events-in-react">Events in React <a name="events"></a></a></h2>
+<h3 id="event-handling"><a class="header" href="#event-handling">Event Handling</a></h3>
+<p>In React, events are used to capture and respond to user interactions, such as clicks, input changes, and mouse movements. Event handling in React is similar to handling events in traditional HTML, but there are some differences due to React's synthetic event system.</p>
+<p>In React, you define event handlers as functions and attach them to JSX elements using event attributes. Here's an example of how you might handle a click event in React:</p>
+<pre><code class="language-jsx">function Button() {
+  function handleClick() {
+    console.log('Button clicked');
+  }
+
+  return &lt;button onClick={handleClick}&gt;Click me&lt;/button&gt;;
+}
+</code></pre>
+<p>The <code>onClick</code> attribute specifies the event handler function, <code>handleClick</code>, which will be executed when the button is clicked. React's synthetic event system provides a consistent API for handling events across different browsers.</p>
+<h3 id="event-object"><a class="header" href="#event-object">Event Object</a></h3>
+<p>In React, event handlers are passed an event object as an argument. This object contains information about the event, such as the type of event, target element, and any event-specific data. You can access event properties and methods within your event handler functions.</p>
+<pre><code class="language-jsx">function handleChange(event) {
+  console.log('Input value:', event.target.value);
+}
+</code></pre>
+<h2 id="higher-order-components-hocs-in-react"><a class="header" href="#higher-order-components-hocs-in-react">Higher Order Components (HOCs) in React <a name="higher-order-components"></a></a></h2>
+<h3 id="what-are-hocs"><a class="header" href="#what-are-hocs">What Are HOCs?</a></h3>
+<p>Higher Order Components are a design pattern in React that allows you to reuse component logic by wrapping one or more components with a higher-order component. HOCs are not a part of the React API; they are a pattern that leverages the composability of components.</p>
+<h3 id="how-hocs-work"><a class="header" href="#how-hocs-work">How HOCs Work</a></h3>
+<p>HOCs are functions that take a component and return a new enhanced component. They can add props, modify behavior, or encapsulate certain functionality. For example, you might create an HOC that provides authentication, access control, or data fetching capabilities to a component.</p>
+<p>Here's a simplified example of a higher order component that provides a &quot;loading&quot; indicator to a component:</p>
+<pre><code class="language-jsx">function withLoadingIndicator(WrappedComponent) {
+  return function WithLoadingIndicator(props) {
+    if (props.isLoading) {
+      return &lt;div&gt;Loading...&lt;/div&gt;;
+    }
+    return &lt;WrappedComponent {...props} /&gt;;
+  };
+}
+</code></pre>
+<h3 id="using-hocs"><a class="header" href="#using-hocs">Using HOCs</a></h3>
+<p>You can use an HOC by wrapping your component with it. For instance, suppose you have a component called <code>MyComponent</code>, and you want to add a loading indicator using the <code>withLoadingIndicator</code> HOC:</p>
+<pre><code class="language-jsx">const MyComponentWithLoading = withLoadingIndicator(MyComponent);
+</code></pre>
+<p>Now, <code>MyComponentWithLoading</code> is a new component that includes the loading indicator logic from the HOC. You can render it as you would with any other component.</p>
+<pre><code class="language-jsx">&lt;MyComponentWithLoading isLoading={true} /&gt;
+</code></pre>
+<h3 id="benefits-of-hocs"><a class="header" href="#benefits-of-hocs">Benefits of HOCs</a></h3>
+<p>HOCs enable you to separate concerns and promote reusability. They help you avoid code duplication by encapsulating common functionality in a separate function. This makes your code more maintainable and flexible, allowing you to compose and extend component behavior as needed.</p>
+<h3 id="relationship-between-events-and-hocs"><a class="header" href="#relationship-between-events-and-hocs">Relationship Between Events and HOCs</a></h3>
+<p>Events and HOCs can work together in a React application. For instance, you might create an HOC that handles common event-related logic, such as tracking user interactions, and then wrap components that need that behavior. This can help centralize event handling logic and make it reusable across multiple components. Additionally, you can pass event handling functions as props when composing components with HOCs, allowing for flexible customization of event behavior.</p>
+<p>In summary, events in React are essential for capturing and responding to user interactions, while Higher Order Components are a design pattern that promotes reusability and composability of component logic. You can use HOCs to encapsulate and extend event-related logic, making it easier to manage event handling across your React application.</p>
+<h2 id="props-vs-state"><a class="header" href="#props-vs-state">Props vs. State <a name="props-vs-state"></a></a></h2>
+<p>Props and state are two fundamental concepts in React, and they play distinct roles in how components work.</p>
+<h3 id="props-1"><a class="header" href="#props-1">Props</a></h3>
+<p><strong>Props (short for properties)</strong> are a mechanism for passing data from a parent component to a child component. Props are read-only, meaning that the child component cannot modify the props it receives. They are used to customize or configure child components based on data from their parent.</p>
+<p>Example of using props:</p>
+<pre><code class="language-jsx">function Greeting(props) {
+  return &lt;div&gt;Hello, {props.name}&lt;/div&gt;;
+}
+</code></pre>
+<h3 id="state-1"><a class="header" href="#state-1">State</a></h3>
+<p><strong>State</strong> is a way to store and manage data that can change over time within a component. State is used to make components dynamic and interactive. Unlike props, state is mutable, and components can change their internal state using the <code>setState</code> method. State is often used for data that the component needs to keep track of, such as user input or UI state.</p>
+<p>Example of using state:</p>
+<pre><code class="language-jsx">class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;p&gt;Count: {this.state.count}&lt;/p&gt;
+        &lt;button onClick={() =&gt; this.setState({ count: this.state.count + 1 })}&gt;
+          Increment
+        &lt;/button&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+</code></pre>
+<h2 id="how-they-relate-and-are-integrated"><a class="header" href="#how-they-relate-and-are-integrated">How They Relate and Are Integrated</a></h2>
+<p>Props and state are often used together to create dynamic and interactive React applications. Here's how they relate and are integrated:</p>
+<ol>
+<li>
+<p><strong>Passing Data</strong>: Props are used to pass data from a parent component to its child components. This data can be initial data that a child component uses to render itself.</p>
+</li>
+<li>
+<p><strong>Updating Data</strong>: State is used to manage data that can change within a component. Components can have state and use it to keep track of user interactions, input, or changes in data.</p>
+</li>
+<li>
+<p><strong>Reactivity</strong>: When a parent component passes props to a child component, any changes to those props in the parent will re-render the child. This allows for dynamic updates.</p>
+</li>
+<li>
+<p><strong>State Management</strong>: State is local to the component that owns it, and changes in state trigger re-renders of that component, updating the UI as needed.</p>
+</li>
+<li>
+<p><strong>Lifting State</strong>: Sometimes, you might need to manage state at a higher level in the component tree and pass it down as props to child components. This is called &quot;lifting state up.&quot;</p>
+</li>
+</ol>
+<p>In summary, props are for passing data from parent to child, while state is for managing data that can change within a component. Together, they enable you to build interactive and data-driven React applications. Hooks, especially the <code>useState</code> hook, make it easier to manage local state in functional components, further enhancing the capabilities of React functional components.</p>
+<h2 id="hooks-in-functional-components"><a class="header" href="#hooks-in-functional-components">Hooks in Functional Components <a name="hooks"></a></a></h2>
+<p>React introduced Hooks in version 16.8 as a way to add state and side-effects to functional components, which were previously limited to stateless rendering. </p>
+<p>In React, &quot;stateless rendering&quot; refers to the practice of creating functional components (also known as stateless functional components) that are purely responsible for rendering UI based on the input data provided through props. These components do not manage or maintain any internal state.</p>
+<p>Out with the old in with the new KING, hooks allow you to reuse stateful logic and side-effects across components, making functional components more powerful and flexible.</p>
+<p>Some of the most commonly used hooks include:</p>
+<h3 id="1-usestate"><a class="header" href="#1-usestate">1. <code>useState</code></a></h3>
+<p>This one might sound familiar from above, <code>useState</code> hook allows functional components to manage local state. It takes an initial state value and returns an array with the current state and a function to update it.</p>
+<pre><code class="language-jsx">import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;Count: {count}&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;Increment&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<h3 id="2-useeffect"><a class="header" href="#2-useeffect">2. <code>useEffect</code></a></h3>
+<p>The <code>useEffect</code> hook enables you to perform side-effects in functional components. It takes a function that will be executed after every render, and you can specify dependencies to control when the effect should run.</p>
+<pre><code class="language-jsx">import React, { useEffect, useState } from 'react';
+
+function Example() {
+  const [data, setData] = useState([]);
+
+  useEffect(() =&gt; {
+    // Fetch data from an API and update the state
+    fetchData().then((result) =&gt; setData(result));
+  }, []); // Empty dependency array runs the effect only once
+}
+</code></pre>
+<h3 id="3-other-built-in-hooks"><a class="header" href="#3-other-built-in-hooks">3. Other Built-in Hooks</a></h3>
+<p>React provides several other built-in hooks, such as <code>useContext</code> and <code>useReducer</code>, which allow you to manage context, state transitions, and references in functional components, respectively.</p>
+<ul>
+<li><code>useContext</code>: Allows you to access the context API within functional components. It's useful for sharing data across the component tree without prop drilling.</li>
+</ul>
+<pre><code class="language-jsx">import React, { useContext } from 'react';
+
+const ThemeContext = React.createContext('light');
+
+function ThemedButton() {
+  const theme = useContext(ThemeContext);
+  return &lt;button className={theme}&gt;Themed Button&lt;/button&gt;;
+}
+</code></pre>
+<ul>
+<li><code>useReducer</code>: This hook is used for more complex state management and state transitions. It's similar to <code>setState</code> but offers more control over how state updates occur.</li>
+</ul>
+<pre><code class="language-jsx">import React, { useReducer } from 'react';
+
+const initialState = { count: 0 };
+
+function counterReducer(state, action) {
+  switch (action.type) {
+    case 'increment':
+      return { count: state.count + 1 };
+    case 'decrement':
+      return { count: state.count - 1 };
+    default:
+      return state;
+  }
+}
+
+function Counter() {
+  const [state, dispatch] = useReducer(counterReducer, initialState);
+
+  return (
+    &lt;div&gt;
+      &lt;p&gt;Count: {state.count}&lt;/p&gt;
+      &lt;button onClick={() =&gt; dispatch({ type: 'increment' })}&gt; Increment&lt;/button&gt;
+      &lt;button onClick={() =&gt; dispatch({ type: 'decrement' })}&gt; Decrement&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+</code></pre>
+<h3 id="4-custom-hooks"><a class="header" href="#4-custom-hooks">4. Custom Hooks</a></h3>
+<p>You can create your own custom hooks to encapsulate and share component logic across different components. Custom hooks promote code reuse and maintainability.</p>
+<pre><code class="language-jsx">// Custom hook for handling form input state
+import { useState } from 'react';
+
+function useFormInput(initialValue) {
+  const [value, setValue] = useState(initialValue);
+
+  const handleChange = (e) =&gt; {
+    setValue(e.target.value);
+  };
+
+  return {
+    value,
+    onChange: handleChange,
+  };
+}
+</code></pre>
+<p>In summary, hooks in React are a way to manage state and side-effects in functional components. They integrate seamlessly with functional components, making it easier to write and maintain complex logic and enabling better code reuse. React's built-in hooks and the ability to create custom hooks provide a powerful toolset for building dynamic and interactive applications.</p>
+<p>Great Resources(videos): <a href="https://www.youtube.com/watch?v=Jl4q2cccwf0&amp;ab_channel=TheNetNinja">https://www.youtube.com/watch?v=Jl4q2cccwf0&amp;ab_channel=TheNetNinja</a></p>
+<ol>
+<li>useState: <a href="https://www.youtube.com/watch?v=4qVNaohzDWU&amp;ab_channel=LogRocket">https://www.youtube.com/watch?v=4qVNaohzDWU&amp;ab_channel=LogRocket</a></li>
+<li>useEffect:<a href="https://www.youtube.com/watch?v=gv9ugDJ1ynU&amp;ab_channel=TheNetNinja">https://www.youtube.com/watch?v=gv9ugDJ1ynU&amp;ab_channel=TheNetNinja</a></li>
+<li>useRef: <a href="https://www.youtube.com/watch?v=yCS2m01bQ6w&amp;ab_channel=Codevolution">https://www.youtube.com/watch?v=yCS2m01bQ6w&amp;ab_channel=Codevolution</a></li>
+<li>useCallback: <a href="https://www.youtube.com/watch?v=-Ls48dd-vJE&amp;ab_channel=BenAwad">https://www.youtube.com/watch?v=-Ls48dd-vJE&amp;ab_channel=BenAwad</a> </li>
+</ol>
+<h1 id="react-ecosystem"><a class="header" href="#react-ecosystem">React Ecosystem <a name="react-ecosystem"></a></a></h1>
+<h2 id="calling-apis"><a class="header" href="#calling-apis">Calling APIs <a name="handling-api-requests"></a></a></h2>
+<p>Calling APIs is a key part of any React App. It's what enables your app to communicate with the outside world - including, presumably, your backend.</p>
+<p>Here's a helpful tutorial on the best practices for calling APIs in React:</p>
+<p><a href="https://www.youtube.com/watch?v=bYFYF2GnMy8">https://www.youtube.com/watch?v=bYFYF2GnMy8</a></p>
+<p>There's also a part 2:</p>
+<p><a href="https://www.youtube.com/watch?v=1tfd6ANaNRY">https://www.youtube.com/watch?v=1tfd6ANaNRY</a></p>
+<p>The best ways to fetch data are using the popular package Axos (<a href="https://www.npmjs.com/package/axios">https://www.npmjs.com/package/axios</a>) or the vanilla JS _fetch _function (<a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch</a>)</p>
+<p>Once you have parsed the data, you'll probably want to store it in your state somehow (using useState or a redux store).</p>
+<p>It is also good practice to encapsulate your entire API call into a custom hook, and name the hook according to what it does (ex. <em>useFetchPokemonStats</em>). This is also much easier to do if you use a state-management system like Redux, which is described below. </p>
+<p>The methods described above let you call an API immediately upon rendering a certain component. But what happens if you want to manually trigger an API call (ex. after a certain action or event)?</p>
+<p>Your API call should still use useEffect, and should look mostly like the calls you learned about in Part 1. The 1 difference is you need to guard the useEffect wisely in its dependency array.</p>
+<p>As you recall, the dependency array of a useEffect contains everything that the useEffect depends upon - if any of its dependencies change, it will have a _side effect _of rerunning the useEffect.</p>
+<p>So, you can define a specific variable which only changes when you want your API call to run. You can put that variable in the dependency array of the useEffect. When the action or event that you want to trigger the API call occurs, you should change the trigger variable. This change will trigger the useEffect to run. The trigger variable should never change except when you want the useEffect to run.</p>
+<p>I personally like making my trigger variable an object which also contains any subvariables that my API call needs. So for example, if I was coding a call to a search API that included a text query and target price, my trigger object would contain those.</p>
+<p>Here is an example of a very basic React application that calls an API to perform a search with a custom hook and a useEffect guarded by a trigger object as described above: <a href="https://github.com/Tech-Start-UCalgary/react-api-examples/tree/main/js-no-redux">https://github.com/Tech-Start-UCalgary/react-api-examples/tree/main/js-no-redux</a></p>
+<h3 id="useswr"><a class="header" href="#useswr">useSWR</a></h3>
+<p><img src="images/image1.png" alt="alt_text" title="image_tooltip" /></p>
+<p>useSWR is a useful React hook for data fetching published by Vercel (creators of Next.js). </p>
+<p>SWR stands for stale-while-revalidate. It allows for smart data fetching and encapsulates a lot of advanced fetching logic (like how often should you refetch? should you have a cache?) in a single line of code.</p>
+<p>You should read more about useSWR here:</p>
+<p><a href="https://swr.vercel.app/">https://swr.vercel.app/</a></p>
+<p>You can watch a video tutorial here:</p>
+<p><a href="https://www.youtube.com/watch?v=f7yjEdXgGiM">https://www.youtube.com/watch?v=f7yjEdXgGiM</a></p>
+<h1 id="react-router"><a class="header" href="#react-router">React Router <a name="react-router"></a></a></h1>
+<p><strong>React Router</strong> is a popular library used for routing in React applications. Routing is the process of determining which UI components should be displayed based on the current URL or path. React Router helps you create single-page applications with multiple views and navigate between them without requiring full page reloads.</p>
+<p>Here's an elaboration on React Router and its integration with React:</p>
+<h3 id="react-router-features"><a class="header" href="#react-router-features">React Router Features:</a></h3>
+<ol>
+<li>
+<p><strong>Declarative Routing:</strong> React Router uses a declarative approach, where you define the routes and their corresponding components in a clear and organized manner. You specify what component should be rendered when a particular URL is matched.</p>
+</li>
+<li>
+<p><strong>Nested Routing:</strong> React Router supports nested routes, allowing you to create complex and hierarchical UI structures. This is especially useful for building multi-level menus or complex application layouts.</p>
+</li>
+<li>
+<p><strong>Route Parameters:</strong> You can define route parameters in your routes, allowing you to extract dynamic data from the URL. For example, a route like <code>/users/:id</code> can capture the <code>id</code> as a parameter.</p>
+</li>
+<li>
+<p><strong>Programmatic Navigation:</strong> React Router provides a set of functions for programmatic navigation. You can change the route, push to the browser's history, or replace the current route using these functions. This is useful for actions like form submissions or after successful authentication.</p>
+</li>
+<li>
+<p><strong>Route Guards:</strong> React Router allows you to implement route guards for protecting routes based on user authentication or other conditions. This ensures that users can only access certain routes if they meet specific criteria.</p>
+</li>
+</ol>
+<h3 id="integration-with-react"><a class="header" href="#integration-with-react">Integration with React:</a></h3>
+<p>React Router is typically integrated into a React application as a separate library. Here's how it's commonly done:</p>
+<ol>
+<li>
+<p><strong>Installation:</strong> You start by installing React Router as a package in your React project. You can use either <code>react-router-dom</code> (for web applications) or <code>react-router-native</code> (for mobile applications).</p>
+<pre><code class="language-bash">npm install react-router-dom
+</code></pre>
+</li>
+<li>
+<p><strong>Router Component:</strong> You wrap your entire application (or a part of it) with a <code>&lt;BrowserRouter&gt;</code> or <code>&lt;HashRouter&gt;</code> component provided by React Router. This component manages the application's navigation state and listens to changes in the URL.</p>
+<pre><code class="language-jsx">import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+function App() {
+  return (
+    &lt;Router&gt;
+      {/* Define your routes here */}
+    &lt;/Router&gt;
+  );
+}
+</code></pre>
+</li>
+<li>
+<p><strong>Route Configuration:</strong> Inside the <code>&lt;Router&gt;</code>, you define your routes using the <code>&lt;Route&gt;</code> component. Each <code>&lt;Route&gt;</code> component specifies a path and the component to render when the path matches.</p>
+<pre><code class="language-jsx">&lt;Route path=&quot;/home&quot; component={Home} /&gt;
+&lt;Route path=&quot;/about&quot; component={About} /&gt;
+</code></pre>
+</li>
+<li>
+<p><strong>Route Navigation:</strong> To navigate between routes, you use the <code>&lt;Link&gt;</code> component to create links or the <code>history</code> object to programmatically navigate.</p>
+<pre><code class="language-jsx">&lt;Link to=&quot;/home&quot;&gt;Home&lt;/Link&gt;
+// OR
+history.push('/home');
+</code></pre>
+</li>
+<li>
+<p><strong>Route Parameters:</strong> You can use route parameters to capture dynamic values from the URL. These parameters are accessible as props in the routed components.</p>
+<pre><code class="language-jsx">&lt;Route path=&quot;/user/:id&quot; component={UserProfile} /&gt;
+</code></pre>
+</li>
+<li>
+<p><strong>Nested Routes:</strong> You can nest routes by defining routes within the components rendered by other routes. This allows for hierarchical routing structures.</p>
+<pre><code class="language-jsx">&lt;Route path=&quot;/dashboard&quot; component={Dashboard}&gt;
+  &lt;Route path=&quot;/dashboard/profile&quot; component={Profile} /&gt;
+&lt;/Route&gt;
+</code></pre>
+</li>
+</ol>
+<p>By integrating React Router into your React application, you can create well-organized, client-side routing that provides a seamless and efficient user experience for navigating different parts of your application.</p>
+<h1 id="react-with-redux"><a class="header" href="#react-with-redux">React with Redux <a name="redux"></a></a></h1>
+<p>Redux is a widely used state container for javascript apps. As soon as your app reaches any level of data complexity, it makes a ton of sense to start using Redux to manage your state.</p>
+<p><em>A fair warning: Redux <span style="text-decoration:underline;">will </span>seem complicated at the beginning. That's completely expected! Push through that initial discomfort and you'll get used to it in no time :)</em></p>
+<p>Here is a great introductory video to React-Redux:</p>
+<p><a href="https://www.youtube.com/watch?v=CVpUuw9XSjY">https://www.youtube.com/watch?v=CVpUuw9XSjY</a></p>
+<p>I highly recommend using **createSlice <strong>to setup your Redux Store</strong>. **It is a simple way to encapsulate creating actions and slicers in a simple, easy-to-read, easy-to-understand way. Here is a short video that does a great job explaining how to use createSlice:</p>
+<p><a href="https://www.youtube.com/watch?v=e0MEtFaQTZk">https://www.youtube.com/watch?v=e0MEtFaQTZk</a></p>
+<p>To access your Redux state and update your Redux state in React, I highly recommend using the twin hooks **useSelector **and <strong>useDispatch</strong> respectively. They are simple, easy, and elegant. </p>
+<p><a href="https://www.youtube.com/watch?v=3zoIigieur0">https://www.youtube.com/watch?v=3zoIigieur0</a></p>
+<h1 id="lastly-nextjs"><a class="header" href="#lastly-nextjs">Lastly, Next.JS <a name="nextjs"></a></a></h1>
+<p>Next.js is a framework built on top of React, designed to simplify and enhance the development of web applications. It provides several features and benefits while seamlessly integrating with React. Let's explore these aspects interactively:</p>
+<p><strong>Q1: What is Next.js?</strong></p>
+<p>Next.js is a framework for building web applications that are built on top of the React library. It simplifies many aspects of React development and adds capabilities for server-side rendering, routing, and more.</p>
+<p><strong>Q2: How does Next.js relate to React?</strong></p>
+<p>Next.js is an extension of React. It leverages React's component-based structure and allows you to build React applications while providing additional tools and features for server-side rendering, routing, and other optimizations.</p>
+<p><strong>Q3: What are some key features of Next.js?</strong></p>
+<p>Next.js offers several key features:</p>
+<ul>
+<li>
+<p><strong>Server-Side Rendering (SSR):</strong> Next.js enables server-side rendering, which improves performance and SEO by rendering pages on the server before sending them to the client.</p>
+</li>
+<li>
+<p><strong>Routing:</strong> It includes a built-in routing system, so you can easily define and navigate between pages.</p>
+</li>
+<li>
+<p><strong>File-Based Routing:</strong> Routes are created based on the file structure, making it intuitive and easy to organize your application.</p>
+</li>
+<li>
+<p><strong>Automatic Code Splitting:</strong> It automatically splits your JavaScript code into smaller, more manageable chunks, optimizing loading times.</p>
+</li>
+<li>
+<p><strong>Static Site Generation (SSG):</strong> Next.js allows you to generate static HTML files at build time for even better performance and SEO.</p>
+</li>
+</ul>
+<p><strong>Q4: How do you create a new Next.js app?</strong></p>
+<p>To create a new Next.js app, you can use the following commands:</p>
+<pre><code class="language-bash">npx create-next-app my-nextjs-app
+cd my-nextjs-app
+npm run dev
+</code></pre>
+<p>This will set up a new Next.js application and start the development server.</p>
+<p><strong>Q5: Can you explain the pages and routing in Next.js?</strong></p>
+<p>In Next.js, you create pages by simply adding files to the <code>pages</code> directory. Each file becomes a route. For example, if you create <code>pages/about.js</code>, you will have a route at <code>/about</code>.</p>
+<p><strong>Q6: How does Next.js handle data fetching?</strong></p>
+<p>Next.js allows you to fetch data during server-side rendering using the <code>getServerSideProps</code> function. This data can be injected into your React components as props.</p>
+<pre><code class="language-jsx">export async function getServerSideProps() {
+  // Fetch data from an API or database
+  const data = await fetchData();
+
+  return {
+    props: { data },
+  };
+}
+</code></pre>
+<p><strong>Q7: What's the advantage of server-side rendering in Next.js?</strong></p>
+<p>Server-side rendering in Next.js improves the initial loading speed of your application and helps with search engine optimization (SEO). It also ensures that users see content more quickly.</p>
+<p><strong>Q8: How can I build a static website with Next.js?</strong></p>
+<p>Next.js provides static site generation (SSG) via the <code>getStaticProps</code> function. You can generate static HTML files for your pages at build time.</p>
+<pre><code class="language-jsx">export async function getStaticProps() {
+  // Fetch data from an API or database
+  const data = await fetchData();
+
+  return {
+    props: { data },
+  };
+}
+</code></pre>
+<p><strong>Q9: Are there any limitations or trade-offs with Next.js?</strong></p>
+<p>While Next.js offers many advantages, it may introduce complexity to smaller projects. It requires server-side rendering, which might not be necessary for all applications.</p>
+<p><strong>Q10: Can I deploy Next.js applications to various hosting platforms?</strong></p>
+<p>Yes, you can deploy Next.js applications to a wide range of hosting platforms, including Vercel, Netlify, and AWS. These platforms often provide built-in support for Next.js, making deployment straightforward.</p>
+<p>Next.js is a powerful tool that enhances React applications by providing features like server-side rendering, routing, and automatic code splitting. It simplifies the development process and improves performance. If you have more specific questions or need further information about Next.js, feel free to ask!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../guides/API_Guide/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../guides/React_Native_Guide/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../guides/API_Guide/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../guides/React_Native_Guide/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

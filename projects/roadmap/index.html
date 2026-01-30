@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js navy">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>A RoadMap - Tech Start UCalgary Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "navy";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('navy')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Tech Start UCalgary Documentation</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Events</li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/index.html"><strong aria-hidden="true">1.</strong> Overview</a></li><li class="chapter-item expanded "><a href="../../events/2025-2026/demos/elevator-pitch/index.html"><strong aria-hidden="true">2.</strong> Elevator Pitch</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/interim-showcase/index.html"><strong aria-hidden="true">3.</strong> Interim Showcase</a></li><li class="chapter-item expanded "><a href="../../events/2024-2025/demos/final-showcase/index.html"><strong aria-hidden="true">4.</strong> Final Showcase</a></li><li class="chapter-item expanded affix "><li class="part-title">Getting Started</li><li class="chapter-item expanded "><a href="../../installation/installfest/index.html"><strong aria-hidden="true">5.</strong> Installfest: from zero to hero</a></li><li class="chapter-item expanded "><a href="../../installation/wsl2/index.html"><strong aria-hidden="true">6.</strong> WSL2 Installation</a></li><li class="chapter-item expanded affix "><li class="part-title">Projects</li><li class="chapter-item expanded "><a href="../../projects/motivation/index.html"><strong aria-hidden="true">7.</strong> Motivation</a></li><li class="chapter-item expanded "><a href="../../projects/readme/index.html"><strong aria-hidden="true">8.</strong> A good README.md</a></li><li class="chapter-item expanded "><a href="../../projects/license/index.html"><strong aria-hidden="true">9.</strong> A LICENSE.md</a></li><li class="chapter-item expanded "><a href="../../projects/roadmap/index.html" class="active"><strong aria-hidden="true">10.</strong> A RoadMap</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Software Development</li><li class="chapter-item expanded "><a href="../../software/career-paths/index.html"><strong aria-hidden="true">11.</strong> Career Paths</a></li><li class="chapter-item expanded "><a href="../../software/front-end/index.html"><strong aria-hidden="true">12.</strong> Front End</a></li><li class="chapter-item expanded "><a href="../../software/devops/index.html"><strong aria-hidden="true">13.</strong> DevOps</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Guides</li><li class="chapter-item expanded "><a href="../../guides/Tech_Demo/index.html"><strong aria-hidden="true">14.</strong> Giving a good Technical Demo</a></li><li class="chapter-item expanded "><a href="../../guides/Django_Guide/index.html"><strong aria-hidden="true">15.</strong> Django</a></li><li class="chapter-item expanded "><a href="../../guides/Git_Guide/index.html"><strong aria-hidden="true">16.</strong> Git</a></li><li class="chapter-item expanded "><a href="../../guides/API_Guide/index.html"><strong aria-hidden="true">17.</strong> APIs</a></li><li class="chapter-item expanded "><a href="../../guides/React_Guide/index.html"><strong aria-hidden="true">18.</strong> React</a></li><li class="chapter-item expanded "><a href="../../guides/React_Native_Guide/index.html"><strong aria-hidden="true">19.</strong> React Native</a></li><li class="chapter-item expanded "><a href="../../guides/Web_Dev_Guide/index.html"><strong aria-hidden="true">20.</strong> Web Dev</a></li><li class="chapter-item expanded "><a href="../../guides/UI_UX_Design_Guide/index.html"><strong aria-hidden="true">21.</strong> UI/UX Design</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/index.html"><strong aria-hidden="true">22.</strong> Cloud Computing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/index.html"><strong aria-hidden="true">22.1.</strong> Amazon Web Services (AWS)</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/index.html"><strong aria-hidden="true">22.1.1.</strong> Database Services</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/DynamoDB/index.html"><strong aria-hidden="true">22.1.1.1.</strong> DynamoDB</a></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/database-services/RDS/index.html"><strong aria-hidden="true">22.1.1.2.</strong> RDS</a></li></ol></li><li class="chapter-item expanded "><a href="../../software/cloud-computing/AWS/Lambda/index.html"><strong aria-hidden="true">22.1.2.</strong> Lambda</a></li><li class="spacer"></li></ol></li></ol></li><li class="chapter-item expanded "><li class="part-title">Curated online resources</li><li class="chapter-item expanded "><a href="../../topics/conflict-management-styles/index.html"><strong aria-hidden="true">23.</strong> Dealing With Conflict</a></li><li class="chapter-item expanded "><a href="../../topics/css/index.html"><strong aria-hidden="true">24.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../../topics/html/index.html"><strong aria-hidden="true">25.</strong> HTML</a></li><li class="chapter-item expanded "><a href="../../topics/management-styles/index.html"><strong aria-hidden="true">26.</strong> Management Styles</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Workshops</li><li class="chapter-item expanded "><a href="../../workshops/secrets-management/index.html"><strong aria-hidden="true">27.</strong> Secrets Management</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="../../CONTRIBUTING.html">Contributing</a></li><li class="chapter-item expanded affix "><a href="../../CREDITS.html">Credits</a></li><li class="chapter-item expanded affix "><a href="../../LICENSE.html">License</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Tech Start UCalgary Documentation</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        <a href="https://github.com/Tech-Start-UCalgary/docs/edit/main/src/projects/roadmap/README.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="a-roadmap"><a class="header" href="#a-roadmap">A RoadMap</a></h1>
+<p>A RoadMap is one of the best ways to manifest the future vision of your product
+and the strategy and steps
+that will be used for achieving that vision.</p>
+<p>A RoadMap is also a great tool to cooperate with other people
+because you can prioritize on it the steps
+that are yet to be done,
+and see who's working on what,
+what progress has been made,
+and so on.</p>
+<p>This is an example from the Makes project on GitHub:</p>
+<p><img src="./makes-roadmap.png" alt="Makes RoadMap" /></p>
+<p>That's a simple RoadMap, yet it has all the important information.
+That's nice!</p>
+<p>I highly recommend you create your RoadMap using the Projects feature on GitHub
+because it integrates very well with other GitHub features
+like Issues, Pull Requests and Milestones,
+but it's also fine if you use <a href="https://www.atlassian.com/software/jira">Jira</a>
+or <a href="https://trello.com/">Trello</a>.</p>
+<p>As a rule of thumb,
+anything related to making your project awesome
+can (and should) go into the RoadMap.
+It's also not limited to just programming tasks,
+you could perfectly add to the RoadMap
+a meeting with your users,
+some market research activity,
+or having some Pizza with the team.</p>
+<p>A RoadMap is also a living creature,
+it evolves as the project evolves
+and you can iterate on it on the go.
+Don't worry if you don't get it perfectly from the beginning,
+but make sure you have one from the beginning!</p>
+<h2 id="how-to-create-a-roadmap"><a class="header" href="#how-to-create-a-roadmap">How to create a RoadMap?</a></h2>
+<h3 id="step-1---start-with-milestones"><a class="header" href="#step-1---start-with-milestones">Step 1 - Start with Milestones</a></h3>
+<p>My suggestion is that you start by creating a few
+<a href="https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones">Milestones</a>.</p>
+<p>Think about what your project wants to achieve:
+Is it maybe a website that allows you to shorten URLs,
+like <a href="https://tinyurl.com">https://tinyurl.com</a>?</p>
+<p>What's the <a href="https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp">minimum viable product</a> that you can deliver to your users
+so that they can start getting a taste?</p>
+<p>You are right!
+An ugly webpage, with an ugly textbox and an ugly button,
+that when clicked, gives you a beautifully shortened URL :)</p>
+<p>But that's even too far in the future.
+What about making your first Milestone
+about having an empty webpage?
+Your second Milestone could be having a backend that answers a ping request.
+Your third Milestone can be designing the database,
+such that it stores the shortened URLs;
+and your fourth Milestone can be adding the textbox and button to the front-end,
+and an endpoint in the back-end that stores and retrieves the shortened URL.</p>
+<p>You see?
+we just planned a <a href="https://blog.crisp.se/2016/01/25/henrikkniberg/making-sense-of-mvp">minimum viable product</a>,
+using an <a href="https://learn.microsoft.com/en-us/devops/plan/what-is-agile">agile methodology</a>.</p>
+<p>Congratulations!</p>
+<h3 id="step-2---split-the-milestones-in-smaller-issues"><a class="header" href="#step-2---split-the-milestones-in-smaller-issues">Step 2 - Split the Milestones in smaller Issues</a></h3>
+<p>Now we can proceed to define the individual tasks (GitHub Issues)
+that are needed for completing each Milestone,
+and most importantly,
+we can assign each member of our team an Issue,
+and work collaboratively towards the same goal.</p>
+<p>Bonus points if we can plan it so that they can all work in parallel.</p>
+<p>For example,
+for Milestone #1 (Having an empty webpage that the user can access),
+we could create the following Issues:</p>
+<p><img src="./milestone-1-plan.png" alt="Milestone 1 Plan" /></p>
+<p>In words:</p>
+<ul>
+<li><strong>Issue #1</strong>: Create a Git repository.
+<ul>
+<li>Priority: Medium.</li>
+<li>Assignee: John.</li>
+</ul>
+</li>
+<li><strong>Issue #2</strong>, after Issue #1: Add a license.
+<ul>
+<li>Priority: High.</li>
+<li>Assignee: Olivia.</li>
+</ul>
+</li>
+<li><strong>Issue #3</strong>, after Issue #1: Add a README.md.
+<ul>
+<li>Priority: Medium.</li>
+<li>Assignee: Jane.</li>
+</ul>
+</li>
+<li><strong>Issue #4</strong>, after Issue #1: Initialize an empty React project.
+<ul>
+<li>Priority: Medium.</li>
+<li>Assignee: Oliver.</li>
+</ul>
+</li>
+<li><strong>Issue #5</strong>, after Issue #4: Use GitHub actions to deploy the front-end into GitHub pages.
+<ul>
+<li>Priority: Medium.</li>
+<li>Assignee: John. (John should be free, since finishing #4 means #1 was finished).</li>
+</ul>
+</li>
+</ul>
+<p>Boom! Done.</p>
+<p>Now create more Issues for all of the other Milestones.</p>
+<h3 id="step-3---add-your-issues-to-the-roadmap"><a class="header" href="#step-3---add-your-issues-to-the-roadmap">Step 3 - Add your Issues to the RoadMap</a></h3>
+<p>My suggestion for this is to keep it simple.
+Avoid too many labels, statuses and complexity.</p>
+<p>First, create a Project (a RoadMap) on GitHub.
+This is usually under the Projects tab in the organization view:</p>
+<p><img src="./new-project.png" alt="New Project on GitHub" /></p>
+<p>Then define some statuses:</p>
+<p><img src="./status-field.png" alt="Status Field" /></p>
+<ul>
+<li><strong>🆕 New</strong>: Where you place all of the issues initially.</li>
+<li><strong>📋 Backlog</strong>: The issues that are yet to be done, and their priority.</li>
+<li><strong>🏗 In progress</strong>: The issues that are being worked on, and who's working on them.</li>
+<li><strong>✅ Done</strong>: The issues that have been shipped.</li>
+</ul>
+<p>Then, create a priority field:</p>
+<p><img src="./priority-fields.png" alt="Priority Field" /></p>
+<p>This will help your team focus on the things
+that are more impactful to your project.</p>
+<p>You can use the <a href="https://en.wikipedia.org/wiki/Time_management">Eisenhower matrix</a> for this:</p>
+<ul>
+<li><strong>🌋 High priority</strong>: Issues that are important and urgent.</li>
+<li><strong>🏔 Medium priority</strong>: Issues that are important, but not urgent.</li>
+<li><strong>🏕 Low priority</strong>: Issues that are not important, but may be nice to have someday.</li>
+<li><strong>🏝 Never priority</strong>: Just close the issue :) don't waste your time on this.</li>
+</ul>
+<p>Now you can start adding Issues to your RoadMap:</p>
+<p><img src="./makes-roadmap.png" alt="Makes RoadMap" /></p>
+<p>And see what is the progress towards each Milestone, for example:</p>
+<p><img src="./milestones-progress.png" alt="Milestones Progress" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../projects/license/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../software/career-paths/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../projects/license/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../software/career-paths/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
