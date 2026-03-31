@@ -8,11 +8,11 @@ Get invaluable feedback on your project to guide your further development beyond
 
 ## Quick Info
 
-### Venue
+### Venue [TBD]
 
-#### [Collision Space, Hunter Hub for Entrepreneurial Thinking](https://www.ucalgary.ca/hunter-hub/collision-space)
+<!--#### [Collision Space, Hunter Hub for Entrepreneurial Thinking](https://www.ucalgary.ca/hunter-hub/collision-space)
 
-Hunter Student Commons Room 401
+Hunter Student Commons Room 401-->
 
 ### Date - 2 May 2026
 
