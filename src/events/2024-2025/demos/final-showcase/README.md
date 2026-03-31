@@ -1,7 +1,5 @@
 # Final Showcase
 
-NOTE: THIS IS FROM LAST YEAR - ONLY USE AS A REFERENCE FOR WHAT THE EVENT WILL LOOK LIKE => WILL UPDATE WITH NEW DETAILS AS WE GET CLOSER TO THE DATE
-
 ## Objectives
 
 Share your hard work over the last year to the club, our sponsors, and industry guests.
@@ -33,17 +31,18 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 [Final Showcase- CampusBuddy2024.pdf](https://github.com/user-attachments/files/19638790/Final.Showcase-compressed.pdf)
 
 ### Schedule [TBD]
+exact times will be announced later
 
-|         |     |         |                             |
-| ------- | --- | ------- | --------------------------- |
-| 12:00pm | -   | 12:30pm | Light Networking & Snacks   |
-| 12:30pm | -   | 12:45pm | Introductions               |
-| 12:45pm | -   | 1:45pm  | Project Presentations (1-3) |
-| 1:45pm  | -   | 2:00pm  | Intermission                |
-| 2:00pm  | -   | 2:45pm  | Project Presentations (4-5) |
-| 2:45pm  | -   | 3:30pm  | Judging Break & Bingo       |
-| 3:30pm  | -   | 4:00pm  | Feedback & Awards           |
-| 4:00pm  | -   | 4:30pm  | Closing Remarks             |
+|      |     |      |                             |
+| ---- | --- | ---- | -- ------------------------ |
+| TBD  | -   | TBD  | Light Networking & Snacks   |
+| TBD  | -   | TBD  | Introductions               |
+| TBD  | -   | TBD  | Project Presentations (1-3) |
+| TBD  | -   | TBD  | Intermission                |
+| TBD  | -   | TBD  | Project Presentations (4-6) |
+| TBD  | -   | TBD  | Judging Break & Bingo       |
+| TBD  | -   | TBD  | Feedback & Awards           |
+| TBD  | -   | TBD  | Closing Remarks             |
 
 ### Presentation Order
 
