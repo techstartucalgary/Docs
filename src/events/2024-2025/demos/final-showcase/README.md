@@ -34,7 +34,7 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 exact times will be announced later
 
 |      |     |      |                             |
-| ---- | --- | ---- | -- ------------------------ |
+| ---- | --- | ---- | --------------------------- |
 | TBD  | -   | TBD  | Light Networking & Snacks   |
 | TBD  | -   | TBD  | Introductions               |
 | TBD  | -   | TBD  | Project Presentations (1-3) |
