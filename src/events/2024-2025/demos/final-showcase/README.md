@@ -16,11 +16,11 @@ Hunter Student Commons Room 401-->
 
 ### Date - 2 May 2026
 
-<!--### Time - 12:00pm to 4:00pm
+<!--### Time - 12:00pm to 4:00pm-->
 
 Project teams, please arrive **no later than 11:30am**
 
-Setup begins at 10:00am, so you're welcome to enter the venue from then on-->
+Setup begins at 10:00am, so you're welcome to enter the venue from then on
 
 ### Rubric
 
