@@ -16,7 +16,7 @@ Get invaluable feedback on your project to guide your further development beyond
 
 Hunter Student Commons Room 401
 
-### Date - 2 May 2026
+### Date - 3 May 2025
 
 ### Time - 12:00pm to 4:00pm
 
@@ -26,13 +26,13 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 
 ### Rubric
 
-[Judge Rubric \_ Showcase 2025 - Rubric.pdf](https://drive.google.com/file/d/1A9s6HDKGVUHLU9jHZfKdIHxpe06R6n86/view)
+[Judge Rubric \_ Showcase 2025 - Rubric.pdf](https://github.com/user-attachments/files/19638665/Judge.Rubric._.Showcase.2025.-.Rubric.pdf)
 
 ### Sample Presentation (2024 - CampusBuddy)
 
 [Final Showcase- CampusBuddy2024.pdf](https://github.com/user-attachments/files/19638790/Final.Showcase-compressed.pdf)
 
-### Schedule [TBD]
+### Schedule
 
 |         |     |         |                             |
 | ------- | --- | ------- | --------------------------- |
@@ -47,35 +47,21 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 
 ### Presentation Order
 
-1. Shatter
-2. Vivordo Health
-3. Verexa
-4. Sterling
-5. Audora
-6. FlowBuildr
-
+1. CONN-X
+2. Event Ease
+3. Agrivanna
+4. Earth's Echo
+5. Callia
 
 ### Presentation Time Limit
 
-12 minutes for presentation (hard limit)
+15 minutes for presentation (hard limit)
 
 We will have a timer clearly visible for you
 
-8 minutes for questions
+5 minutes for questions
 
 We will also be allowing 3 mins for each team during the judging break to let the judges play with their product.
-
-### Trifold
-Focus on visuals over text!
-Make sure to bring a spare laptop so that attendees can use your MVP!
-Suggested Points that should be on the trifold (by no means required):
-- Problem Statement
-- Target Users
-- Market Research
-- Design
-- Tech Stack/Implementation
-- Any feedback from happy users
-
 
 ### Presentation Logistics
 
