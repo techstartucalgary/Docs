@@ -34,8 +34,7 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 
 ### Schedule [TBD]
 Exact times will be announced.
-
-|          |     |          |                                 |    
+    
 | -------- | --- | -------- | ------------------------------- |
 | 11:00 am | -   | 11:30 am | Light Networking & Snacks       |
 | 11:30 am | -   | 11:45 am | Introductions                   |
