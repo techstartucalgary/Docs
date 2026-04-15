@@ -31,7 +31,7 @@ Setup begins at 10:00am, so you're welcome to enter the venue from then on
 [Final Showcase- CampusBuddy2024.pdf](https://github.com/user-attachments/files/19638790/Final.Showcase-compressed.pdf)
 
 ### Schedule [TBD]
-Exact times will be announced.
+exact times will be announced later
 
 |      |     |      |                             |
 | ---- | --- | ---- | --------------------------- |
