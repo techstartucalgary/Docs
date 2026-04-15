@@ -4,10 +4,10 @@
 
 # Events
 
-- [Overview](./events/2024-2025/demos/README.md)
+- [Overview](./events/2025-2026/demos/README.md)
 - [Elevator Pitch](./events/2025-2026/demos/elevator-pitch/README.md)
 - [Interim Showcase](./events/2025-2026/demos/interim-showcase/README.md)
-- [Final Showcase](./events/2024-2025/demos/final-showcase/README.md)
+- [Final Showcase](./events/2025-2026/demos/final-showcase/README.md)
 
 # Getting Started
 
