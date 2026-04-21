@@ -4,7 +4,7 @@
 
 Share your hard work over the last year to the club, our sponsors, and industry guests.
 
-Get invaluable feedback on your project to guide your further development beyond TechStart.
+Get invaluable feedback on your project to guide your further development beyond Tech Start.
 
 ## Quick Info
 
@@ -18,7 +18,7 @@ Hunter Student Commons Room 401-->
 
 ### Date - 2 May 2026
 
-### Time - 12:00pm to 4:00pm
+### Time - 11:00am to 4:30pm
 
 Project teams, please arrive **no later than 11:30am**
 
