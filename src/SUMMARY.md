@@ -47,6 +47,7 @@
       - [DynamoDB](./software/cloud-computing/AWS/database-services/DynamoDB/README.md)
       - [RDS](./software/cloud-computing/AWS/database-services/RDS/README.MD)
     - [Lambda](./software/cloud-computing/AWS/Lambda/README.MD)
+    - [CloudWatch](./software/cloud-computing/AWS/CloudWatch/README.md)
 
 ---
 
