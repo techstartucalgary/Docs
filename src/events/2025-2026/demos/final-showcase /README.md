@@ -73,6 +73,16 @@ During this time, teams will be cycling between groups of judges to let them dem
 | 6 | FlowBuildr | Sterling | Audora | 2:35 PM |
 | Judge Deliberation | -| -| -| 2:42 PM - 3:00 PM |
 
+## Judge List
+
+- Gabriel Lopes, Neo Financial, Director of Software Engineering
+- Ahmad Khawaja, Amazon, Finance Manager
+- Rodolfo Ferro Casagrande, Helcim, Director of Design
+- Jen Lussier, Platform Calgary, CEO
+- Jake Moore, ATB, Senior Product Manager
+- Joel Happ, Storiator Labs, Founder
+- Sharmeen Aqueel, Lyyvora, Founder/Principal Designer
+- Abdel Elkady, SeisWare, Senior Software Developer
 
 ### Trifold
 Focus on visuals over text!
