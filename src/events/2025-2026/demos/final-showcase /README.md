@@ -12,10 +12,6 @@ Get invaluable feedback on your project to guide your further development beyond
 Taylor Institute for Teaching and Learning
 Room: TI 160
 
-<!--#### [Collision Space, Hunter Hub for Entrepreneurial Thinking](https://www.ucalgary.ca/hunter-hub/collision-space)
-
-Hunter Student Commons Room 401-->
-
 ### Date - 2 May 2026
 
 ### Time - 11:00am to 4:30pm
@@ -48,13 +44,12 @@ Exact times will be announced.
 
 ### Presentation Order
 
-1. Shatter
-2. Vivordo Health
+1. FlowBuildr
+2. Shatter
 3. Verexa
-4. Sterling
-5. Audora
-6. FlowBuildr
-
+4. Audora
+5. Sterling
+6. Vivordo
 
 ### Presentation Time Limit
 
@@ -62,9 +57,22 @@ Exact times will be announced.
 
 We will have a timer clearly visible for you
 
-8 minutes for questions
+8 minutes max for questions (we'll move on once the judges are done with questions or when the 8 min mark is hit, whichever comes last).
 
-We will also be allowing 3 mins for each team during the judging break to let the judges play with their product.
+### 1-on-1 Judging Break
+
+During this time, teams will be cycling between groups of judges to let them demo their product. Each demo will be approximately **5 minutes**, so make sure to guide judges through the most important workflows of your applications, to show them that your product really works! All demos will take place between 2-3pm following the given schedule:
+
+| Round | Group 1 | Group 2 | Group 3 | Time |
+|---|---|---|---|---|
+| 1 | Shatter | Vivordo Health | Verexa | 2:00 PM |
+| 2 | Sterling | Audora | FlowBuildr | 2:07 PM |
+| 3 | Vivordo Health | Verexa | Shatter | 2:14 PM |
+| 4 | Audora | FlowBuildr | Sterling | 2:21 PM |
+| 5 | Verexa | Shatter | Vivordo Health | 2:28 PM |
+| 6 | FlowBuildr | Sterling | Audora | 2:35 PM |
+| Judge Deliberation | -| -| -| 2:42 PM - 3:00 PM |
+
 
 ### Trifold
 Focus on visuals over text!
@@ -80,7 +88,7 @@ Suggested Points that should be on the trifold (by no means required):
 
 ### Presentation Logistics
 
-There are 3 microphones: 1 clip-on, 1 hand-held, and 1 on the podium. If you're presenting it's a good idea to be familiar with how to use these to make your presentation go more smoothly.
+There is 1 lapel microphone. If you're presenting it's a good idea to be familiar with how to use these to make your presentation go more smoothly.
 
 MacBooks with Apple Silicon chips have had issues with the projector system, so bring Intel MacBooks or Windows/Linux devices.
 
@@ -97,11 +105,3 @@ Our judges will be using the rubric below to give feedback, as well as general f
 They will also choose winners for the following categories: Best Overall, Best Design, and Best Technology.
 
 Note, one team **can** win more than one award.
-
-<!-- TODO update rubric once finalized -->
-<!-- <object data="./rubric.pdf" type="application/pdf" width="100%" height="700px">
-    <embed src="./rubric.pdf">
-        <p>Failed to render rubric. Please find the PDF on Google Drive: <a href="https://drive.google.com/file/d/1uOApqhFG3j0oEj8EBkpVseIc79FBJHav/view?usp=sharing">View PDF</a></p>
-    </embed>
-</object>
- -->
